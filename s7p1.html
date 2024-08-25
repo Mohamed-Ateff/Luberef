@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/Footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/s7p1.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="images/Logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="Missing Data">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Missing Data">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Missing Data"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="Missing Data"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="Missing Data"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link"> أبرز المحطات </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link"> المنتجات ومرافق الإنتاج </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Main Activities"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Company Products"
+                        >مرفق إنتاج ينبع
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link"> المشاريع المستقبلية </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link"> الأداء المالي </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Main Activities"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Company Products"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link"> البيئة والمجتمع </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/5.png" alt="" />
+      <div class="title">
+        <h1>الأداء المالي</h1>
+      </div>
+
+      <div class="box-with-title" id="dif-color-box-with-title2">
+        <h1>أهم النتائج والمؤشرات لعام 2023</h1>
+      </div>
+    </div>
+
+    <div class="body-padding">
+      <div class="three-boxes">
+        <div class="container">
+          <div
+            class="one-box"
+            style="
+              background-color: #a8aaad;
+              border-radius: 35px 5px 35px 5px !important;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <img
+              src="Images/G1.png"
+              style="width: 120px; height: 120px"
+              alt=""
+            />
+            <h1 style="margin-top: 25px; font-size: 40px">العمليات</h1>
+          </div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">استغلال الطاقة الإنتاجية</p>
+            <div class="num-and-star">
+              <span>*</span>
+              <h1>۹۰.۹ ٪</h1>
+            </div>
+            <div class="two-nums-and-icon" style="margin-right: 20px">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۸۸.۸ ٪</p>
+            </div>
+            <div class="text-and-star">
+              <span>*</span>
+              <p style="font-size: 13px">
+                بناء على طاقة تشغيلية قدرها 1,345,000 طن متري، وذلك بعد تعزيز
+                القدرة الإنتاجية خلال العام.
+              </p>
+            </div>
+          </div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">توافر الطاقة التشغيلية</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۹۸.۰ ٪</h1>
+            </div>
+            <div class="two-nums-and-icon">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۹٤.۹ ٪</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="one-box"
+            style="
+              background-color: #a8aaad;
+              border-radius: 35px 5px 35px 5px !important;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <img
+              src="Images/G2.png"
+              style="width: 120px; height: 120px"
+              alt=""
+            />
+            <h1
+              style="
+                margin-top: 25px;
+                font-size: 40px;
+                text-align: center;
+                line-height: 55px;
+              "
+            >
+              <span>الطاقة </span>
+              <br />
+              <span>التشغيلية</span>
+            </h1>
+          </div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">زيوت الأساس</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۱,٤٥٥.۰۰</h1>
+            </div>
+            <div class="two-nums-and-icon" style="margin-right: 0px">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۱,٤٥٥.۰۰</p>
+            </div>
+            <div class="text-and-star">
+              <p>طن متري</p>
+            </div>
+          </div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">المنتجات الثانوية</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۲,۸۳۰.۰۰۰</h1>
+            </div>
+            <div class="two-nums-and-icon">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۲,٦٥۰.۰۰۰</p>
+            </div>
+            <div class="text-and-star">
+              <p>طن متري</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="two-cards-with-grey-bg"
+            style="
+              border-radius: 35px 5px 35px 5px !important;
+              background-color: #a8aaad;
+            "
+          >
+            <div
+              class="one-box"
+              style="
+                background-color: #a8aaad;
+                border-radius: 35px 5px 35px 5px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+              "
+            >
+              <img
+                src="Images/G3.png"
+                style="width: 120px; height: 120px"
+                alt=""
+              />
+              <h1
+                style="
+                  margin-top: 25px;
+                  font-size: 40px;
+                  text-align: center;
+                  line-height: 55px;
+                "
+              >
+                <span>إنتاج زيوت </span>
+                <br />
+                <span>الأساس</span>
+              </h1>
+            </div>
+            <div
+              class="one-box"
+              style="
+                border-radius: 5px 35px 5px 35px;
+                background-color: #a8aaad;
+              "
+            >
+              <p class="top-title-for-cards">زيوت الأساس</p>
+              <div class="num-and-star">
+                <!-- <span>*</span> -->
+                <h1 style="color: #162c51">۱,٤٥٥.۰۰</h1>
+              </div>
+              <div class="two-nums-and-icon" style="margin-right: 0px">
+                <p style="color: #162c51">2022</p>
+                <img src="Images/arrow-left-without-bg.png" alt="" />
+                <p style="color: #162c51">۱,٤٥٥.۰۰</p>
+              </div>
+              <div class="text-and-star">
+                <p style="color: #016aab">طن متري</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">الفئة الأولى</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۳۹۸,۲۲۲</h1>
+            </div>
+            <div class="two-nums-and-icon">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>٤۰۷,۷٥۱</p>
+            </div>
+            <div class="text-and-star">
+              <p>طن متري</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="one-box display-non-for-mobile"
+            style="background-color: transparent"
+          ></div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">الفئة الثانية</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۱۸۲٤,٦۰۰</h1>
+            </div>
+            <div class="two-nums-and-icon" style="margin-right: 0px">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۷۸۷,۰٤۱</p>
+            </div>
+            <div class="text-and-star">
+              <p>طن متري</p>
+            </div>
+          </div>
+
+          <div
+            class="one-box display-non-for-mobile"
+            style="background-color: transparent"
+          ></div>
+        </div>
+        <div class="container">
+          <div
+            class="two-cards-with-grey-bg"
+            style="
+              border-radius: 35px 5px 35px 5px !important;
+              background-color: #a8aaad;
+            "
+          >
+            <div
+              class="one-box"
+              style="
+                background-color: #a8aaad;
+                border-radius: 35px 5px 35px 5px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+              "
+            >
+              <img
+                src="Images/G4.png"
+                style="width: 120px; height: 120px"
+                alt=""
+              />
+              <h1
+                style="
+                  margin-top: 25px;
+                  font-size: 40px;
+                  text-align: center;
+                  line-height: 55px;
+                "
+              >
+                <span>حجم مبيعات </span>
+                <br />
+                <span>زيوت الأساس</span>
+              </h1>
+            </div>
+            <div
+              class="one-box"
+              style="
+                border-radius: 5px 35px 5px 35px;
+                background-color: #a8aaad;
+              "
+            >
+              <p class="top-title-for-cards">حجم مبيعات زيوت الأساس</p>
+              <div class="num-and-star">
+                <span style="color: #162c51">*</span>
+                <h1 style="color: #162c51">۱,۲٥۱.۳۰٥</h1>
+              </div>
+              <div class="two-nums-and-icon" style="margin-right: 0px">
+                <p style="color: #162c51">2022</p>
+                <img src="Images/arrow-left-without-bg.png" alt="" />
+                <p style="color: #162c51">۱,۲۲۸.۷٥۹</p>
+              </div>
+              <div class="text-and-star">
+                <p style="color: #016aab">طن متري</p>
+              </div>
+              <div class="text-and-star" style="margin-top: 0px">
+                <span style="color: #162c51; margin-top: 7px">*</span>
+                <p style="font-size: 15px; color: #162c51; font-weight: 600">
+                  منتجات لوبريف فقط
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">الفئة الأولى</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>٤۱۰,٤۰۹</h1>
+            </div>
+            <div class="two-nums-and-icon">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>٤۲۳,۰٤۸</p>
+            </div>
+            <div class="text-and-star">
+              <p>طن متري</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="one-box">
+            <p class="top-title-for-cards">الفئة الثانية</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۸٤۰,۸۹٦</h1>
+            </div>
+            <div class="two-nums-and-icon">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۸۰٥,۷۱۱</p>
+            </div>
+            <div class="text-and-star">
+              <p>طن متري</p>
+            </div>
+          </div>
+          <div
+            class="two-cards-with-grey-bg"
+            style="border-radius: 5px 35px 5px 35px; background-color: #162c51"
+          >
+            <div class="one-box" style="border-radius: 5px 35px 5px 35px">
+              <p class="top-title-for-cards">
+                <span>*</span>
+                الفئة الثالثة
+              </p>
+              <div class="num-and-star">
+                <h1>۱۲۰,٥۰۰</h1>
+              </div>
+              <div class="two-nums-and-icon" style="margin-right: 0px">
+                <p>2022</p>
+                <img src="Images/arrow-left-without-bg.png" alt="" />
+                <p>۸۱,٤٤۲</p>
+              </div>
+              <div class="text-and-star">
+                <p>طن متري</p>
+              </div>
+            </div>
+            <div
+              class="one-box"
+              style="
+                border-radius: 5px 35px 5px 35px;
+                justify-content: flex-end !important;
+                padding-right: 0px;
+                padding-left: 60px;
+              "
+            >
+              <div
+                class="text-and-star"
+                style="
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  padding-top: 95px;
+                "
+              >
+                <span style="font-size: 25px; margin-top: -5px">*</span>
+                <p style="font-size: 14px">
+                  تشير إلى مبيعات أعضاء تحالف أرامكو لزيوت الأساس (إس أويل
+                  وموتيفا) في منطقة الشركة وإلى زيوت الأساس المستوردة، التي بيعت
+                  في السوق المحلية من قبل الشركة، وتشمل جزءاً بسيطاً من مبيعات
+                  التحالف من الفئة الأولى لزيوت الأساس.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="two-cards-with-grey-bg"
+            style="
+              border-radius: 35px 5px 35px 5px !important;
+              background-color: #a8aaad;
+            "
+          >
+            <div
+              class="one-box"
+              style="
+                background-color: #a8aaad;
+                border-radius: 35px 5px 35px 5px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+              "
+            >
+              <img
+                src="Images/G5.png"
+                style="width: 120px; height: 120px"
+                alt=""
+              />
+              <h1
+                style="
+                  margin-top: 25px;
+                  font-size: 40px;
+                  text-align: center;
+                  line-height: 55px;
+                "
+              >
+                <span>حجم مبيعات </span>
+                <br />
+                <span>المنتجات الثانوية</span>
+              </h1>
+            </div>
+            <div
+              class="one-box"
+              style="
+                border-radius: 5px 35px 5px 35px;
+                background-color: #a8aaad;
+              "
+            >
+              <p class="top-title-for-cards">حجم مبيعات زيوت الأساس</p>
+              <div class="num-and-star">
+                <!-- <span style="color: #162c51">*</span> -->
+                <h1 style="color: #162c51">۲,٥٥۰.۲۸۹</h1>
+              </div>
+              <div class="two-nums-and-icon" style="margin-right: 0px">
+                <p style="color: #162c51">2022</p>
+                <img src="Images/arrow-left-without-bg.png" alt="" />
+                <p style="color: #162c51">۲,٥٦۳.۷۰۳</p>
+              </div>
+              <div class="text-and-star">
+                <p style="color: #016aab">طن متري</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="one-box">
+            <p class="top-title-for-cards">هوامش المنتجات الثانوية</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۲۲</h1>
+            </div>
+            <div class="two-nums-and-icon">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۹٦</p>
+            </div>
+            <div class="text-and-star">
+              <p>ريالاً سعودياً / طن متري</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="one-box">
+            <p class="top-title-for-cards">هوامش التكسير</p>
+            <div class="num-and-star">
+              <!-- <span>*</span> -->
+              <h1>۲,۰٦۸</h1>
+            </div>
+            <div class="two-nums-and-icon" style="margin-right: 0px">
+              <p>2022</p>
+              <img src="Images/arrow-left-without-bg.png" alt="" />
+              <p>۲,٤۸٤</p>
+            </div>
+            <div class="text-and-star">
+              <p>ريالاً سعودياً / طن متري</p>
+            </div>
+          </div>
+
+          <div class="one-box" style="background-color: #016aab">
+            <div class="space-between">
+              <p class="top-title-for-cards">
+                <span style="color: white">إجمالي معدل </span>
+                <br />
+                <span style="color: white">الحوادث المسجلة</span>
+              </p>
+              <p
+                class="top-title-for-cards"
+                style="
+                  font-weight: 700;
+                  font-size: 30px;
+                  position: relative;
+                  top: -10px;
+                "
+              >
+                ESG
+              </p>
+            </div>
+            <div class="num-and-star" style="margin-top: 10px !important">
+              <!-- <span>*</span> -->
+              <h1>۰</h1>
+            </div>
+
+            <div class="text-and-star">
+              <p>صفر حوادث</p>
+            </div>
+          </div>
+
+          <div class="one-box" style="background-color: #016aab">
+            <div class="space-between">
+              <p class="top-title-for-cards">
+                <span style="color: white">الحد من حرق </span>
+                <br />
+                <span style="color: white">الغاز بنسبة</span>
+              </p>
+              <p
+                class="top-title-for-cards"
+                style="
+                  font-weight: 700;
+                  font-size: 30px;
+                  position: relative;
+                  top: -10px;
+                "
+              >
+                ESG
+              </p>
+            </div>
+            <div class="num-and-star" style="margin-top: 10px !important">
+              <!-- <span>*</span> -->
+              <h1>٤ ٪</h1>
+            </div>
+
+            <div class="text-and-star">
+              <p>مقارنة بالعام السابق</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="table-container">
+        <h1 class="title-for-table" data-en="">أهم المؤشرات لعام 2023</h1>
+        <table class="table19">
+          <thead>
+            <tr>
+              <th data-en="">الـــبنــد</th>
+              <th data-en="">2023</th>
+              <th data-en="">2022</th>
+              <th data-en="">وحدة القياس</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>الأرباح قبل الفوائد والضرائب والاستهلاك والإطفاء</td>
+              <td>1,912</td>
+              <td>2,511</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>العائد على رأس المال المستخدم</td>
+              <td>%30</td>
+              <td>%39</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>الإيرادات</td>
+              <td>9,489</td>
+              <td>10,614</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>ربح العام</td>
+              <td>1,510</td>
+              <td>1,978</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>إجمالي حقوق الملكية</td>
+              <td>4,869</td>
+              <td>5,083</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>إجمالي الربح</td>
+              <td>1,858</td>
+              <td>2,434*</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>إجمالي الدخل الشامل</td>
+              <td>1,460</td>
+              <td>2,021</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>نسبة المديونية</td>
+              <td>%-1</td>
+              <td>%3</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>الربح التشغيلي</td>
+              <td>1,590</td>
+              <td>2,171</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>ربحية السهم</td>
+              <td>8.98</td>
+              <td>11.72</td>
+              <td>ريال سعودي</td>
+            </tr>
+            <tr>
+              <td>التوزيعات النقدية</td>
+              <td>1,683</td>
+              <td>1,125</td>
+              <td>مليون ريال سعودي</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="title-for-table-under-it">*تمت إعادة حسابها</p>
+      </div>
+    </div>
+
+    <div class="two-col-text" style="margin-top: 70px">
+      <div class="container">
+        <div class="one-p">
+          <h1>الإيرادات</h1>
+          <p class="p-text" style="text-align: initial">
+            في عام 2023 حققت لوبريف إيرادات بقيمة 9,488.7 مليون ريال سعودي،
+            مقارنة بـ10,613.9 مليون ريال في 2022، بانخفاض نسبته 11% على أساس
+            سنوي. وزاد حجم مبيعات زيوت الأساس بما في ذلك مبيعات التحالف،
+            بـ61,604 طن متري بنسبة 5%، فيما تراجعت الأسعار بنسبة 13%. وسجلت
+            مبيعات المنتجات الثانوية والمنتجات البترولية البيضاء مجتمعة تراجعاً
+            بنسبة 0.5%، فيما انخفضت الأسعار بنسبة 12%.
+          </p>
+        </div>
+        <div class="one-p">
+          <h1>العائد على رأس المال المستخدم</h1>
+          <p class="p-text">
+            بلغ العائد على رأس المال المستخدم 30% في 2023، مقارنة بـ39% في 2022.
+            وتراجع صافي الربح التشغيلي بعد الزكاة بواقع 497 مليون ريال (25%)
+            نتيجة انخفاض الربح التشغيلي. وتراجع متوسط رأس المال العامل بواقع 148
+            مليون ريال 3% بسبب ارتفاع الرصيد النقدي وسداد القروض طويلة الأجل.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="two-col-text" style="margin-top: 70px">
+      <div class="container">
+        <div class="one-p">
+          <h1>الربح التشغيلي</h1>
+          <p class="p-text" style="text-align: initial">
+            سجلت لوبريف أرباحاً تشغيلية بقيمة 1,590.3 مليون ريال سعودي في 2023،
+            مقارنة بـ2,171.1 مليون ريال في 2022 بانخفاض نسبته 27% على أساس سنوي،
+            وذلك نتيجة تراجع أسعار المنتجات، الذي عوضه بشكل جزئي ارتفاع حجم
+            مبيعات زيوت الأساس وتراجع أسعار اللقيم.
+          </p>
+        </div>
+        <div class="one-p">
+          <h1>نسبة المديونية</h1>
+          <p class="p-text">
+            بلغ معدل المديونية لشركة لوبريف -1% كما في 31 ديسمبر 2023، مقارنة
+            بـ3% في الفترة المقابلة من 2022، وذلك نتيجة سداد القروض وارتفاع
+            الرصيد النقدي.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>الأداء المالي</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="JS/counter.js"></script>
+    <script src="JS/en.js"></script>
+  </body>
+</html>

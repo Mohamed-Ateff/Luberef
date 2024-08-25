@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/Footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/s4.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="images/Logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="Missing Data">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Missing Data">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Missing Data"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="Missing Data"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="Missing Data"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link"> أبرز المحطات </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link"> المنتجات ومرافق الإنتاج </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Main Activities"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Company Products"
+                        >مرفق إنتاج ينبع
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link"> المشاريع المستقبلية </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link"> الأداء المالي </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Main Activities"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Company Products"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link"> البيئة والمجتمع </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/4.png" alt="" />
+      <div class="title">
+        <h1>أبرز المحطات</h1>
+      </div>
+
+      <div class="box-with-title">
+        <h1>أبرز المحطات في تاريخ الشركة</h1>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div class="container">
+        <div class="slider-card-connect">
+          <div class="box-title-for-slider-card-connect">
+            <p>تصفح المزيد عبر الإنزلاق بالفأرة للأعلى او الاسفل</p>
+          </div>
+          <div class="controls">
+            <button id="slideUp"><img src="" alt="" /></button>
+            <button id="slideDown"><img src="" alt="" /></button>
+          </div>
+          <div class="wrapper">
+            <div class="outer">
+              <div class="card" style="--delay: -1">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>1991</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      زيادة الطاقة الإنتاجية لمرفق جدّة إلى نحو 240 ألف طن متري.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="--delay: 1">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>1996</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      نقل حصة المؤسسة العامة للبترول والمعادن - بترومين البالغة
+                      70% إلى شركة أرامكو السعودية.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="--delay: 2">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>1997</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      بدء تشغيل مرفق إنتاج ينبع بطاقة إنتاجية تقارب 300 ألف طن
+                      متري، ما عزز التكامل مع مرفق إنتاج جدة ورفع طاقته
+                      الإنتاجية إلى نحو 260 ألف طن متري وهو ما رفع بدوره إجمالي
+                      الطاقة الإنتاجية لشركة لوبريف إلى نحو 560 ألف طن متري من
+                      زيوت الأساس من الفئة الأولى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="--delay: 3">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>2007</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      استحواذ شركة جدوى للاستثمار الصناعي على حصة شركة موبيل
+                      البالغة 30% في شركة لوبريف.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="--delay: 4">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>2013</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      عززت لوبريف التكامل بين مرفقي الإنتاج في ينبع وجدة، ما أدى
+                      إلى زيادة الطاقة الإنتاجية لمرفق جدة إلى نحو 275 ألف طن
+                      متري، وزيادة إجمالي الطاقة الإنتاجية لشركة لوبريف إلى نحو
+                      575 ألف طن متري من زيوت الأساس من الفئة الأولى.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="--delay: 5">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>2017</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      اكتمال التوسعة الأولى لمرفق ينبع وإضافة نحو 710 آلاف طن
+                      متري إلى الطاقة الإنتاجية.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="--delay: 6">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>2019</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      تشكيل تحالف أرامكو لزيوت الأساس واعتماد العلامات التجارية
+                      لزيوت الأساس الخاصة بشركة أرامكو السعودية.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="--delay: 7">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>2021</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      توقيع اتفاقية مع أرامكو السعودية للحصول على كميات إضافية
+                      من الزيت الخام المختزل، التي ساهمت بالإضافة إلى مبادرات
+                      مشروع تحول الأعمال في زيادة الطاقة الإنتاجية للشركة بنحو
+                      90 ألف طن متري.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="--delay: 8">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>2022</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      إدراج شركة لوبريف في السوق المالية السعودية في واحد من
+                      أكبر الطروحات العامة الأولية لعام 2022 بنسبة تغطية بلغت
+                      29.5 مرة من إجمالي الأسهم المطروحة.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="--delay: 9">
+                <div class="content">
+                  <div class="box-for-slide">
+                    <h1>2023</h1>
+                  </div>
+                  <div class="details">
+                    <p>
+                      عدلت لوبريف اتفاقية توريد اللقيم الإلحاقية الموقعة مع
+                      أرامكو السعودية لزيادة إمدادات الزيت الخام المختزل بواقع 5
+                      آلاف برميل يوميًا في خطوة ستؤدي لزيادة سنوية في إنتاج زيوت
+                      الأساس بواقع 90 ألف طن متري تقريبا.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- New buttons for manual control -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-for-box-with-title2-with-margin">
+      <div class="box-with-title2" id="dif-color-box-with-title2">
+        <h1>أبـرز أحداث عام 2023</h1>
+      </div>
+    </div>
+
+    <div class="one-section">
+      <div class="container">
+        <h1 class="title-for-one-section">الربع الأول ،،،</h1>
+        <img class="img-for-one-section" src="Images/s1.png" alt="" />
+        <div class="four-cards">
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon1.png" alt="" />
+            </div>
+            <p>
+              وقعت لوبريف عقد أعمال الهندسة والتوريد والبناء مع شركة بتروجيت
+              بغرض توسعة مرفق ينبع (التوسعة الثانية). ويهدف المشروع إلى رفع
+              الطاقة الإنتاجية لمرفق ينبع إلى 1.3 مليون طن متري بحلول عام 2025.
+              ستتيح التوسعة تحقيق المرونة في الإنتاج الإضافي من زيوت الأساس من
+              الفئتين الثانية والثالثة بناء على طلبات العملاء.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon2.png" alt="" />
+            </div>
+            <p>
+              أكملت لوبريف أعمال الصيانة الدورية المجدولة لمرفق جدة بنجاح من أجل
+              تحقيق التنافسية، والموثوقية، والاستدامة، وتحقيق معدل صفر للحوادث
+              أو الإصابات المتعلقة بالصحة والسلامة والبيئة.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon3.png" alt="" />
+            </div>
+            <p>
+              وقعت لوبريف مذكرات تفاهم خلال إقامة فعاليات الحدث التقني البارز
+              “ليب” في السعودية، شملت مذكرة تفاهم مع شركة “إنسيليكو” لاستخدام
+              خبرتها في تكنولوجيا الذكاء الاصطناعي لتطوير تطبيقات جديدة لزيوت
+              الأساس ومواد التشحيم ومذكرة تفاهم مع شركة “نور نت” لتوفير خدمة
+              الجيل الجديد من البنية التحتية لتكنولوجيا المعلومات والخدمات
+              السحابية المدارة، بالإضافة إلى اتفاقية مع شركة ساب لاستخدام
+              البرنامج الخدمي “RISE with SAP” لتحسين قدرات برنامج لوبريف لتخطيط
+              الموارد المؤسسية.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon4.png" alt="" />
+            </div>
+            <p>
+              في إطار برنامج التحول، تمكنت لوبريف من تخفيض النفقات التشغيلية
+              بمرفق جدة عبر التحول لطرف ثالث لتقديم خدمات المياه والطاقة ومن
+              المتوقع أن تسفر هذه الخطوة الاستراتيجية عن توفير بقيمة 28 مليون
+              ريال سعودي سنوياً.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="one-section" style="margin-top: 60px">
+      <div class="container">
+        <h1 class="title-for-one-section">الربع الثاني ،،،</h1>
+        <img class="img-for-one-section" src="Images/s2.png" alt="" />
+        <div class="four-cards">
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon1.png" alt="" />
+            </div>
+            <p>
+              وقعت لوبريف اتفاقية معدّلة لاتفاقية توريد اللقيم الإلحاقية للحصول
+              على إمدادات إضافية قدرها خمسة آلاف برميل يومياً من الزيت الخام
+              المختزل من أرامكو السعودية، مما سيزيد إجمالي كمية الزيت الخام
+              المختزل المستلمة في مرفق لوبريف بمدينة ينبع إلى 50 ألف برميل
+              يومياً.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon5.png" alt="" />
+            </div>
+            <p>
+              وقعت لوبريف اتفاقية للحصول على إمدادات إضافية تصل إلى 2000 برميل
+              يومياً من زيت غاز التفريغ من شركة أرامكو السعودية والذي سيستخدم
+              كلقيم لإنتاج زيوت الأساس والمنتجات الثانوية في مرفق ينبع.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon6.png" alt="" />
+            </div>
+            <p>
+              شاركت لوبريف في أكبر مزاد على الإطلاق لائتمان الكربون الطوعي،
+              والذي نظمته شركة «سوق الكربون الطوعي الإقليمية في نيروبي عاصمة
+              كينيا» واشترت لوبريف 20 ألف طن من أرصدة ائتمان الكربون، وهو ما
+              يعزز التزامها نحو تحقيق الحياد الصفري بحلول عام 2050.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon1.png" alt="" />
+            </div>
+            <p>
+              وقعت لوبريف مذكرة تفاهم مع الهيئة الملكية للجبيل وينبع تهدف إلى
+              خلق الفرص الاستثمارية التي تسهم في تحقيق التكامل بمرافق تصنيع
+              الزيوت الأساسية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="one-section" style="margin-top: 60px">
+      <div class="container">
+        <h1 class="title-for-one-section">الربع الثالث ،،،</h1>
+        <img class="img-for-one-section" src="Images/s3.png" alt="" />
+        <div class="four-cards">
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon7.png" alt="" />
+            </div>
+            <p>
+              عين مجلس إدارة لوبريف المهندس سامر بن عبد العزيز بن محمد الحقيل في
+              منصب الرئيس وكبير الإداريين التنفيذيين للشركة، وهو قيادي يتمتع
+              بخبرة واسعة تزيد على 25 عاماً في القيادة والتخطيط والإدارة
+              الاستراتيجية في قطاع الطاقة. وشغل الحقيل عدة مناصب بارزة في أرامكو
+              السعودية وشركاتها التابعة، من بينها تأسيس وقيادة منظمة تشرف على 12
+              شركة دولية تابعة لأرامكو السعودية تتجاوز قيمة أصولها المجتمعة 35
+              مليار دولار، كما شغل منصب الرئيس والرئيس التنفيذي لشركة البترول
+              السعودية الدولية في مدينة نيويورك، وتولى إدارة مبيعات أرامكو من
+              النفط الخام في أمريكا الشمالية.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img src="Images/icoon8.png" alt="" />
+            </div>
+            <p>
+              وقعت لوبريف وشركة إديميتسو مذكرة تفاهم لمناقشة الفرص التجارية
+              الممكنة المتعلقة بمنتجات زيوت الأساس المتخصصة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="one-section" style="margin-top: 60px">
+      <div class="container">
+        <h1 class="title-for-one-section">الربع الرابع ،،،</h1>
+        <img class="img-for-one-section" src="Images/s4.png" alt="" />
+        <div class="four-cards">
+          <div class="one-card-from-four-last">
+            <div class="card-for-logo-last">
+              <img src="Images/icoon2.png" alt="" />
+            </div>
+            <p>
+              عززت لوبريف موقعها كلاعب رئيسي في قطاع زيوت الأساس، وذلك من خلال
+              المشاركة في مؤتمر «ICIS» الشرق الأوسط في جدة، وهو حدث إقليمي بارز
+              في قطاع زيوت الأساس وزيوت التشحيم. وترسخ دور الشركة الريادي
+              بمشاركة الرئيس والرئيس التنفيذي لشركة لوبريف، المهندس سامر الحقيل
+              الذي عرض رؤية قيمة عن المشهد الحالي سلط خلالها الضوء على الفرص
+              والتحديات، وشدد على الدور الحاسم الذي يلعبه التعاون بين الكيانات
+              المختلفة داخل القطاع.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>الأداء المالي</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="JS/counter.js"></script>
+    <script src="JS/en.js"></script>
+
+    <script>
+      const outer = document.querySelector(".outer");
+      const cards = document.querySelectorAll(".card");
+      let currentIndex = 0;
+
+      // Get the buttons
+      const slideUpButton = document.getElementById("slideUp");
+      const slideDownButton = document.getElementById("slideDown");
+
+      // Initially disable the "Go Up" button
+      slideUpButton.classList.add("inactive");
+      slideUpButton.disabled = true;
+
+      // Show the initial card
+      showCards(currentIndex);
+
+      slideUpButton.addEventListener("click", () => {
+        moveSlider(-1);
+      });
+
+      slideDownButton.addEventListener("click", () => {
+        moveSlider(1);
+      });
+
+      function moveSlider(direction) {
+        currentIndex += direction;
+
+        // Update "Go Up" button state
+        if (currentIndex <= 0) {
+          currentIndex = 0;
+          slideUpButton.classList.add("inactive");
+          slideUpButton.classList.remove("active");
+          slideUpButton.disabled = true;
+        } else {
+          slideUpButton.classList.add("active");
+          slideUpButton.classList.remove("inactive");
+          slideUpButton.disabled = false;
+        }
+
+        // Update "Go Down" button state
+        if (currentIndex >= cards.length - 1) {
+          currentIndex = cards.length - 1;
+          slideDownButton.classList.add("inactive");
+          slideDownButton.classList.remove("active");
+          slideDownButton.disabled = true;
+        } else {
+          slideDownButton.classList.add("active");
+          slideDownButton.classList.remove("inactive");
+          slideDownButton.disabled = false;
+        }
+
+        showCards(currentIndex);
+      }
+
+      function showCards(index) {
+        // Reset styles for all cards
+        cards.forEach((card, i) => {
+          card.style.opacity = 0;
+          card.style.pointerEvents = "none";
+          card.style.transform = `translateY(${(i - index) * 110}%)`; // Adjust for margin
+        });
+
+        // Make the current card fully visible
+        cards[index].style.opacity = 1;
+        cards[index].style.pointerEvents = "auto";
+
+        // Optionally, make the next two cards partially visible
+        if (cards[index + 1]) {
+          cards[index + 1].style.opacity = 0.4;
+          cards[index + 1].style.pointerEvents = "auto";
+        }
+
+        if (cards[index + 2]) {
+          cards[index + 2].style.opacity = 0.4;
+          cards[index + 2].style.pointerEvents = "auto";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/Footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/s5p1.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="images/Logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="Missing Data">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Missing Data">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Missing Data"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="Missing Data"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="Missing Data"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link"> أبرز المحطات </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link"> المنتجات ومرافق الإنتاج </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Main Activities"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Company Products"
+                        >مرفق إنتاج ينبع
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link"> المشاريع المستقبلية </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link"> الأداء المالي </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Main Activities"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Company Products"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link"> البيئة والمجتمع </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/5.png" alt="" />
+      <div class="title">
+        <h1>المنتجات ومرافق الإنتاج</h1>
+      </div>
+
+      <div class="box-with-title" id="dif-color-box-with-title2">
+        <h1>نظرة عامة على المنتجات</h1>
+      </div>
+    </div>
+
+    <div class="text-img-under-hero">
+      <div class="container">
+        <div class="text-under-hero">
+          <h1>
+            لوبريف واحدة من أكبر <br />
+            منتجي زيوت الأساس عالية<br />
+            الجودة من الفئتين الأولى <br />والثانية على مستوى العالم.
+          </h1>
+        </div>
+      </div>
+      <div class="img-under-hero">
+        <img src="Images/under-hero.png" alt="" />
+      </div>
+    </div>
+
+    <div class="two-col-text">
+      <div class="container">
+        <div class="one-p">
+          <p class="p-text">
+            وتنتج كذلك مجموعة متنوعة من المنتجات الثانوية مثل: الأسفلت، وزيت
+            وقود، السفن الثقيل، والشمع الخامل، ومستخلص برايت ستوك، والكبريت،
+            والمنتجات البترولية البيضاء، مثل: الديزل ذي المحتوى فائق الانخفاض من
+            الكبريت، والنافثا، وسائل الحفر. تعتمد لوبريف على خبرتها الواسعة في
+            قطاع زيوت الأساس لتقديم منتجات عالية الجودة توفر الموثوقية والاتساق
+            على نطاق عالمي.
+          </p>
+        </div>
+        <div class="one-p">
+          <p class="p-text">
+            عادة ما تحتوي منتجات زيوت الأساس على نوعين محددين من المعرفات في
+            أسمائها للمساعدة على تحديد درجة المنتج وفئته. وتحدد الدرجة عن طريق
+            الرقم المذكور في اسم المنتج الذي يشير إلى مدى لزوجته. وتستند فئات
+            زيوت الأساس إلى المواصفات الفنية للزيوت وتعريفها، وفقاً لمعهد
+            البترول الأمريكي.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <p class="p-text" >
+          يسوق أعضاء تحالف زيوت الأساس، ومن بينهم لوبريف، منتجاتهم تحت علامات
+          أرامكو التجارية العالمية، وهي «أرامكو دورا» و«أرامكو بريما» و«أرامكو
+          الترا»، التي تشير للفئات الأولى والثانية والثالثة من زيوت الأساس على
+          التوالي.
+        </p>
+      </div>
+    </div>
+
+    <div class="table-with-title">
+      <div class="container">
+        <h1 class="title-for-table">
+          الفئات الأولى والثانية والثالثة من زيوت الأساس
+        </h1>
+        <table class="table1">
+          <thead>
+            <tr class="no-border">
+              <th data-en="Missing">الفئة</th>
+              <th data-en="Missing">العلامة التجارية</th>
+              <th data-en="Missing">الخصائص الرئيسية</th>
+              <th data-en="Missing">المنتجات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Missing">الفئة الأولى</td>
+              <td data-en="Missing">أرامكو دورا</td>
+              <td>مؤشر اللزوجة جيد</td>
+
+              <td>
+                <span>• أرامكو دورا 150</span>
+                <br />
+                <span>• أرامكو دورا 500 </span>
+                <br />
+                <span>• أرامكو دورا بي إس 150</span>
+                <br />
+              </td>
+            </tr>
+            <tr class="change-bg">
+              <td data-en="Missing">الفئة الثانية</td>
+              <td data-en="Missing">أرامكو بريما</td>
+              <td>
+                مؤشر اللزوجة جيد،<br />
+                والكبريت منخفض
+              </td>
+              <td>
+                <span>• أرامكو بريما 70 </span>
+                <br />
+                <span>• أرامكو بريما 110</span>
+                <br />
+                <span>• أرامكو بريما 230</span>
+                <br />
+                <span>• أرامكو بريما 500</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td data-en="Missing">الفئة الثالثة *</td>
+              <td data-en="Missing">أرامكو ألترا</td>
+              <td>مؤشر اللزوجة ممتاز، <br />والكبريت منخفض</td>
+              <td>
+                <span>• أرامكو ألترا 2 </span>
+                <br />
+                <span>• أرامكو ألترا 6</span>
+                <br />
+                <span>• أرامكو ألترا 4 </span>
+                <br />
+                <span>• أرامكو ألترا 8</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-under-table-small">* لا تنتجه الشركة حاليا</p>
+      </div>
+    </div>
+
+    <div class="three-boxes">
+      <div class="container">
+        <div class="one-box">
+          <p class="top-title-for-cards">الفئة الأولى من زيوت الأساس</p>
+          <h1 class="second-title-for-cards">۳۹۸,۲۲۲</h1>
+          <p class="third-title-for-cards">طناً مترياً</p>
+          <p class="last-title-for-cards">الإنتاج في 2023</p>
+        </div>
+        <div class="one-box">
+          <p class="top-title-for-cards">الفئة الثانية من زيوت الأساس</p>
+          <h1 class="second-title-for-cards">۸۲٤,٦۰۰</h1>
+          <p class="third-title-for-cards">طناً مترياً</p>
+          <p class="last-title-for-cards">الإنتاج في 2023</p>
+        </div>
+        <div class="one-box" id="change-bg-for-one-box">
+          <p class="top-title-for-cards">مبيعات تحالف زيوت الأساس</p>
+          <h1 class="second-title-for-cards">۱۲۰,٥۰۰</h1>
+          <p class="third-title-for-cards">طناً مترياً</p>
+          <p class="last-title-for-cards">المبيعات في 2023</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-for-page" style="margin: 100px auto auto auto">
+      <h1>
+        تنتج لوبريف ثلاث درجات من زيوت الأساس من الفئة الأولى: أرامكو <br> دورا 150،
+        وأرامكو دورا 500، وأرامكو دورا بي اي 150.
+      </h1>
+    </div>
+
+    <div class="two-col-text" style="margin: 80px auto 80px auto">
+      <div class="container">
+        <div class="one-p">
+          <p class="p-text">
+            يتم إنتاج أرامكو دورا 150 وأرامكو دورا 500 في مرفق جدة، بينما يجري
+            إنتاج أرامكو دورا بي إس 150 في مرفق ينبع، وتباع هذه المنتجات بصورة
+            رئيسية في الأسواق النهائية في المملكة العربية السعودية ودولة
+            الإمارات العربية المتحدة والهند وسنغافورة وإفريقيا.
+          </p>
+        </div>
+        <div class="one-p">
+          <p class="p-text">
+            كما تنتج لوبريف أربع درجات من زيوت الأساس من الفئة الثانية، وهي
+            أرامكو بريما 70، وأرامكو بريما 110، وأرامكو بريما 230، وأرامكو بريما
+            500 من مرفق ينبع وتباع هذه المنتجات بصورة رئيسية في الأسواق النهائية
+            في المملكة العربية السعودية والهند والإمارات العربية المتحدة
+            وإفريقيا.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-with-title">
+      <div class="container">
+        <table class="table1">
+          <thead>
+            <tr class="no-border">
+              <th data-en="Missing">المنتج</th>
+              <th data-en="Missing">
+                2023
+                <br />
+                <span>(ألف طن متري)</span>
+              </th>
+              <th data-en="Missing">
+                2022
+                <br />
+                <span>(ألف طن متري)</span>
+              </th>
+              <th data-en="Missing">نسبة التغيير %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Missing">الفئة الأولى من زيوت الأساس</td>
+              <td data-en="Missing">398</td>
+              <td data-en="Missing">408</td>
+              <td data-en="Missing">(2.5%)</td>
+            </tr>
+
+            <tr>
+              <td data-en="Missing">الفئة الثانية من زيوت الأساس</td>
+              <td data-en="Missing">825</td>
+              <td data-en="Missing">787</td>
+              <td data-en="Missing">4.8%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>الأداء المالي</p>
+          </a>
+          <a class="footer-link" href="">
+            <div class="dot-for-footer"></div>
+            <p>البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="JS/counter.js"></script>
+    <script src="JS/en.js"></script>
+  </body>
+</html>
