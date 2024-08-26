@@ -63,7 +63,7 @@
   cursor: pointer;
   margin: 10px 0px;
   border: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 button.active {
@@ -97,8 +97,8 @@ button.inactive {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease, transform 0.5s ease;
-  /* background-color: red; */
 }
+
 .wrapper .outer:hover .card {
   animation-play-state: paused;
 }
@@ -137,6 +137,87 @@ button.inactive {
 .wrapper .outer .card .content .details p {
   font-size: 18px;
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper .outer .card {
+    margin-right: 0px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* background-color: red; */
+  }
+  .controls {
+    /* background-color: red; */
+    width: fit-content;
+    position: absolute;
+    top: 54%;
+    right: 29%;
+    width: fit-content;
+    z-index: 99;
+    background-color: chocolate;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: initial;
+  }
+  .slider-card-connect {
+    border-top: 2px dashed #c0c0c0;
+    width: 100%;
+    height: 50vh;
+    background-color: #162c51;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper .outer .card .content {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: 0px !important;
+  }
+  .card .content .box-for-slide {
+    min-height: 150px;
+    min-width: 150px;
+    background: #016aab !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 5px;
+  }
+
+  .outer {
+    background-color: darkcyan;
+    overflow: hidden;
+  }
+
+  .wrapper .outer .card .content .box-for-slide h1 {
+    color: #fcdc48;
+    font-size: 40px;
+  }
+
+  .wrapper .outer .card .content .details {
+    margin-right: 0px;
+  }
+
+  .wrapper .outer .card .content .details p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 /* slider ends */
