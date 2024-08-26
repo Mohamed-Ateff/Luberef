@@ -1,10 +1,7 @@
 /* Table */
 
-
-
 .table-container {
   width: 100%;
-  overflow-x: scroll;
 }
 table {
   width: 100%;
@@ -118,6 +115,9 @@ body[dir="ltr"] .table19 {
 }
 
 @media (max-width: 768px) {
+  .table-container {
+    overflow-x: scroll;
+  }
   ul li {
     margin: 1px 0 !important;
   }
@@ -307,7 +307,7 @@ body[dir="ltr"] .table32 {
           /* background-color: red; */
         }
       }
-    } 
+    }
   }
   body {
     padding: 0;
