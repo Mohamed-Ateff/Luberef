@@ -1,22 +1,18 @@
-//
-
 function convertToHindiNumerals(text) {
   const arabicToHindiMap = {
-    0: "٠",
-    1: "١",
-    2: "۲",
-    3: "۳",
-    4: "٤",
-    5: "٥",
-    6: "٦",
-    7: "٧",
-    8: "٨",
-    9: "٩",
+    0: "\u0660", // ٠
+    1: "\u0661", // ١
+    2: "\u0662", // ٢
+    3: "\u0663", // ٣
+    4: "\u0664", // ٤
+    5: "\u0665", // ٥
+    6: "\u0666", // ٦
+    7: "\u0667", // ٧
+    8: "\u0668", // ٨
+    9: "\u0669", // ٩
   };
 
-  return text.replace(/[0-9]/g, function (match) {
-    return arabicToHindiMap[match];
-  });
+  return text.replace(/[0-9]/g, (match) => arabicToHindiMap[match]);
 }
 
 function convertNumbersInElement(element) {
@@ -31,7 +27,6 @@ function convertNumbersInElement(element) {
 
 // Convert numbers in the entire document
 convertNumbersInElement(document.body);
-
 //
 
 $(document).ready(function () {
