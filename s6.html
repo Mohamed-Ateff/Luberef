@@ -382,7 +382,7 @@
         <p class="dis-for-advanced-table-with-chart">
           الإنتاج يعتمد على المواد الأولية المتاحة ويستبعد التكامل مع مرفق جدة.
         </p>
-        <!-- <table class="custom-table">
+        <table class="custom-table">
           <thead>
             <tr>
               <th>العــام</th>
@@ -420,18 +420,45 @@
                   />
                 </svg>
               </td>
-              <td>إمدادات الزيت الخام المختزل بلغت 45 مليون برميل يومياً</td>
+              <td>
+                <span>إمدادات الزيت الخام المختزل بلغت</span>
+                <br />
+                <span>45 مليون برميل يومياً</span>
+              </td>
               <td>
                 <span>-</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
               <td>
                 <span>900</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
-              <td>Row 1 Col 5</td>
+              <td>
+                <div class="container-for-pie-and-data">
+                  <div class="doughnut-chart-container">
+                    <canvas id="doughnutChart1"></canvas>
+                  </div>
+                  <div class="data-beside-pie-chart">
+                    <div class="one-line-data">
+                      <p>%14</p>
+                      <p>الفئات 1</p>
+                      <div style="background-color: #fcdc48"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p>%86</p>
+                      <p>الفئات 2</p>
+                      <div style="background-color: #162c51"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p class="blank-data">_</p>
+                      <p>الفئات 3</p>
+                      <div style="background-color: #016aab"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
@@ -461,21 +488,47 @@
                 </svg>
               </td>
               <td>
-                إمدادات وحدة التقطير الفراغي بلغت 50 مليون برميل يومياً والتحرك
-                نحو تحقيق القدرة الإنتاجية
+                <span>إمدادات وحدة التقطير الفراغي</span>
+                <br />
+                <span>بلغت 50 مليون برميل يومياً</span>
+                <br />
+                <span>والتحرك نحو تحقيق القدرة الإنتاجية</span>
               </td>
 
               <td>
                 <span>+100</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
               <td>
                 <span>1,000</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
-              <td>Row 1 Col 5</td>
+              <td>
+                <div class="container-for-pie-and-data">
+                  <div class="doughnut-chart-container">
+                    <canvas id="doughnutChart2"></canvas>
+                  </div>
+                  <div class="data-beside-pie-chart">
+                    <div class="one-line-data">
+                      <p>%14</p>
+                      <p>الفئات 1</p>
+                      <div style="background-color: #fcdc48"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p>%86</p>
+                      <p>الفئات 2</p>
+                      <div style="background-color: #162c51"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p class="blank-data">_</p>
+                      <p>الفئات 3</p>
+                      <div style="background-color: #016aab"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
@@ -508,98 +561,128 @@
               <td>
                 <span>+126</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
               <td>
                 <span>1,126</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
-              <td>Row 3 Col 5</td>
+              <td>
+                <div class="container-for-pie-and-data">
+                  <div class="doughnut-chart-container">
+                    <canvas id="doughnutChart3"></canvas>
+                  </div>
+                  <div class="data-beside-pie-chart">
+                    <div class="one-line-data">
+                      <p>%13</p>
+                      <p>الفئات 1</p>
+                      <div style="background-color: #fcdc48"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p>%87</p>
+                      <p>الفئات 2</p>
+                      <div style="background-color: #162c51"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p class="blank-data">_</p>
+                      <p>الفئات 3</p>
+                      <div style="background-color: #016aab"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
-                <svg
-                  width="220"
-                  height="121"
-                  viewBox="0 0 220 121"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M219.502 0.743164H60V120.743H219.502V0.743164Z"
-                    fill="#162C51"
-                  />
-                  <path
-                    d="M59.9996 0.742555L0 60.7422L60.0002 120.742L120 60.7428L59.9996 0.742555Z"
-                    fill="#162C51"
-                  />
-                  <path
-                    d="M60.0001 24.3143L23.5723 60.7422L60.0005 97.1704L96.4284 60.7426L60.0001 24.3143Z"
-                    fill="#84C5EE"
-                  />
-                  <path
-                    d="M142.775 67.7422H130.943V65.0302C131.255 64.8382 135.071 62.1502 136.607 60.6862C138.071 59.2462 139.103 58.1662 139.103 56.6542C139.103 55.4542 138.431 53.9902 136.103 53.9902C134.111 53.9902 133.127 55.4302 132.815 56.2702C131.567 56.0542 130.895 55.3582 130.895 54.5902C130.895 53.9422 131.183 53.3422 131.783 52.7662C132.287 52.2622 133.799 51.2542 136.463 51.2542C140.327 51.2542 142.631 53.3182 142.631 56.4862C142.631 58.7902 141.167 60.4702 140.063 61.5742C138.719 62.9182 136.439 64.5742 136.223 64.7182H142.775V67.7422ZM159.416 59.7262C159.416 64.9102 156.968 68.1502 152.504 68.1502C147.992 68.1502 145.592 64.9102 145.592 59.7262C145.592 54.5182 147.992 51.2542 152.504 51.2542C156.968 51.2542 159.416 54.5182 159.416 59.7262ZM155.888 59.7262C155.888 56.4622 154.808 54.0142 152.504 54.0142C150.176 54.0142 149.12 56.4622 149.12 59.7262C149.12 63.0142 150.176 65.3902 152.504 65.3902C154.808 65.3902 155.888 63.0142 155.888 59.7262ZM174.088 67.7422H162.256V65.0302C162.568 64.8382 166.384 62.1502 167.92 60.6862C169.384 59.2462 170.416 58.1662 170.416 56.6542C170.416 55.4542 169.744 53.9902 167.416 53.9902C165.424 53.9902 164.44 55.4302 164.128 56.2702C162.88 56.0542 162.208 55.3582 162.208 54.5902C162.208 53.9422 162.496 53.3422 163.096 52.7662C163.6 52.2622 165.112 51.2542 167.776 51.2542C171.64 51.2542 173.944 53.3182 173.944 56.4862C173.944 58.7902 172.48 60.4702 171.376 61.5742C170.032 62.9182 167.752 64.5742 167.536 64.7182H174.088V67.7422ZM178.704 61.0942L178.944 53.5822C179.016 52.3342 179.568 51.7102 180.888 51.7102H187.464C188.808 51.7102 189.288 52.1422 189.288 53.1742C189.288 53.9422 188.952 54.5422 188.832 54.7342H181.92L181.824 57.6862C182.208 57.6142 182.76 57.5182 183.912 57.5182C188.352 57.5182 189.984 59.9902 189.984 62.6782C189.984 65.9422 187.632 68.1502 183.288 68.1502C179.496 68.1502 177.672 66.7342 177.624 66.6142L178.968 64.2142C179.064 64.3102 180.72 65.3902 183.096 65.3902C185.664 65.3902 186.48 64.2382 186.48 62.8942C186.48 61.5502 185.784 60.3022 182.736 60.3022C180.696 60.3022 179.304 60.8302 178.704 61.0942Z"
-                    fill="white"
-                  />
-                </svg>
+        
+                
               </td>
               <td>بدء تشغيل مشروع التوسعة الثانية</td>
               <td>
                 <span>+124</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
               <td>
                 <span>1,250</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
-              <td>Row 4 Col 5</td>
+              <td>
+                <div class="container-for-pie-and-data">
+                  <div class="doughnut-chart-container">
+                    <canvas id="doughnutChart4"></canvas>
+                  </div>
+                  <div class="data-beside-pie-chart">
+                    <div class="one-line-data">
+                      <p>%13</p>
+                      <p>الفئات 1</p>
+                      <div style="background-color: #fcdc48"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p>%73</p>
+                      <p>الفئات 2</p>
+                      <div style="background-color: #162c51"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p>%14</p>
+                      <p>الفئات 3</p>
+                      <div style="background-color: #016aab"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
-                <svg
-                  width="220"
-                  height="121"
-                  viewBox="0 0 220 121"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M219.502 0.743164H60V120.743H219.502V0.743164Z"
-                    fill="#162C51"
-                  />
-                  <path
-                    d="M59.9996 0.742555L0 60.7422L60.0002 120.742L120 60.7428L59.9996 0.742555Z"
-                    fill="#162C51"
-                  />
-                  <path
-                    d="M60.0001 24.3143L23.5723 60.7422L60.0005 97.1704L96.4284 60.7426L60.0001 24.3143Z"
-                    fill="#84C5EE"
-                  />
-                  <path
-                    d="M142.775 67.7422H130.943V65.0302C131.255 64.8382 135.071 62.1502 136.607 60.6862C138.071 59.2462 139.103 58.1662 139.103 56.6542C139.103 55.4542 138.431 53.9902 136.103 53.9902C134.111 53.9902 133.127 55.4302 132.815 56.2702C131.567 56.0542 130.895 55.3582 130.895 54.5902C130.895 53.9422 131.183 53.3422 131.783 52.7662C132.287 52.2622 133.799 51.2542 136.463 51.2542C140.327 51.2542 142.631 53.3182 142.631 56.4862C142.631 58.7902 141.167 60.4702 140.063 61.5742C138.719 62.9182 136.439 64.5742 136.223 64.7182H142.775V67.7422ZM159.416 59.7262C159.416 64.9102 156.968 68.1502 152.504 68.1502C147.992 68.1502 145.592 64.9102 145.592 59.7262C145.592 54.5182 147.992 51.2542 152.504 51.2542C156.968 51.2542 159.416 54.5182 159.416 59.7262ZM155.888 59.7262C155.888 56.4622 154.808 54.0142 152.504 54.0142C150.176 54.0142 149.12 56.4622 149.12 59.7262C149.12 63.0142 150.176 65.3902 152.504 65.3902C154.808 65.3902 155.888 63.0142 155.888 59.7262ZM174.088 67.7422H162.256V65.0302C162.568 64.8382 166.384 62.1502 167.92 60.6862C169.384 59.2462 170.416 58.1662 170.416 56.6542C170.416 55.4542 169.744 53.9902 167.416 53.9902C165.424 53.9902 164.44 55.4302 164.128 56.2702C162.88 56.0542 162.208 55.3582 162.208 54.5902C162.208 53.9422 162.496 53.3422 163.096 52.7662C163.6 52.2622 165.112 51.2542 167.776 51.2542C171.64 51.2542 173.944 53.3182 173.944 56.4862C173.944 58.7902 172.48 60.4702 171.376 61.5742C170.032 62.9182 167.752 64.5742 167.536 64.7182H174.088V67.7422ZM190.248 62.1982C190.248 65.6542 187.488 68.1502 183.792 68.1502C180.072 68.1502 177.384 65.7262 177.384 62.3662C177.384 60.1582 178.536 58.2382 179.808 56.5822L183.024 52.3582C183.432 51.9022 183.84 51.2542 185.16 51.2542C186.312 51.2542 186.96 51.8782 187.128 52.1662L183.096 57.3502C183.456 57.1582 184.152 56.9422 184.992 56.9422C188.256 56.9422 190.248 59.1982 190.248 62.1982ZM186.864 62.3662C186.864 60.5422 185.592 59.2462 183.768 59.2462C181.968 59.2462 180.672 60.5662 180.672 62.3662C180.672 64.1662 181.968 65.4862 183.768 65.4862C185.592 65.4862 186.864 64.1902 186.864 62.3662Z"
-                    fill="white"
-                  />
-                </svg>
+          
+
+
               </td>
-              <td>تكامل الزيت الخام المختزل بالتحسين *</td>
+              <td>
+                <span>تكامل الزيت الخام المختزل</span>
+                <br />
+                <span>بالتحسين *</span>
+              </td>
               <td>
                 <span>+350</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
               <td>
                 <span>1,600</span>
                 <br />
-                <span>(ألف طن سنوياً) </span>
+                <span class="cost-t">(ألف طن سنوياً) </span>
               </td>
-              <td>Row 5 Col 5</td>
+              <td>
+                <div class="container-for-pie-and-data">
+                  <div class="doughnut-chart-container">
+                    <canvas id="doughnutChart5"></canvas>
+                  </div>
+                  <div class="data-beside-pie-chart">
+                    <div class="one-line-data">
+                      <p>%11</p>
+                      <p>الفئات 1</p>
+                      <div style="background-color: #fcdc48"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p>%78</p>
+                      <p>الفئات 2</p>
+                      <div style="background-color: #162c51"></div>
+                    </div>
+                    <div class="one-line-data">
+                      <p>%11</p>
+                      <p>الفئات 3</p>
+                      <div style="background-color: #016aab"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
           </tbody>
-        </table> -->
-        <p>
+        </table>
+        <p></p>
         <p>
           * التحسين عن طريق تبديل عملية التكسير الهيدروجيني وعمليات زيوت الأساس
           من الفئة الثانية ومن ثم إنتاج زيوت الأساس من الفئة الثالثة عبر استخدام
@@ -771,5 +854,95 @@
     <script src="Js/Index.js"></script>
     <script src="JS/counter.js"></script>
     <script src="JS/en.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // Data for the five doughnut charts
+      const chartData = [
+        {
+          data: [14, 86],
+          backgroundColor: ["#FCDC48", "#344869"],
+        },
+        {
+          data: [14, 86],
+          backgroundColor: ["#FCDC48", "#344869"],
+        },
+        {
+          data: [13, 87],
+          backgroundColor: ["#FCDC48", "#344869"],
+        },
+        {
+          data: [13, 73, 14],
+          backgroundColor: ["#FCDC48", "#344869", "#016AAB"],
+        },
+        {
+          data: [11, 78, 11],
+          backgroundColor: ["#FCDC48", "#344869", "#016AAB"],
+        },
+      ];
+
+      // Function to create a doughnut chart
+      function createDoughnutChart(chartId, data) {
+        const ctx = document.getElementById(chartId).getContext("2d");
+        new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            datasets: [
+              {
+                data: data.data,
+                backgroundColor: data.backgroundColor,
+                hoverBackgroundColor: data.backgroundColor,
+                borderWidth: 0,
+              },
+            ],
+          },
+          options: {
+            cutoutPercentage: 90,
+            animation: {
+              animateRotate: true,
+              animateScale: false, // Disable the scaling animation
+              duration: 3000, // Animation duration
+            },
+            plugins: {
+              legend: {
+                display: false, // Remove legend controls
+              },
+              tooltip: {
+                enabled: false, // Remove tooltips
+              },
+            },
+          },
+        });
+      }
+
+      // Function to check if the element is at the bottom of the viewport
+      function isAtBottomOfViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+
+      // Track which charts have already been initialized
+      const initializedCharts = new Set();
+
+      // Event listener to trigger the animation when scrolling
+      window.addEventListener("scroll", function () {
+        document
+          .querySelectorAll(".doughnut-chart-container")
+          .forEach((container, index) => {
+            if (
+              isAtBottomOfViewport(container) &&
+              !initializedCharts.has(index)
+            ) {
+              initializedCharts.add(index); // Mark this chart as initialized
+              createDoughnutChart(
+                `doughnutChart${index + 1}`,
+                chartData[index]
+              );
+            }
+          });
+      });
+    </script>
   </body>
 </html>

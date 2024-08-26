@@ -177,6 +177,11 @@
   font-weight: 700;
   font-size: 40px;
 }
+.cost-t {
+  font-size: 13px;
+  color: #a8aaad;
+  font-family: 700;
+}
 .dis-for-advanced-table-with-chart {
   color: #162c51;
   font-weight: 600;
@@ -190,10 +195,10 @@
 
 .custom-table th,
 .custom-table td {
+  font-size: 15px;
   text-align: right;
 }
 tr {
-  /* background-color: red; */
   /* padding: 10px 0px !important; */
 }
 
@@ -204,13 +209,56 @@ tr {
 .custom-table thead {
   background-color: #84c5ee;
   color: #162c51;
+  font-size: 13px;
+  margin-right: 15px !important;
 }
 
+.custom-table tbody tr:nth-child(odd) {
+  background: linear-gradient(90deg, #e0edf6 0%, rgba(255, 255, 255, 0) 100%);
+}
 .custom-table tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #e0edf6 100%);
 }
 
 /* pie chart */
+
+.doughnut-chart-container {
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px;
+}
+.container-for-pie-and-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.data-beside-pie-chart {
+  padding-right: 35px;
+}
+
+.container-for-pie-and-data .one-line-data {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-for-pie-and-data .one-line-data p {
+  margin-left: 10px;
+  color: #333333;
+  font-size: 15px;
+}
+.container-for-pie-and-data .one-line-data .blank-data {
+  position: relative;
+  top: -8px;
+  right: -10px;
+}
+
+.container-for-pie-and-data .one-line-data div {
+  width: 13px;
+  height: 13px;
+}
 
 /* bar chart */
 
