@@ -102,7 +102,7 @@ header {
   /* overflow: hidden; */
   position: -webkit-sticky; /* Safari */
   position: sticky !important;
-  top: 0 !important;
+  top: -2px !important;
   z-index: 999999999 !important;
 }
 .navbar {
