@@ -108,6 +108,14 @@
   font-size: 27px;
 }
 
+body[lang="en"] {
+  .text-with-dot .dot {
+    margin-top: 22px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .text-with-dots {
     flex-direction: column;
