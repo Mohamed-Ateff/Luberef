@@ -49,6 +49,13 @@
   font-size: 28px;
 }
 
+body[lang="en"] {
+  .man-word {
+    right: 0px;
+    left: -60px;
+  }
+}
+
 /* Article */
 
 .article {

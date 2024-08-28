@@ -113,6 +113,21 @@ button.inactive {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+body[lang="en"] {
+  .controls {
+    top: 26%;
+    left: 8% !important;
+  }
+  .wrapper .outer .card .content .details {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+  .wrapper .outer .card {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+}
+
 .wrapper .outer:hover .card {
   animation-play-state: paused;
 }
