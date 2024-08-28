@@ -170,3 +170,16 @@ body[lang="en"] {
   margin-left: 15px;
   margin-top: 17px;
 }
+
+body[lang="ar"] {
+  .english-item {
+    display: none;
+  }
+}
+
+body[lang="en"] {
+  .arabic-item {
+    display: none;
+  }
+}
+

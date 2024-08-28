@@ -94,3 +94,13 @@ footer .container {
     flex-direction: column;
   }
 }
+
+body[lang="en"] {
+  .card-for-footer .footer-link {
+    padding: 13.5px 75px 13.5px 25px;
+  }
+  .card-for-footer .dot-for-footer {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}

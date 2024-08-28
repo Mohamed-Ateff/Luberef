@@ -58,6 +58,26 @@ header {
   margin-right: 10px;
 }
 
+body[lang="en"] {
+  .donwload-pdf-home {
+    margin-left: 0px;
+    margin-right: 25px;
+  }
+  .donwload-pdf-home img {
+    margin-right: 0px;
+    margin-left: 25px;
+  }
+
+  .buttons-home img {
+    margin-right: 0px;
+    margin-left: 25px;
+  }
+  .toggle-btn img {
+    margin-right: 0px;
+    margin-right: 10px;
+  }
+}
+
 /* Button styles */
 .toggle-btn {
   background-color: white;
@@ -93,6 +113,17 @@ header {
   }
   .delete-buttons-for-pc {
     display: inline !important;
+  }
+}
+
+body[lang="en"] {
+  .buttons-home img {
+    margin-right: 0px;
+    margin-left: 25px;
+  }
+  .toggle-btn img {
+    margin-right: 0px;
+    margin-left: 10px;
   }
 }
 
