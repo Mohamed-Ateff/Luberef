@@ -76,6 +76,10 @@ body[lang="en"] {
     margin-right: 0px;
     margin-right: 10px;
   }
+  .english-item img {
+    margin-right: 0px !important;
+    margin-left: 25px !important;
+  }
 }
 
 /* Button styles */
