@@ -15,6 +15,12 @@
   padding: 30px 30px;
   border-radius: 5px 35px 5px 35px;
 }
+#one-box-costum {
+  border-radius: 5px 35px 5px 35px;
+  justify-content: flex-end !important;
+  padding-right: 0px;
+  padding-left: 60px;
+}
 
 .top-title-for-cards {
   font-size: 22px;
@@ -24,6 +30,24 @@
 }
 .top-title-for-cards span {
   color: #84c5ee;
+}
+
+body[dir="ltr"] {
+  .top-title-for-cards {
+    text-align: left;
+  }
+  .text-and-star span {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .text-and-star p {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  #one-box-costum {
+    padding-right: 60px;
+    padding-left: 0px;
+  }
 }
 
 .container-for-three-boxes-for-one-box {
@@ -301,7 +325,7 @@ body[dir="ltr"] .table19 {
     }
   }
 }
-.title-for-table-under-it{
+.title-for-table-under-it {
   margin-top: 15px;
   font-weight: 100;
   font-size: 15px;
