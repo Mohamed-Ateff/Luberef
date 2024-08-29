@@ -181,5 +181,8 @@ body[lang="en"] {
   .arabic-item {
     display: none;
   }
+  .p-text-with-q img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
 }
-

@@ -1,4 +1,3 @@
-
 .card-and-text {
   margin: 70px 0px;
 }
@@ -18,6 +17,14 @@
   padding: 50px;
   margin-top: 40px;
 }
+
+body[lang="en"] {
+  .box-card-and-text {
+    margin-right: 50px;
+    margin-left: 0px;
+  }
+}
+
 #box-card-and-text-diff-h {
   height: 187px !important;
   max-height: 200px !important;
@@ -139,6 +146,13 @@
   width: 100%;
   text-align: right;
 }
+
+body[lang="en"] {
+  .card-for-container-for-three-boxes-for-one-box-two {
+    text-align: left;
+  }
+}
+
 .card-for-container-for-three-boxes-for-one-box-two h1 {
   color: #fcdc48;
   font-size: 55px;
@@ -156,6 +170,11 @@
   justify-content: center;
   padding: 35px 20px;
   min-height: 100%;
+}
+.container-for-three-boxes-for-one-box-for-image {
+  transform: rotate(180deg);
+  top: -10px;
+  position: relative;
 }
 
 @media screen and (max-width: 992px) {
@@ -262,6 +281,41 @@ tr {
   position: relative;
   top: -2px;
   color: white;
+}
+
+body[lang="en"] {
+  .date-and-shape {
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+  .date-and-shape .shape {
+    width: 60px;
+    height: 100.5%;
+    position: absolute;
+    left: 100% !important;
+    top: 50%;
+    clip-path: polygon(100% 50%, 0 0, 0 100%) !important;
+    transform: translateY(-50%);
+  }
+  .dimo {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    z-index: 99 !important;
+    transform: translateY(-50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .custom-table {
+    text-align: left !important;
+  }
+  .custom-table th,
+  .custom-table td {
+    font-size: 15px;
+    text-align: left;
+  }
 }
 
 @media (max-width: 950px) {
@@ -400,6 +454,24 @@ tr {
 .container-for-pie-and-data .one-line-data div {
   width: 13px;
   height: 13px;
+}
+
+body[lang="en"] {
+  .data-beside-pie-chart {
+    padding-right: 0px;
+    padding-left: 35px;
+  }
+
+  .container-for-pie-and-data .one-line-data {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .container-for-pie-and-data .one-line-data p {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
 }
 
 /* bar chart */

@@ -27,6 +27,12 @@
   text-align: right;
   font-weight: 600;
 }
+body[lang="en"] {
+  .top-title-for-cards {
+    text-align: left;
+  }
+}
+
 .second-title-for-cards {
   font-size: 60px;
   margin: 10px 0px 0px 0px;
@@ -69,7 +75,6 @@
   .three-boxes .container {
     /* margin-top: 70px; */
     flex-direction: column;
-    
   }
   .one-box {
     width: 100%;
