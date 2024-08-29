@@ -37,6 +37,16 @@
   height: 100%;
 }
 
+body[dir="ltr"] {
+  .img-under-hero {
+    width: 55%;
+    height: 620px;
+    position: absolute;
+    top: 0;
+    right: 0 !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .text-under-hero {
     width: 100%;
