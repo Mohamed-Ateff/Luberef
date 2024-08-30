@@ -166,6 +166,12 @@ body[lang="en"] {
   padding: 20px;
 }
 
+body[lang="en"] {
+  .div-for-padding {
+    padding: 40px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .three-final-cards .container {
     flex-direction: column;

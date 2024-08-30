@@ -362,6 +362,19 @@ body[lang="en"] {
   max-height: 100%;
 }
 
+body[lang="en"] {
+  .card-for-logo-last {
+    left: 0%;
+    transform: translate(-71%, -50%);
+  }
+  .one-card-from-four-last {
+    width: 98%;
+    margin-left: 10%;
+    margin-right: 0%;
+    padding: 70px 70px 70px 120px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .img-for-one-section {
     height: 150px;
