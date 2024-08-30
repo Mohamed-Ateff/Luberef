@@ -51,6 +51,7 @@
 
 body[lang="en"] {
   .man-word {
+    width: fit-content;
     right: 0px;
     left: -60px;
   }
