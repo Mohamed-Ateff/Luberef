@@ -127,6 +127,14 @@ body[dir="ltr"] {
   align-items: flex-start;
 }
 
+body[lang="en"] {
+  .two-nums-and-icon img {
+    transform: rotate(180deg);
+    top: 1px;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .three-boxes .container {
     margin-top: 0px;
