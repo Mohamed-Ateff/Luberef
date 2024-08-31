@@ -11,6 +11,7 @@
   position: absolute;
   bottom: -2px;
   left: 0%;
+  z-index: 999;
 }
 .man-img {
   width: 50%;
@@ -40,6 +41,7 @@
   align-items: flex-start;
   justify-content: flex-end;
 }
+
 .man-word h1 {
   color: white;
   font-size: 38px;
@@ -51,14 +53,22 @@
 
 body[lang="en"] {
   .man-word {
-    width: 100%;
-    right: 0px;
-    left: 00px;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
-    text-align: center !important;
+    /* background-color: red; */
+    width: fit-content;
+    left: -60px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .man-word {
+      width: 100%;
+      right: 0px;
+      left: 00px;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-direction: column !important;
+      text-align: center !important;
+    }
   }
 }
 

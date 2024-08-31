@@ -77,11 +77,11 @@
   transition: 0.3s ease;
 }
 
-button.active {
+.controls button.active {
   background-color: #fcdc48; /* Green background for active state */
 }
 
-button.inactive {
+.controls button.inactive {
   background-color: #2c4a71; /* Gray background for inactive state */
   cursor: not-allowed; /* Change cursor to not-allowed when inactive */
 }
