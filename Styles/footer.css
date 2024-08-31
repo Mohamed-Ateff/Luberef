@@ -97,7 +97,7 @@ footer .container {
 
 body[lang="en"] {
   .card-for-footer .footer-link {
-    padding: 13.5px 75px 13.5px 25px;
+    padding: 13.5px 75px 13.5px 25px !important;
   }
   .card-for-footer .dot-for-footer {
     margin-left: 0px;
