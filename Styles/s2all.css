@@ -51,9 +51,14 @@
 
 body[lang="en"] {
   .man-word {
-    width: fit-content;
+    width: 100%;
     right: 0px;
-    left: -60px;
+    left: 00px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-align: center !important;
   }
 }
 

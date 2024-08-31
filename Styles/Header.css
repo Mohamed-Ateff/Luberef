@@ -111,6 +111,12 @@ body[lang="en"] {
   outline: none;
 }
 @media screen and (max-width: 992px) {
+  header {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed !important;
+  }
   .toggle-btn {
     margin-right: 20px;
     margin-top: 10px;
@@ -394,24 +400,30 @@ body[lang="en"] {
 }
 
 @media screen and (max-width: 992px) {
+  .sticky {
+    position: sticky !important;
+    top: 14.5vh !important;
+    z-index: 999999999 !important;
+    overflow: hidden;
+  }
   .delete-buttons-for-mobile {
     display: none !important;
   }
   .navbar-nav {
+    height: 85.5vh;
     background-color: blue;
     overflow-y: auto;
-    height: 91vh !important;
   }
   .navbar-brand {
     margin-right: 15px;
   }
   .navbar-nav {
     border-right: 2px solid #fcdc48;
-    padding: 30px 0px 100px 0px;
+    padding: 50px 20px;
     background-color: #162c51;
   }
   .menu-link {
-    padding-right: 23px !important;
+    /* background-color: red; */
     font-size: 16px !important;
   }
   .menu-link br {
@@ -463,8 +475,21 @@ body[lang="en"] {
   .navbar-nav {
     overflow: auto !important;
   }
+  .buttons-home {
+    justify-content: flex-start !important;
+    height: fit-content;
+    /* background-color: #fcdc48  !important; */
+    margin: 10px !important;
+  }
+  .buttons-home a {
+    position: static;
+    padding: 0px !important;
+  }
   .navbar-collapse {
     overflow: auto !important;
+  }
+  .toggle-btn {
+    margin: 15px 10px !important;
   }
 }
 

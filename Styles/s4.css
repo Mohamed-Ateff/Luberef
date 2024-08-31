@@ -364,78 +364,81 @@ body[lang="en"] {
 
 body[lang="en"] {
   .card-for-logo-last {
-    left: 0%;
-    transform: translate(-71%, -50%);
+    margin-left: 15% !important;
   }
   .one-card-from-four-last {
-    width: 98%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0%;
     margin-right: 0%;
     padding: 70px 70px 70px 120px;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .img-for-one-section {
-    height: 150px;
-  }
-  .four-cards {
-    flex-direction: column;
-  }
-  .one-card-from-four {
-    width: 100%;
-  }
-  .one-card-from-four {
-    margin-top: 100px;
-    min-height: 400px;
-    background-color: #f0f0f0;
-    position: relative;
-    border-radius: 15px;
-    padding: 100px 30px 30px 30px;
-  }
-  .one-card-from-four-last {
-    width: 100%;
-    margin-right: 0%;
-    margin-top: 100px;
-    min-height: 400px;
-    padding: 100px 30px 30px 30px;
-    position: relative;
-  }
 
-  .card-for-logo {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #162c51;
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-  }
-  .card-for-logo-last {
-    position: absolute;
-    top: 0%;
-    left: 50% !important;
-    transform: translate(-100%, -50%) !important;
-    background-color: #162c51;
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-  }
-  .card-for-logo img {
-    min-width: 150% !important;
-    min-height: 150% !important;
-  }
-  .card-for-logo-last img {
-    min-width: 150% !important;
-    min-height: 150% !important;
+body[lang="en"],
+body[lang="ar"] {
+  @media screen and (max-width: 992px) {
+    .img-for-one-section {
+      height: 150px;
+    }
+    .four-cards {
+      flex-direction: column;
+    }
+    .one-card-from-four {
+      width: 100%;
+    }
+    .one-card-from-four {
+      margin-top: 100px;
+      min-height: 400px;
+      background-color: #f0f0f0;
+      position: relative;
+      border-radius: 15px;
+      padding: 100px 30px 30px 30px;
+    }
+    .one-card-from-four-last {
+      width: 100%;
+      margin-right: 0%;
+      margin-top: 100px;
+      min-height: 400px;
+      padding: 100px 30px 30px 30px;
+      position: relative;
+    }
+
+    .card-for-logo {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #162c51;
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    .card-for-logo-last {
+      position: absolute;
+      top: 0%;
+      left: 50% !important;
+      transform: translate(-100%, -50%) !important;
+      background-color: #162c51;
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    .card-for-logo img {
+      min-width: 150% !important;
+      min-height: 150% !important;
+    }
+    .card-for-logo-last img {
+      min-width: 150% !important;
+      min-height: 150% !important;
+    }
   }
 }
