@@ -127,6 +127,7 @@ body[lang="en"] {
 .card-for-container-for-three-boxes-for-one-box img {
   width: 50px;
   height: 50px;
+  transform: rotate(180deg);
 }
 
 .one-box-two {
@@ -148,6 +149,9 @@ body[lang="en"] {
 }
 
 body[lang="en"] {
+  .card-for-container-for-three-boxes-for-one-box img {
+    transform: rotate(0deg);
+  }
   .card-for-container-for-three-boxes-for-one-box-two {
     text-align: left;
   }
@@ -289,19 +293,19 @@ body[lang="en"] {
     margin-right: 50px;
   }
   .date-and-shape .shape {
-    width: 60px;
+    width: 30px;
     height: 100.5%;
     position: absolute;
-    left: 100% !important;
+    left: 99.5% !important;
     top: 50%;
     clip-path: polygon(100% 50%, 0 0, 0 100%) !important;
     transform: translateY(-50%);
   }
   .dimo {
-    width: 75px;
-    height: 75px;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    left: 75%;
+    left: 80%;
     top: 50%;
     z-index: 99 !important;
     transform: translateY(-50%);
@@ -316,6 +320,9 @@ body[lang="en"] {
     font-size: 15px;
     text-align: left;
   }
+}
+
+body[lang="en"] {
 }
 
 @media (max-width: 950px) {
@@ -621,6 +628,14 @@ body[lang="en"] {
     left: 20px;
     top: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    .progress-value-outside .some-text-for-chart {
+      left: -40px;
+      top: 20px;
+    }
+  }
+
   .box-one-chart-container-data {
     justify-content: center;
     margin-left: 0px;
