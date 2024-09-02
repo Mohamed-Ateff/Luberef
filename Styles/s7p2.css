@@ -1,3 +1,12 @@
+/* Select all cells in the last three columns */
+.table19 tr td:nth-last-child(-n + 3),
+.table19 tr th:nth-last-child(-n + 3) {
+  /* Apply your styles here */
+  color: #84C5EE !important; /* Example style */
+  background-color: #162c51;
+  border: 0px !important;
+}
+
 /* Table */
 
 .table-container {
