@@ -203,3 +203,5 @@ animateProgressBars();
 
 // Event listener to animate progress bars on scroll
 window.addEventListener("scroll", animateProgressBars);
+
+
