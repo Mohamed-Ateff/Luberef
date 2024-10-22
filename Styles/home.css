@@ -5,8 +5,14 @@
   margin: 80px auto;
 }
 .map {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+}
+.title-for-page {
+  line-height: 50px;
+}
+.title-for-page h1{
+    font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,10 +49,10 @@
 .card-blue {
   background-color: #162c51 !important;
   width: 17%;
-  padding: 0px !important;
+  padding: 20px 0 0 0 !important;
   border-radius: 35px 10px 35px 10px !important;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   height: 200px;
@@ -78,9 +84,15 @@
 }
 
 .text-with-dots {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   margin-top: 60px;
+}
+
+.row-text{
+  display: flex;
+  justify-content: start;
+  align-items: start;
 }
 
 .col-text-with-dot {
