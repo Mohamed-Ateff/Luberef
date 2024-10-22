@@ -21,7 +21,12 @@
   padding-right: 0px;
   padding-left: 60px;
 }
-
+#one-box-costum-2{
+  width: 66%; 
+}
+#hide-boxfor1{
+  display: none;
+}
 .top-title-for-cards {
   font-size: 22px;
   color: white;
@@ -145,6 +150,9 @@ body[lang="en"] {
     min-height: 350px;
     width: 100%;
     padding: 30px 30px;
+  }
+  #one-box-costum-2{
+    width: 100%; 
   }
   .display-non-for-mobile {
     display: none;

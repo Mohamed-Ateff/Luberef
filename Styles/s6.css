@@ -221,7 +221,7 @@ body[lang="en"] {
 
 .custom-table th,
 .custom-table td {
-  font-size: 15px;
+  font-size: 20px;
   text-align: right;
 }
 tr {
@@ -281,7 +281,7 @@ tr {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .date-and-shape h1 {
-  font-size: 22px;
+  font-size: 24px;
   position: relative;
   top: -2px;
   color: white;
@@ -343,7 +343,7 @@ body[lang="en"] {
   }
   .custom-table th,
   .custom-table td {
-    font-size: 15px;
+    font-size: 20px;
     text-align: left;
   }
 }

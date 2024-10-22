@@ -88,7 +88,7 @@ body[lang="en"] {
 .box-with-title2 {
   width: 100%;
   height: 200px;
-  background-color: #162c51;
+  background-color: #fcdc48;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +100,7 @@ body[lang="en"] {
 }
 
 .box-with-title2 h1 {
-  color: #fcdc48;
+  color: #162c51;
   font-size: 48px;
   margin-top: -5px;
   text-align: center;

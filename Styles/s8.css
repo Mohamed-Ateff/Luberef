@@ -38,6 +38,12 @@
   text-align: justify;
   font-size: 24px;
 }
+.span-number{
+  color: #a8aaad;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 70px;
+}
 
 .img-and-text-ten .Text-div {
   padding-right: 0px;
