@@ -790,3 +790,13 @@ body[lang="en"] {
     bottom: -30%;
   }
 }
+
+#text-dots{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#text-dots .col-text-with-dot{
+  width: 100%;
+}
