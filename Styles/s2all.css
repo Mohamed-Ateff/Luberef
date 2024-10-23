@@ -168,15 +168,16 @@ body[lang="en"] {
 }
 
 .article h1 {
-  font-size: 28px;
-  color: #016aab;
+  font-size: 15px;
+  /* color: #016aab; */
 }
 .article p {
-  font-size: 25px;
-  color: #333333;
+  font-size: 12px;
+  /* color: #333333; */
   text-align: justify;
+  /*
   margin-top: 30px;
-  line-height: 40px;
+  line-height: 40px; */
 }
 
 @media screen and (max-width: 992px) {
@@ -224,5 +225,27 @@ body[lang="en"] {
   .man-word p {
     color: #fcdc48;
     font-size: 20px;
+  }
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.article-container > div {
+  margin: 0 10px;
+  width: 16%;
+}
+#financial-officer > div {
+  width: 23%;
+}
+
+@media screen and (max-width: 1024px) {
+  .article-container {
+    flex-direction: column;
+  }
+  .article-container > div {
+    width: 100%;
   }
 }
