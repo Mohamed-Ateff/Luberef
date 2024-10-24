@@ -164,20 +164,19 @@ body[lang="en"] {
 /* Article */
 
 .article {
+  background-color: red;
   margin-top: 60px;
 }
 
 .article h1 {
-  font-size: 15px;
+  font-size: 18px;
+  margin-bottom: 10px;
   /* color: #016aab; */
 }
 .article p {
-  font-size: 12px;
-  /* color: #333333; */
+  font-size: 14px;
   text-align: justify;
-  /*
-  margin-top: 30px;
-  line-height: 40px; */
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 992px) {
