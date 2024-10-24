@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   margin-bottom: 130px;
-  padding-left: 240px;
+  text-align:justify;
 }
 @media screen and (max-width: 768px) {
   .text-img-under-hero {
@@ -40,7 +40,8 @@
 
 body[lang="en"] {
   .text-img-under-hero {
-  padding:0px 180px 0px 0px
+ 
+  text-align:justify;
   }
 
   .img-under-hero {
