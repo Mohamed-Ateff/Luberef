@@ -172,7 +172,7 @@ body[lang="en"] {
   margin-bottom: 10px;
   /* color: #016aab; */
 }
-.article p {
+.article > p {
   font-size: 14px;
   text-align: justify;
   margin-bottom: 10px;
