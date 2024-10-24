@@ -7,6 +7,7 @@
   align-items: center;
   position: relative;
   margin-bottom: 130px;
+  padding-left: 240px;
 }
 @media screen and (max-width: 768px) {
   .text-img-under-hero {
@@ -24,7 +25,7 @@
 }
 
 .img-under-hero {
-  width: 55%;
+  width: 45%;
   height: 620px;
   position: absolute;
   top: 0;
@@ -34,16 +35,20 @@
 
 .img-under-hero img {
   width: 100%;
-  height: 420px;
+  height: 320px;
 }
 
 body[lang="en"] {
+  .text-img-under-hero {
+  padding:0px 180px 0px 0px
+  }
+
   .img-under-hero {
-    width: 55%;
+    width: 45%;
     height: 620px;
     position: absolute;
     top: 0;
-    left: 45%;
+    left: 55%;
     transform: scaleX(-1);
   }
 }
@@ -92,7 +97,7 @@ body[lang="en"] {
       color: #fff;
       padding: 25px 30px;
       text-align: right;
-      font-size: 24px;
+      font-size: 18px;
     }
     th {
       /* width: calc(100% / 4); */
@@ -102,7 +107,7 @@ body[lang="en"] {
   td {
     border: 4px solid #f7f7f7;
     background-color: white;
-      font-size: 22px;
+      font-size: 15px;
   }
 
   th {
