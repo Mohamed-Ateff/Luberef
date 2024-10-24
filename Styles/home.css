@@ -116,6 +116,7 @@
 }
 
 .text-with-dot-p {
+  text-align: justify !important;
   font-size: 27px;
 }
 

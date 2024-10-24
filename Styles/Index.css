@@ -144,7 +144,7 @@ body[lang="en"] {
 
 .p-text {
   color: #333333;
-  text-align: justify;
+  text-align: justify !important;
   line-height: 40px;
   font-size: 26.7px;
   margin-top: 40px;
@@ -154,7 +154,7 @@ body[lang="en"] {
 }
 .p-text-with-q {
   color: #333333;
-  text-align: justify;
+  text-align: justify !important;
   line-height: 40px;
   font-size: 26.7px;
   margin-top: 45px;
