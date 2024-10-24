@@ -102,6 +102,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  text-align: justify;
 }
 .text-with-dot .dot {
   min-width: 8px;
