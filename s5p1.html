@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/s5p1.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="/pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/5.png" alt="" />
+      <div class="title">
+        <h1
+          data-en="Products and Facilities"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          المنتجات ومرافق الإنتاج
+        </h1>
+      </div>
+
+      <div
+        class="box-with-title"
+        id="dif-color-box-with-title2"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 data-en="Products Overview">نظرة عامة على المنتجات</h1>
+      </div>
+    </div>
+
+    <div class="text-img-under-hero">
+      <div class="container">
+        <div class="text-under-hero">
+          <h1 data-aos="fade" data-aos-duration="2000">
+            <span data-en="Luberef is one of the largest"
+              >لوبريف واحدة من أكبر</span
+            >
+            
+            <span data-en="pure-play producers of "
+              >منتجي زيوت الأساس عالية</span
+            >
+            
+            <span data-en="high-quality Group I and II "
+              >الجودة من الفئتين الأولى</span
+            >
+            
+            <span data-en="base oils globally."
+              >والثانية على مستوى العالم.</span
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col-text">
+      <div class="container">
+        <div class="one-p">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="It also produces various byproducts such as asphalt, marine heavy fuel oil (MHFO), slack wax, extract and sulfur, as well as white products like ultra-low sulfur diesel (ULSD), naphtha and drilling fluid. Luberef draws on its rich experience in the base oil business to bring quality products that offer reliability and consistency on a global scale. Luberef’s products are used by a broad range of critical and core industries to produce offerings that positively impact the lives of millions of people around the world."
+          >
+            وتنتج كذلك مجموعة متنوعة من المنتجات الثانوية مثل: الأسفلت، وزيت
+            وقود، السفن الثقيل، والشمع الخامل، ومستخلص برايت ستوك، والكبريت،
+            والمنتجات البترولية البيضاء، مثل: الديزل ذي المحتوى فائق الانخفاض من
+            الكبريت، والنافثا، وسائل الحفر. تعتمد لوبريف على خبرتها الواسعة في
+            قطاع زيوت الأساس لتقديم منتجات عالية الجودة توفر الموثوقية والاتساق
+            على نطاق عالمي.
+          </p>
+        </div>
+        <div class="one-p">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="Base oil products typically 
+have two specific identifiers in their name to help identify the product’s grade and group. The grade is defined by the number stated in the product name, which is a reference to the product’s viscosity. The base oil groups are based on the technical specification of the base oils and where they fall within the American Petroleum Institute 
+(API) definition."
+          >
+            عادة ما تحتوي منتجات زيوت الأساس على نوعين محددين من المعرفات في
+            أسمائها للمساعدة على تحديد درجة المنتج وفئته. وتحدد الدرجة عن طريق
+            الرقم المذكور في اسم المنتج الذي يشير إلى مدى لزوجته. وتستند فئات
+            زيوت الأساس إلى المواصفات الفنية للزيوت وتعريفها، وفقاً لمعهد
+            البترول الأمريكي.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="As a member of the Base Oil Alliance, Luberef, like other alliance members, markets its products under a global Aramco brand. Group I, II and III are branded as aramcoDURA™, aramcoPRIMA™, and aramcoULTRA™ respectively."
+        >
+          يسوق أعضاء تحالف زيوت الأساس، ومن بينهم لوبريف، منتجاتهم تحت علامات
+          أرامكو التجارية العالمية، وهي «أرامكو دورا» و«أرامكو بريما» و«أرامكو
+          الترا»، التي تشير للفئات الأولى والثانية والثالثة من زيوت الأساس على
+          التوالي.
+        </p>
+      </div>
+    </div>
+
+    <div class="table-with-title">
+      <div class="container">
+        <h1
+          class="title-for-table"
+          data-en="Products Overview and Properties"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          الفئات الأولى والثانية والثالثة من زيوت الأساس
+        </h1>
+        <table class="table1" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr class="no-border">
+              <th data-en="Trademark">الفئة</th>
+              <th data-en="Missing">العلامة التجارية</th>
+              <th data-en="Key Properties">الخصائص الرئيسية</th>
+              <th data-en="Products">المنتجات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Group I">الفئة الأولى</td>
+              <td data-en="aramcoDURA™">أرامكو دورا</td>
+              <td data-en="Good viscosity index">مؤشر اللزوجة جيد</td>
+
+              <td>
+                <span
+                  data-en="• aramcoDURA 150  
+"
+                  >• أرامكو دورا 150</span
+                >
+                <br />
+                <span
+                  data-en="• aramcoDURA 500  
+"
+                  >• أرامكو دورا 500
+                </span>
+                <br />
+                <span data-en="• aramcoDURA BS 150"
+                  >• أرامكو دورا بي إس 150</span
+                >
+                <br />
+              </td>
+            </tr>
+            <tr class="change-bg">
+              <td data-en="Group II">الفئة الثانية</td>
+              <td data-en="aramcoPRIMA™">أرامكو بريما</td>
+              <td data-en="Good viscosity index, low sulfur">
+                مؤشر اللزوجة جيد،<br />
+                والكبريت منخفض
+              </td>
+              <td>
+                <span
+                  data-en="• aramcoPRIMA 70  
+"
+                  >• أرامكو بريما 70
+                </span>
+                <br />
+                <span
+                  data-en="• aramcoPRIMA 110  
+"
+                  >• أرامكو بريما 110</span
+                >
+                <br />
+                <span
+                  data-en="• aramcoPRIMA 230  
+"
+                  >• أرامكو بريما 230</span
+                >
+                <br />
+                <span data-en="• aramcoPRIMA 500">• أرامكو بريما 500</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td data-en="*Group III">الفئة الثالثة *</td>
+              <td data-en="aramcoULTRA™">أرامكو ألترا</td>
+              <td data-en="Excellent  viscosity index, low sulfur">
+                مؤشر اللزوجة ممتاز، <br />والكبريت منخفض
+              </td>
+              <td>
+                <span
+                  data-en="• aramcoULTRA 2  
+"
+                  >• أرامكو ألترا 2
+                </span>
+                <br />
+                <span
+                  data-en="• aramcoULTRA 4  
+"
+                  >• أرامكو ألترا 6</span
+                >
+                <br />
+                <span
+                  data-en="• aramcoULTRA 6   
+"
+                  >• أرامكو ألترا 4
+                </span>
+                <br />
+                <span data-en="• aramcoULTRA 8">• أرامكو ألترا 8</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="text-under-table-small"
+          data-en="*Not currently produced by Luberef."
+        >
+          * لا تنتجه الشركة حاليا
+        </p>
+      </div>
+    </div>
+
+    <div class="three-boxes">
+      <div class="container">
+        <div class="one-box" data-aos="fade-up" data-aos-duration="2000">
+          <p class="top-title-for-cards" data-en="Group I Base Oils">
+            الفئة الأولى من زيوت الأساس
+          </p>
+          <h1 class="second-title-for-cards counter">398,222</h1>
+          <p class="third-title-for-cards" data-en="MT">طناً مترياً</p>
+          <p class="last-title-for-cards" data-en="Production in 2023">
+            الإنتاج في 2023
+          </p>
+        </div>
+        <div class="one-box" data-aos="fade-up" data-aos-duration="2000">
+          <p class="top-title-for-cards" data-en="Group II Base Oils">
+            الفئة الثانية من زيوت الأساس
+          </p>
+          <h1 class="second-title-for-cards counter">824,600</h1>
+          <p class="third-title-for-cards" data-en="MT">طن متري</p>
+          <p class="last-title-for-cards" data-en="Production in 2023">
+            الإنتاج في 2023
+          </p>
+        </div>
+        <div
+          class="one-box"
+          id="change-bg-for-one-box"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <p class="top-title-for-cards" data-en="Base Oil Alliance Sales">
+            مبيعات تحالف زيوت الأساس
+          </p>
+          <h1 class="second-title-for-cards counter">120,500</h1>
+          <p class="third-title-for-cards" data-en="MT">طن متري</p>
+          <p class="last-title-for-cards" data-en="Sales in 2023">
+            المبيعات في 2023
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-for-page" style="margin: 100px auto auto auto">
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-en="Luberef produces three grades of Group I base oils: aramcoDURA™ 150, aramcoDURA™ 500 and aramcoDURA BS™ 150."
+      >
+        تنتج لوبريف ثلاث درجات من زيوت الأساس من الفئة الأولى: أرامكو <br />
+        دورا 150، وأرامكو دورا 500، وأرامكو دورا بي اي 150.
+      </h1>
+    </div>
+
+    <div class="two-col-text" style="margin: 80px auto 80px auto">
+      <div class="container">
+        <div class="one-p">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="AramcoDURA 150 and aramcoDURA™ 500 are produced at the Jeddah facility. The Yanbu facility produces aramcoDURA BS™ 150. These products are primarily sold in end markets in the Kingdom, the UAE, India, Singapore and Africa."
+          >
+            يتم إنتاج أرامكو دورا 150 وأرامكو دورا 500 في مرفق جدة، بينما يجري
+            إنتاج أرامكو دورا بي إس 150 في مرفق ينبع، وتباع هذه المنتجات بصورة
+            رئيسية في الأسواق النهائية في المملكة العربية السعودية ودولة
+            الإمارات العربية المتحدة والهند وسنغافورة وإفريقيا.
+          </p>
+        </div>
+        <div class="one-p">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="Luberef produces four grades of Group II base oils, namely aramcoPRIMA™ 70, aramcoPRIMA™ 110, aramcoPRIMA™ 230 and aramcoPRIMA™ 500, at the Yanbu facility. These products are mainly sold in end markets in the Kingdom, India, the UAE and Africa."
+          >
+            كما تنتج لوبريف أربع درجات من زيوت الأساس من الفئة الثانية، وهي
+            أرامكو بريما 70، وأرامكو بريما 110، وأرامكو بريما 230، وأرامكو بريما
+            500 من مرفق ينبع وتباع هذه المنتجات بصورة رئيسية في الأسواق النهائية
+            في المملكة العربية السعودية والهند والإمارات العربية المتحدة
+            وإفريقيا.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-with-title">
+      <div class="container">
+        <table class="table1 table2" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr class="no-border">
+              <th data-en="Product">المنتج</th>
+              <th>
+                <span>2023</span>
+                <br />
+                <span class="weight" data-en="(’000 MT)">(ألف طن متري)</span>
+              </th>
+              <th>
+                <span>2022</span>
+                <br />
+                <span class="weight" data-en="(’000 MT)">(ألف طن متري)</span>
+              </th>
+              <th data-en="% Change YOY">نسبة التغيير %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Group I Base Oils">الفئة الأولى من زيوت الأساس</td>
+              <td>398</td>
+              <td>408</td>
+              <td>(2.5%)</td>
+            </tr>
+
+            <tr>
+              <td data-en="Group II Base Oils">الفئة الثانية من زيوت الأساس</td>
+              <td>825</td>
+              <td>787</td>
+              <td>4.8%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer style="margin-top: 70px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="/pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+  </body>
+</html>

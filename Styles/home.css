@@ -1,0 +1,143 @@
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+}
+.map {
+  width: 90%;
+  height: 90%;
+}
+.title-for-page {
+  line-height: 50px;
+}
+.title-for-page h1{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .map-container {
+    margin: 40px auto;
+  }
+}
+
+/*  */
+
+.four-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.four-cards div {
+  padding: 30px;
+}
+.card-white-smoke {
+  width: 45% !important;
+  min-height: 200px;
+  padding: 30px 50px !important;
+  background-color: #e8e8e9 !important;
+  border-radius: 35px 10px 35px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card-white-smoke p {
+  font-size: 23px;
+}
+.card-blue {
+  background-color: #162c51 !important;
+  width: 17%;
+  padding: 20px 0 0 0 !important;
+  border-radius: 35px 10px 35px 10px !important;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+.card-blue img {
+  height: 100px;
+}
+.card-blue p {
+  text-align: center;
+  margin-top: 15px;
+  color: #fcdc48;
+}
+
+@media screen and (max-width: 992px) {
+  .four-cards {
+    flex-direction: column;
+  }
+  .four-cards div {
+    padding: 30px !important;
+    margin: 10px 0px;
+    height: fit-content !important;
+    width: 100% !important;
+  }
+  .card-blue {
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: right;
+  }
+}
+
+.text-with-dots {
+  margin-top: 60px;
+}
+
+.row-text{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.col-text-with-dot {
+  width: 50%;
+}
+
+.text-with-dot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: justify;
+}
+.text-with-dot .dot {
+  min-width: 8px;
+  min-height: 8px;
+  max-width: 8px;
+  max-height: 8px;
+  background-color: black;
+  border-radius: 50px;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+.text-with-dot-p {
+  text-align: justify !important;
+  font-size: 27px;
+}
+
+body[lang="en"] {
+  .text-with-dot .dot {
+    margin-top: 22px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .text-with-dots {
+    flex-direction: column;
+  }
+
+  .col-text-with-dot {
+    width: 100%;
+  }
+
+  .text-with-dot {
+    padding: 20px 0px;
+  }
+}

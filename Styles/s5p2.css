@@ -1,0 +1,135 @@
+#adjust-top-padding {
+  top: 50px;
+  margin-bottom: 150px;
+}
+.under-hero {
+  height: 350px;
+  width: 100%;
+  background-color: #162c51;
+}
+
+.three-boxes .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #016aab;
+  position: relative;
+  top: 115px;
+  border-radius: 5px 35px 5px 35px;
+  padding: 40px 50px;
+}
+.one-box {
+  /* background-color: red; */
+  width: 29%;
+  border-radius: 5px 35px 5px 35px;
+}
+.top-title-for-cards {
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  font-weight: 600;
+}
+body[lang="en"] {
+  .top-title-for-cards {
+    text-align: left;
+  }
+}
+
+.second-title-for-cards {
+  font-size: 60px;
+  margin: 10px 0px 0px 0px;
+  color: #fcdc48;
+}
+
+.third-title-for-cards {
+  color: #84c5ee;
+  margin: 0px 0px 5px 0px;
+  font-size: 20px;
+}
+.last-title-for-cards {
+  color: #fcdc48;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 992px) {
+  .three-boxes .container {
+    padding: 20px 20px;
+  }
+}
+
+#change-bg-for-one-box {
+  background-color: #fcdc48;
+}
+#change-bg-for-one-box .top-title-for-cards {
+  color: #333333;
+}
+#change-bg-for-one-box .second-title-for-cards {
+  color: #162c51;
+}
+#change-bg-for-one-box .third-title-for-cards {
+  color: #016aab;
+}
+#change-bg-for-one-box .last-title-for-cards {
+  color: #162c51;
+}
+
+@media screen and (max-width: 992px) {
+  .three-boxes .container {
+    /* margin-top: 70px; */
+    flex-direction: column;
+  }
+  .one-box {
+    width: 100%;
+    background-color: #162c51;
+    padding: 30px 25px;
+    margin-bottom: 20px;
+  }
+  .second-title-for-cards {
+    font-size: 35px;
+  }
+
+  .body-for-content {
+    margin-top: 800px !important;
+  }
+}
+
+.body-for-content {
+  margin-top: 160px;
+}
+
+.three-final-cards {
+  min-height: 300px;
+  background-color: #f0f0f0;
+  margin-top: 70px;
+}
+.three-final-cards .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.special-card0 {
+  width: 100% !important;
+  padding: 0px 0px 0px 0px !important;
+  background-color: transparent !important;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.special-card0 img {
+  margin-top: 10px;
+  height: 100px;
+}
+.special-card0 h1 {
+  color: white;
+  margin: 20px 0px 20px 0px;
+}
+.special-card0 p {
+  color: #fcdc48;
+  font-size: 17px;
+}

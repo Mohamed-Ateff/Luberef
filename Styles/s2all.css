@@ -1,0 +1,249 @@
+.man-with-word {
+  width: 100%;
+  background-color: #162c51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.man-with-word svg {
+  position: absolute;
+  bottom: -2px;
+  left: 0%;
+  z-index: 999;
+}
+.man-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.man-img img {
+  margin-top: 100px;
+  margin-bottom: 5px;
+  /* width: 100%; */
+  height: 500px;
+}
+
+.man-word {
+  /* background-color: red; */
+  width: 30%;
+  min-height: 200px;
+  position: relative;
+  right: -60px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.man-word h1 {
+  color: white;
+  font-size: 38px;
+}
+.man-word p {
+  color: #fcdc48;
+  font-size: 28px;
+}
+.man-with-word {
+  position: relative;
+}
+.man-with-word svg {
+  width: 105%;
+  z-index: 9;
+}
+.curve {
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: 200px;
+  border: solid 10px #fcdc48;
+  border-color: transparent transparent #fcdc48;
+  border-radius: 100% 400px 50px 50px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 3000px;
+}
+.curve::after {
+  content: "";
+  position: absolute;
+  bottom: 40.02px; /* Adjust this value to control how far the curve extends below the line */
+  right: 41.5px; /* Adjust this value to position the curve correctly */
+  width: 9.5px; /* Width of the curve */
+  height: 9.7px; /* Height of the curve */
+  background-color: #fcdc48;
+  border-radius: 50%; /* Makes the pseudo-element a circle */
+}
+.curve::before {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust this value to control how far the curve extends below the line */
+  left: -10px; /* Adjust this value to position the curve correctly */
+  width: 10px; /* Width of the curve */
+  height: 10px; /* Height of the curve */
+  background-color: #fcdc48;
+}
+
+body[lang="en"] {
+  .curve {
+    transform: scalex(-1);
+  }
+}
+@media screen and (max-width: 992px) {
+  .curve {
+    border-bottom-right-radius: 400px;
+  }
+  .curve::after {
+    content: "";
+    position: absolute;
+    bottom: 19px; /* Adjust this value to control how far the curve extends below the line */
+    right: 18px; /* Adjust this value to position the curve correctly */
+  }
+}
+
+/* .man-with-word::before {
+  width: 50%;
+  height: 14px;
+  background-color: #fcdc48;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+@media screen and (max-width: 992px) {
+  .man-with-word::before {
+    height: 4.6px;
+    bottom: -2px;
+  }
+} */
+
+body[lang="en"] {
+  .man-with-word svg {
+    width: 95%;
+    z-index: 9;
+    transform: scalex(-1);
+  }
+  .man-with-word::before {
+    left: 50% !important;
+  }
+  @media screen and (max-width: 992px) {
+    .man-with-word::before {
+      height: 4.6px;
+      bottom: -1px;
+    }
+  }
+}
+
+body[lang="en"] {
+  .man-word {
+    /* background-color: red; */
+    width: fit-content;
+    left: -60px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .man-word {
+      width: 100%;
+      right: 0px;
+      left: 00px;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+  }
+}
+
+/* Article */
+
+.article {
+  margin-top: 60px;
+}
+
+.article h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  /* color: #016aab; */
+}
+.article > p {
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .man-with-word {
+    flex-direction: column;
+  }
+  .man-img {
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+  }
+
+  .man-img img {
+    margin-top: 80px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .man-word {
+    /* background-color: red; */
+    width: 100%;
+    min-height: fit-content;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .man-with-word svg {
+    position: absolute;
+    bottom: -37px;
+    left: 0%;
+    width: 100%;
+  }
+  .man-word h1 {
+    color: white;
+    font-size: 28px;
+  }
+  .man-word p {
+    color: #fcdc48;
+    font-size: 20px;
+  }
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.article-container > div {
+  margin: 0 10px;
+  width: 16%;
+}
+#financial-officer > div {
+  width: 23%;
+}
+
+@media screen and (max-width: 1024px) {
+  .article-container {
+    flex-direction: column;
+  }
+  .article-container > div {
+    width: 100%;
+  }
+}

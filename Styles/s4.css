@@ -1,0 +1,592 @@
+.slider-container {
+  position: relative;
+  /* background-color: red; */
+  margin-top: 87px;
+  width: 100%;
+}
+.slider-card-connect {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #162c51;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 150px 180px 180px 100px !important;
+}
+.box-title-for-slider-card-connect {
+  border-top: 2px dashed #c0c0c0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  margin: auto;
+  padding: 0px;
+  /* background-color: red; */
+  background-color: #162c51;
+}
+.box-title-for-slider-card-connect p {
+  padding: 20px 50px;
+  background-color: #081833;
+  color: #84c5ee;
+  font-size: 12px;
+  margin-top: 20px;
+  z-index: 1;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .box-title-for-slider-card-connect {
+    width: 100%;
+    top: -28px;
+    right: 0%;
+  }
+}
+
+.controls {
+  /* background-color: red; */
+  width: fit-content;
+  position: absolute;
+  top: 26%;
+  right: 8%;
+  transform: translateX(-8%);
+  transform: translateY(50%) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.controls button {
+  outline: none;
+  background-color: #fcdc48;
+  width: 70px;
+  height: 70px;
+  border-radius: 500px;
+  cursor: pointer;
+  margin: 10px 0px;
+  border: none;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  transition: 0.3s ease;
+}
+
+.controls button.active {
+  background-color: #fcdc48; /* Green background for active state */
+}
+
+.controls button.inactive {
+  background-color: #2c4a71; /* Gray background for inactive state */
+  cursor: not-allowed; /* Change cursor to not-allowed when inactive */
+}
+
+.controls button.inactive svg {
+  fill: #162c51;
+}
+
+.wrapper .outer {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .outer .card {
+  margin-right: 40px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+body[lang="en"] {
+  .controls {
+    top: 26%;
+    left: 8% !important;
+  }
+  .wrapper .outer .card .content .details {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+  .wrapper .outer .card {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+}
+
+.wrapper .outer:hover .card {
+  animation-play-state: paused;
+}
+
+.wrapper .outer .card:last-child {
+  animation-delay: calc(-3s * var(--delay));
+}
+
+.wrapper .outer .card:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .outer .card .content {
+  display: flex;
+  align-items: center;
+}
+.card .content .box-for-slide {
+  min-height: 190px;
+  min-width: 190px;
+  background: #016aab !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 5px;
+}
+
+.wrapper .outer .card .content .box-for-slide h1 {
+  color: #fcdc48;
+  font-size: 40px;
+}
+
+.wrapper .outer .card .content .details {
+  margin-right: 40px;
+}
+
+.wrapper .outer .card .content .details p {
+  font-size: 18px;
+  color: white;
+}
+
+body[lang="ar"] {
+  @media screen and (max-width: 992px) {
+    .wrapper .outer .card {
+      margin-right: 0px;
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .controls {
+      /* background-color: red; */
+      width: fit-content;
+      position: absolute;
+      top: 90%;
+      right: 22%;
+      width: fit-content;
+      z-index: 99;
+      background-color: #162c51;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: initial;
+
+      padding: 10px 0px;
+    }
+    .controls button {
+      margin: 0px 10px;
+    }
+    .slider-card-connect {
+      border-top: 2px dashed #c0c0c0;
+      width: 100%;
+      min-height: 70vh;
+      /* height: 70vh; */
+      background-color: #162c51;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px !important;
+    }
+    .wrapper .outer {
+      margin-top: 0px;
+      overflow: hidden !important;
+    }
+
+    .outer .card {
+      transform: translateY(
+        0
+      ) !important; /* Ensure all cards stack correctly */
+    }
+
+    .outer .card {
+      opacity: 0;
+      pointer-events: none;
+      margin-top: -20px;
+    }
+
+    .outer .card:nth-child(n + 2) {
+      display: none; /* Hide all but the first card */
+    }
+
+    .outer .card:first-child {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .wrapper .outer .card .content {
+      height: 460px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      right: 0;
+      left: 0;
+      margin: 0px !important;
+    }
+    .card .content .box-for-slide {
+      min-height: 150px;
+      min-width: 150px;
+      background: #016aab !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      border-radius: 5px;
+    }
+
+    .outer {
+      background-color: darkcyan;
+      overflow: hidden;
+    }
+
+    .wrapper .outer .card .content .box-for-slide h1 {
+      color: #fcdc48;
+      font-size: 40px;
+    }
+
+    .wrapper .outer .card .content .details {
+      margin-right: 0px;
+    }
+
+    .wrapper .outer .card .content .details p {
+      font-size: 18px;
+      color: white;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}
+body[lang="en"] {
+  @media screen and (max-width: 992px) {
+    .wrapper .outer .card {
+      margin-right: 0px;
+      margin-left: 0px;
+      width: 95%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      opacity: 0;
+      text-align: center;
+      pointer-events: none;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .controls {
+      /* background-color: red; */
+      width: fit-content;
+      position: absolute;
+      top: 90%;
+      right: 50% !important;
+      width: fit-content;
+      z-index: 99;
+      background-color: #162c51;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: initial;
+      transform: translateX(22.5%) !important;
+      padding: 10px 0px;
+    }
+    .controls button {
+      margin: 0px 10px;
+    }
+    .slider-card-connect {
+      border-top: 2px dashed #c0c0c0;
+      width: 100%;
+      min-height: 70vh;
+      /* height: 70vh; */
+      background-color: #162c51;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px !important;
+    }
+    .wrapper .outer {
+      margin-top: 0px;
+      overflow: hidden !important;
+    }
+
+    .outer .card {
+      transform: translateY(
+        0
+      ) !important; /* Ensure all cards stack correctly */
+    }
+
+    .outer .card {
+      opacity: 0;
+      pointer-events: none;
+      margin-top: -20px;
+    }
+
+    .outer .card:nth-child(n + 2) {
+      display: none; /* Hide all but the first card */
+    }
+
+    .outer .card:first-child {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .wrapper .outer .card .content {
+      min-height: 460px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      right: 0;
+      left: 0;
+      margin: 0px !important;
+    }
+    .card .content .box-for-slide {
+      min-height: 150px;
+      min-width: 150px;
+      background: #016aab !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      border-radius: 5px;
+    }
+
+    .outer {
+      overflow: hidden;
+    }
+
+    .wrapper .outer .card .content .box-for-slide h1 {
+      color: #fcdc48;
+      font-size: 40px;
+    }
+    .wrapper .outer .card .content .details {
+      margin-right: 0px;
+      width: 100%;
+      margin-left: 0px !important;
+    }
+    .wrapper .outer .card .content .details p {
+      font-size: 18px;
+      color: white;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}
+
+/* slider ends */
+
+.title-for-one-section {
+  color: #016aab;
+}
+
+.img-for-one-section {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  margin-top: 30px;
+}
+
+.four-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: wrap;
+  align-items: stretch;
+}
+.one-card-from-four {
+  margin-top: 150px;
+  width: 48%;
+  min-height: 400px;
+  background-color: #f0f0f0;
+  position: relative;
+  border-radius: 15px;
+  padding: 130px 50px 50px 50px;
+}
+.one-card-from-four-last {
+  width: 98%;
+  margin-right: 10%;
+  background-color: #f0f0f0;
+  position: relative;
+  border-radius: 15px;
+  padding: 70px 120px 70px 70px;
+  margin-top: 70px;
+}
+.one-card-from-four p {
+  font-size: 20px;
+  text-align: justify;
+}
+.one-card-from-four-last p {
+  font-size: 18.3px;
+}
+.card-for-logo {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #162c51;
+  width: 170px;
+  height: 170px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.card-for-logo-last {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(71%, -50%);
+  background-color: #162c51;
+  width: 170px;
+  height: 170px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.card-for-logo img {
+  width: fit-content;
+  max-width: 100%;
+  height: fit-content;
+  max-height: 100%;
+}
+.card-for-logo-last img {
+  width: fit-content;
+  max-width: 100%;
+  height: fit-content;
+  max-height: 100%;
+}
+
+body[lang="en"] {
+  .card-for-logo-last {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-71%, -50%);
+  }
+  .one-card-from-four-last {
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 0%;
+    padding: 70px 70px 70px 120px;
+  }
+}
+
+body[lang="en"] {
+  @media screen and (max-width: 992px) {
+    .card-for-logo-last {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%) !important;
+      background-color: #162c51;
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    .one-card-from-four-last {
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+
+      padding: 100px 30px 30px 30px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .img-for-one-section {
+    height: 150px;
+  }
+  .four-cards {
+    flex-direction: column;
+  }
+  .one-card-from-four {
+    width: 100%;
+  }
+  .one-card-from-four {
+    margin-top: 100px;
+    min-height: 400px;
+    background-color: #f0f0f0;
+    position: relative;
+    border-radius: 15px;
+    padding: 100px 30px 30px 30px;
+  }
+  .one-card-from-four-last {
+    width: 100%;
+    margin-right: 0%;
+    margin-top: 100px;
+    min-height: 400px;
+    padding: 100px 30px 30px 30px;
+    position: relative;
+  }
+
+  .card-for-logo {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #162c51;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .card-for-logo-last {
+    position: absolute;
+    top: 0%;
+    left: 50% !important;
+    transform: translate(-100%, -50%) !important;
+    background-color: #162c51;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .card-for-logo img {
+    min-width: 150% !important;
+    min-height: 150% !important;
+  }
+  .card-for-logo-last img {
+    min-width: 150% !important;
+    min-height: 150% !important;
+  }
+}

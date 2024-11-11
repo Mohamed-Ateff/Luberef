@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/s6.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="/pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/6.png" alt="" />
+      <div class="title">
+        <h1
+          data-en="Future Projects"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          المشاريع المستقبلية
+        </h1>
+      </div>
+
+      <div
+        class="box-with-title"
+        id="dif-color-box-with-title2"
+        style="height: 50px; bottom: -2.5%"
+      >
+        <h1></h1>
+      </div>
+    </div>
+
+    <div class="card-and-text">
+      <div class="container">
+        <div class="box-card-and-text">
+          <h1
+            data-en="Yanbu Growth II Expansion"
+            data-aos="fade"
+            data-aos-duration="2000"
+          >
+            مشروع التوسعة الثانية في مرفق ينبع
+          </h1>
+        </div>
+        <div class="text-card-and-text">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="The Yanbu Growth II Expansion marks a transformative chapter for Luberef, aiming to unlock further potential from the Yanbu facility and redefine the product portfolio. By optimizing existing units, Luberef will maximize production capacity, solidifying its position as the pre-eminent Base Oil supplier."
+          >
+            يمثل مشروع التوسعة الثانية في مرفق ينبع علامة تحول لشركة لوبريف
+            ويهدف إلى تطوير إمكانات المرفق وإعادة تحديد قائمة المنتجات. وستتمكن
+            لوبريف عن طريق تحسين الوحدات القائمة من زيادة الطاقة الإنتاجية
+            للمرفق للحد الأقصى وتعزيز مكانتها كمورد بارز لزيوت الأساس.
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="With the introduction of Group III base oils to the company’s product portfolio, Luberef will be well-positioned to cater to the growing demand for high-quality Group III base oils, further strengthening its competitive edge."
+          >
+            ومع إضافة زيوت الأساس من الفئة الثالثة لقائمة منتجات الشركة ستتمكن
+            لوبريف من الاستجابة للطلب المتنامي على زيوت الأساس من الفئة الثالثة
+            عالية الجودة، ما سيعزز من ميزتها التنافسية.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-for-content">
+      <div class="container">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="The project targets to increase the Yanbu facility’s base oil production capacity to approximately 1.3 million metric tons per annum by 2025 (270 thousand for Group I, 815 thousand for Group II, and 175 thousand for Group III). The expansion will provide flexibility for additional Group II and Group III base oils production based on market demand, through the expected ability to switch between the production of Group II and Group III base oils."
+        >
+          يهدف المشروع إلى زيادة الطاقة الإنتاجية لزيوت الأساس من مرفق ينبع إلى
+          نحو 1.3 مليون طن متري سنويا بحلول عام 2025 (270 ألفاً من زيوت الأساس
+          من الفئة الأولى و815 ألفاً من الفئة الثانية و175 ألفاً من الفئة
+          الثالثة) وستوفر التوسعة المرونة في إنتاج كميات إضافية من زيوت الأساس
+          من الفئتين الثانية والثالثة بناء على طلب السوق، وذلك من خلال القدرة
+          على التحويل في الإنتاج بين الفئتين.
+        </p>
+        <p class="p-text-with-q" data-aos="fade-up" data-aos-duration="2000">
+          <img src="Images/q.png" alt="" />
+          <span
+            data-en="The project targets to increase the Yanbu facility’s base oil production capacity to approximately 1.3 million metric tons per annum by 2025 (270 thousand for Group I, 815 thousand for Group II, and 175 thousand for Group III). The expansion will provide flexibility for additional Group II and Group III base oils production based on market demand, through the expected ability to switch between the production of Group II and Group III base oils."
+          >
+            ومن المتوقع أن يتمكن المرفق من إنتاج ما يصل إلى 670 ألف طن متري من
+            زيوت الأساس من الفئة الثالثة دون إنتاج زيوت الأساس من الفئة الثانية
+            أو 1.120 ألف طن متري من زيوت الأساس من الفئة الثانية دون إنتاج زيوت
+            الأساس من الفئة الثالثة.
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="border-div"></div>
+    </div>
+
+    <div class="card-and-text">
+      <div class="container">
+        <div class="box-card-and-text">
+          <h1
+            data-aos="fade"
+            data-aos-duration="2000"
+            data-en="Engineering, Procurement, and Construction (EPC) contract with Petrojet"
+          >
+            عقد الهندسة والتوريد والبناء مع بتروجت
+          </h1>
+        </div>
+        <div class="text-card-and-text">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="In 2023, Luberef has awarded a SAR 555 million Saudi riyals ($148.55 million) Engineering, Procurement and Construction (EPC) contract to Egypt’s Petrojet for Yanbu growth II expansion project, which aims to expand the Yanbu facility’s base oils (Group II and Group III) production capacity to 1.3 million MT per annum by 2025. "
+          >
+            في عام 2023 أرست لوبريف عقدا بقيمة 555 مليون ريال سعودي (148.55
+            مليون دولار) على شركة بتروجت المصرية لتنفيذ أعمال الهندسة والتوريد
+            والبناء في مشروع التوسعة الثانية بمرفق ينبع والهادف لزيادة الطاقة
+            الإنتاجية للمرفق من زيوت الأساس من الفئتين الثانية والثالثة إلى 1.3
+            مليون طن متري بحلول عام 2025.
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="Petrojet will carry out the execution for the Yanbu Growth II expansion project. The project will further enable Luberef to flexibly produce Group-II and Group-III base oils based on market demands."
+          >
+            وستتولى بتروجت تنفيذ أعمال التوسعة بالمشروع الذي من المتوقع أن يمنح
+            لوبريف المرونة للتحول بين إنتاج زيوت الأساس من الفئتين الثانية
+            والثالثة بناء على طلب السوق.
+          </p>
+          <p class="p-text-with-q" data-aos="fade-up" data-aos-duration="2000">
+            <img src="Images/q.png" alt="" />
+            <span
+              data-en="As of 2023 end, 61% of the detailed engineering designs had been completed and other EPC activities commenced for the project."
+            >
+              وبنهاية 2023 اكتمل 61% من التصاميم الهندسية المفصلة، وبدأت أعمال
+              الهندسة والتوريد والبناء للمشروع.</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="three-boxes">
+      <h1
+        class="title-three-boxes"
+        data-en="Main Project Package"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        حــزمـة المـشروع الرئـيسية
+      </h1>
+      <div class="container">
+        <div class="one-box" data-aos="fade-up" data-aos-duration="2000">
+          <p class="top-title-for-cards-first" data-en="">توسيع وتحسين وحدة</p>
+          <p
+            class="top-title-for-cards"
+            data-en="Expansion and optimization of existing ISO de-waxing unit"
+          >
+            إزالة الشمع بالتجزئة الهيدروجين
+          </p>
+          <div class="container-for-three-boxes-for-one-box">
+            <div class="card-for-container-for-three-boxes-for-one-box">
+              <h1 class="counter">19</h1>
+              <p data-en="MBD">ألف برميل في اليوم</p>
+            </div>
+            <div
+              class="card-for-container-for-three-boxes-for-one-box container-for-three-boxes-for-one-box-for-image"
+            >
+              <img src="Images/arrow-left.png" alt="" />
+            </div>
+            <div class="card-for-container-for-three-boxes-for-one-box">
+              <h1 class="counter">29</h1>
+              <p data-en="MBD">ألف برميل في اليوم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-box" data-aos="fade-up" data-aos-duration="2000">
+          <p class="top-title-for-cards-first" data-en="">توسيع وتحسين وحدة</p>
+          <p
+            class="top-title-for-cards"
+            data-en="Expansion and upgrade of existing HCU"
+          >
+            تكسير الهيدروجين
+          </p>
+          <div class="container-for-three-boxes-for-one-box">
+            <div class="card-for-container-for-three-boxes-for-one-box">
+              <h1 class="counter">26</h1>
+              <p data-en="MBD">ألف برميل في اليوم</p>
+            </div>
+            <div
+              class="card-for-container-for-three-boxes-for-one-box container-for-three-boxes-for-one-box-for-image"
+            >
+              <img src="Images/arrow-left.png" alt="" />
+            </div>
+            <div class="card-for-container-for-three-boxes-for-one-box">
+              <h1 class="counter">35</h1>
+              <p data-en="MBD">ألف برميل في اليوم</p>
+            </div>
+          </div>
+        </div>
+        <div class="one-box" data-aos="fade-up" data-aos-duration="2000">
+          <p class="top-title-for-cards-first" data-en="">توسيع وحدة</p>
+          <p class="top-title-for-cards" data-en="Expansion of existing VDU">
+            التقطير الفراغي
+          </p>
+          <div class="container-for-three-boxes-for-one-box">
+            <div class="card-for-container-for-three-boxes-for-one-box">
+              <h1 class="counter">50</h1>
+              <p data-en="MBD">ألف برميل في اليوم</p>
+            </div>
+            <div
+              class="card-for-container-for-three-boxes-for-one-box container-for-three-boxes-for-one-box-for-image"
+            >
+              <img src="Images/arrow-left.png" alt="" />
+            </div>
+            <div class="card-for-container-for-three-boxes-for-one-box">
+              <h1 class="counter">65</h1>
+              <p data-en="MBD">ألف برميل في اليوم</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="border-div"></div>
+    </div>
+
+    <div class="card-and-text">
+      <div class="container">
+        <div class="box-card-and-text" id="box-card-and-text-diff-h">
+          <h1
+            data-en="Business Transformation Initiative"
+            data-aos="fade"
+            data-aos-duration="2000"
+          >
+            مبــادرة تحـول الأعـمال
+          </h1>
+        </div>
+        <div class="text-card-and-text">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="p-text"
+            data-en="Luberef’s business transformation program was initiated in 2021 as part of Saudi Aramco’s transformation initiative for its joint ventures. 
+Under the program, Luberef aims to realize the maximum potential of its world class facility in Yanbu, by focusing on the following initiatives:"
+          >
+            أطلقت لوبريف برنامج تحول الأعمال في عام 2021 في إطار مبادرة التحول
+            التي أطلقتها أرامكو السعودية لشركاتها التابعة. وتهدف لوبريف من خلال
+            البرنامج إلى تحقيق أقصى إمكانات مرفق ينبع ذي المستوى العالمي، وذلك
+            عبر التركيز على المبادرات التالية:
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="three-boxes">
+      <div class="container">
+        <div class="one-box-two" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card-for-container-for-three-boxes-for-one-box-two">
+            <h1 data-en="Increase">زيادة</h1>
+            <p data-en="Capacity of base oil production.">
+              الطاقة الإنتاجية لزيوت الأساس.
+            </p>
+          </div>
+        </div>
+        <div class="one-box-two" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card-for-container-for-three-boxes-for-one-box-two">
+            <h1 data-en="Generate">تحقيق</h1>
+            <p data-en="Value through synergies within Saudi Aramco’s systems.">
+              القيمة عبر التكامل مع أنظمة أرامكو السعودية.
+            </p>
+          </div>
+        </div>
+        <div class="one-box-two" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card-for-container-for-three-boxes-for-one-box-two">
+            <h1 data-en="Reduce">خفض</h1>
+            <p
+              data-en="Operational expenditure by targeting operational efficiencies."
+            >
+              النفقات التشغيلية عبر استهداف تحقيق كفاءة العمليات.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="border-div"></div>
+    </div>
+
+    <div class="advanced-table-with-chart">
+      <div class="container">
+        <h1
+          class="title-for-advanced-table-with-chart"
+          data-en="Transformation Potential of Yanbu facility"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          إمكانات التحول بمنشأة ينبع
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="dis-for-advanced-table-with-chart"
+          data-en="Production is based on potential available feedstock and excludes synergies with the Jeddah facility."
+        >
+          الإنتاج يعتمد على المواد الأولية المتاحة ويستبعد التكامل مع مرفق جدة.
+        </p>
+        <div class="div-for-mobile">
+          <table
+            class="custom-table"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <thead>
+              <tr>
+                <th data-en="Year">العــام</th>
+                <th data-en="Transformation Potential">إمكانات التحول</th>
+                <th data-en="Additional Base Oil production">
+                  إنتاج إضافي لزيوت الأساس
+                </th>
+                <th data-en="Base Oil production">إنتاج زيوت الأساس</th>
+                <th data-en="Product Split">فئات المنتجات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="date-and-shape">
+                    <div class="shape"></div>
+                    <span class="dimo" style="background-color: #0169aa"></span>
+                    <h1>2021</h1>
+                  </div>
+                </td>
+                <td>
+                  <span data-en="45 MBD RCO operation"
+                    >إمدادات الزيت الخام المختزل بلغت</span
+                  >
+                  <br />
+                  <span data-en="">45 مليون برميل يومياً</span>
+                </td>
+                <td>
+                  <span>-</span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <span class="counter">900</span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <div class="container-for-pie-and-data">
+                    <div class="doughnut-chart-container">
+                      <canvas id="doughnutChart1"></canvas>
+                    </div>
+                    <div class="data-beside-pie-chart">
+                      <div class="one-line-data">
+                        <p class="counter">%14</p>
+                        <p data-en="GI">الفئات 1</p>
+                        <div style="background-color: #fcdc48"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="counter">%86</p>
+                        <p data-en="GII">الفئات 2</p>
+                        <div style="background-color: #162c51"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="blank-data">_</p>
+                        <p data-en="GIII">الفئات 3</p>
+                        <div style="background-color: #016aab"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="date-and-shape">
+                    <div class="shape"></div>
+                    <span class="dimo" style="background-color: #0169aa"></span>
+                    <h1>2023</h1>
+                  </div>
+                </td>
+                <td>
+                  <span data-en="Yanbu VDU to 50 MBD"
+                    >إمدادات وحدة التقطير الفراغي</span
+                  >
+                  <br />
+                  <span data-en="and creep capacity realization"
+                    >بلغت 50 مليون برميل يومياً</span
+                  >
+                  <br />
+                  <span data-en="">والتحرك نحو تحقيق القدرة الإنتاجية</span>
+                </td>
+
+                <td>
+                  <span><span>+</span> <span class="counter">100</span> </span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <span class="counter">1,000</span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <div class="container-for-pie-and-data">
+                    <div class="doughnut-chart-container">
+                      <canvas id="doughnutChart2"></canvas>
+                    </div>
+                    <div class="data-beside-pie-chart">
+                      <div class="one-line-data">
+                        <p class="counter">%14</p>
+                        <p data-en="GI">الفئات 1</p>
+                        <div style="background-color: #fcdc48"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="counter">%86</p>
+                        <p data-en="GII">الفئات 2</p>
+                        <div style="background-color: #162c51"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="blank-data">_</p>
+                        <p data-en="GIII">الفئات 3</p>
+                        <div style="background-color: #016aab"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="date-and-shape">
+                    <div class="shape"></div>
+                    <span class="dimo" style="background-color: #84c5ee"></span>
+                    <h1>2024</h1>
+                  </div>
+                </td>
+                <td data-en="HVGO Synergy">تكامل زيت الغاز الفراغي الثقيل</td>
+                <td>
+                  <span><span>+</span> <span class="counter">126</span> </span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <span class="counter">1,126</span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <div class="container-for-pie-and-data">
+                    <div class="doughnut-chart-container">
+                      <canvas id="doughnutChart3"></canvas>
+                    </div>
+                    <div class="data-beside-pie-chart">
+                      <div class="one-line-data">
+                        <p class="counter">%13</p>
+                        <p data-en="GI">الفئات 1</p>
+                        <div style="background-color: #fcdc48"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="counter">%87</p>
+                        <p data-en="GII">الفئات 2</p>
+                        <div style="background-color: #162c51"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="blank-data">_</p>
+                        <p data-en="GIII">الفئات 3</p>
+                        <div style="background-color: #016aab"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="date-and-shape">
+                    <div class="shape"></div>
+                    <span class="dimo" style="background-color: #84c5ee"></span>
+                    <h1>2025</h1>
+                  </div>
+                </td>
+                <td data-en="Growth II project commissioning">
+                  بدء تشغيل مشروع التوسعة الثانية
+                </td>
+                <td>
+                  <span><span>+</span> <span class="counter">124</span> </span>
+
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <span class="counter">1,250</span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <div class="container-for-pie-and-data">
+                    <div class="doughnut-chart-container">
+                      <canvas id="doughnutChart4"></canvas>
+                    </div>
+                    <div class="data-beside-pie-chart">
+                      <div class="one-line-data">
+                        <p class="counter">%13</p>
+                        <p data-en="GI">الفئات 1</p>
+                        <div style="background-color: #fcdc48"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="counter">%73</p>
+                        <p data-en="GII">الفئات 2</p>
+                        <div style="background-color: #162c51"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="counter">%14</p>
+                        <p data-en="GIII">الفئات 3</p>
+                        <div style="background-color: #016aab"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="date-and-shape">
+                    <div class="shape"></div>
+                    <span class="dimo" style="background-color: #84c5ee"></span>
+                    <h1>2026</h1>
+                  </div>
+                </td>
+                <td>
+                  <span
+                    data-en="UCO synergy
+"
+                    >تكامل الزيت الخام المختزل</span
+                  >
+                  <br />
+                  <span data-en="HVGO Optimization(2)">بالتحسين *</span>
+                </td>
+                <td>
+                  <span><span>+</span> <span class="counter">350</span> </span>
+
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <span class="counter">1,600</span>
+                  <br />
+                  <span class="cost-t" data-en="kt/year">(ألف طن سنوياً) </span>
+                </td>
+                <td>
+                  <div class="container-for-pie-and-data">
+                    <div class="doughnut-chart-container">
+                      <canvas id="doughnutChart5"></canvas>
+                    </div>
+                    <div class="data-beside-pie-chart">
+                      <div class="one-line-data">
+                        <p class="counter">%11</p>
+                        <p data-en="GI">الفئات 1</p>
+                        <div style="background-color: #fcdc48"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="counter">%78</p>
+                        <p data-en="GII">الفئات 2</p>
+                        <div style="background-color: #162c51"></div>
+                      </div>
+                      <div class="one-line-data">
+                        <p class="counter">%11</p>
+                        <p data-en="GIII">الفئات 3</p>
+                        <div style="background-color: #016aab"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p></p>
+        <p class="title-under-cost-table">
+          <span
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="*Optimization step switches hydrocracker operation and GII operation and GIII is produced utilizing UCO feed."
+          >
+            * التحسين عن طريق تبديل عملية التكسير الهيدروجيني وعمليات زيوت
+            الأساس من الفئة الثانية ومن ثم إنتاج زيوت الأساس من الفئة الثالثة
+            عبر استخدام لقيم زيت الخام المختزل.</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="title-for-page"
+      style="margin: 100px auto auto auto"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <h1
+        data-en="As part of the program, Luberef continues to seek additional feedstocks with the highest upgrade potential to be processed at its process units which have spare capacity."
+      >
+        كجزء من البرنامج، تواصل لوبريف البحث عن مزيد من اللقيم الذي لديه أعلى
+        إمكانية للترقية ليتم معالجته في الوحدات ذات الطاقة الفائضة.
+      </h1>
+    </div>
+
+
+
+    <div class="container text-with-dots">
+      <div class="row-text">
+        <div class="col-text-with-dot">
+          <div
+            class="text-with-dot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="In 2023, with the additional RCO agreement, the vacuum distillation unit was set to operate at its maximum potential capacity of 50 MBD before the commissioning of the Yanbu Growth II project."
+            >
+              في عام 2023 وبموجب اتفاقية زيادة إمدادات الزيت الخام المختزل،
+              أصبحت وحدة التقطير الفراغي مهيأة للعمل بأقصى طاقة إنتاجية وقدرها
+              50 مليون برميل يوميا قبل بدء تشغيل مشروع التوسعة الثانية.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-text-with-dot"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div class="text-with-dot">
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="Furthermore, the Company is exploring additional feedstock similar to VGO but with different properties such as heavy VGO from nearby facilities. This will allow Luberef to adjust its GII base oil offerings to meet the desired demand from the highest netback markets."
+            >
+              علاوة على ذلك تحاول الشركة استكشاف لقيم إضافي شبيه بزيت غاز
+              التفريغ، لكن مع خصائص مختلفة مثل زيت غاز التفريغ الثقيل من المرافق
+              القريبة، وهو ما سيساعد لوبريف على تعديل قائمة منتجات زيوت الأساس
+              من الفئة الثانية لتلبية الطلب من الأسواق، التي توفر أعلى مستوى من
+              العوائد.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-text">
+        <div class="col-text-with-dot">
+          <div
+            class="text-with-dot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="In 2023, Luberef has also started securing additional feedstock for the second unit in the GII base oil production process with the additional VGO agreement announced in April 2023."
+            >
+              وفي عام 2023 أيضاً، بدأت لوبريف في تأمين إمدادات إضافية من اللقيم
+              للوحدة الثانية في عمليات إنتاج زيوت الأساس من الفئة الثانية، وذلك
+              بعد الحصول على إمدادات إضافية من زيت غاز التفريع في أبريل 2023.
+            </p>
+            
+          </div>
+        </div>
+        <div
+          class="col-text-with-dot"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div
+            class="text-with-dot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="By successfully securing additional VGO, Luberef will be able to operate the hydrocracker unit at its maximum potential capacity until the commissioning of the Yanbu Growth II project."
+            >
+              وعن طريق تأمين لقيم إضافي، ستتمكن لوبريف من تشغيل وحدة تكسير
+              الهيدروجين بأقصى طاقة إنتاجية لحين بدء تشغيل مشروع التوسعة
+              الثانية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="p-text"
+        data-en="transformation journey will not end with the commissioning of the Growth II project, as the Company has identified potential synergies to explore upon project completion. These initiatives will aim to ensure all units in the base oil production process are operating at full capacity, which can be achieved by securing additional VGO streams to the hydrocracker and UCO to the iso de-waxing unit, which in turn will increase the production of GII and GIII base oils."
+      >
+        لن تنتهي عملية التحول مع بدء تشغيل مشروع التوسعة الثانية لمرفق ينبع، فقد
+        حددت لوبريف فرصاً للتكامل ستقوم باستكشافها فور استكمال المشروع. وستهدف
+        المبادرات إلى ضمان عمل كل الوحدات في عملية إنتاج زيوت الأساس بالطاقة
+        الإنتاجية الكاملة، التي يمكن تحقيقها عن طريق تأمين إمدادات إضافية من زيت
+        غاز التفريغ لوحدة تكسير الهيدروجين، ومن الزيت الخام المختزل لوحدة إزالة
+        الشمع بالتجزئة، التي بدورها ستؤدي لزيادة إنتاج زيوت الأساس من الفئتين
+        الثانية والثالثة.
+      </p>
+    </div>
+
+    <div class="card-for-bar-and-text">
+      <div class="container">
+        <div class="text-card-for-bar-and-text">
+          <h1
+            data-en="Group II & III Demand Globally (Mn MT)"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            الطلب العالمي على زيوت الأساس من الفئتين الثانية والثالثة <br />
+            (مليون طن متري)
+          </h1>
+          <p
+            data-en="* The source for CAGR is IHS Global."
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            * مصدر توقعات معدل النمو السنوي المركب هو مستشار الأسواق (آي إتش إس
+            جلوبال).
+          </p>
+        </div>
+        <div class="bar-card-for-bar-and-text">
+          <div class="chart">
+            <div class="progress-bar" data-value="80">
+              <div class="progress" style="background-color: #84c5ee">
+                <p class="progress-value">12~</p>
+              </div>
+              <p class="progress-date">2023</p>
+            </div>
+            <div class="progress-bar" data-value="100">
+              <div class="progress" style="background-color: #162c51">
+                <p class="progress-value-outside">
+                  <span class="num-text-for-chart"> 4.7 %</span>
+                  <span class="some-text-for-chart" data-en="CAGR"
+                    >معدل نمو سنوي مركب</span
+                  >
+                </p>
+                <p class="progress-value">۱٥~</p>
+              </div>
+              <p class="progress-date">2028</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="margin-top: 70px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="/pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // Data for the five doughnut charts
+      const chartData = [
+        {
+          data: [14, 86],
+          backgroundColor: ["#FCDC48", "#344869"],
+        },
+        {
+          data: [14, 86],
+          backgroundColor: ["#FCDC48", "#344869"],
+        },
+        {
+          data: [13, 87],
+          backgroundColor: ["#FCDC48", "#344869"],
+        },
+        {
+          data: [13, 73, 14],
+          backgroundColor: ["#FCDC48", "#344869", "#016AAB"],
+        },
+        {
+          data: [11, 78, 11],
+          backgroundColor: ["#FCDC48", "#344869", "#016AAB"],
+        },
+      ];
+
+      // Function to create a doughnut chart
+      function createDoughnutChart(chartId, data) {
+        const ctx = document.getElementById(chartId).getContext("2d");
+        new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            datasets: [
+              {
+                data: data.data,
+                backgroundColor: data.backgroundColor,
+                hoverBackgroundColor: data.backgroundColor,
+                borderWidth: 0,
+              },
+            ],
+          },
+          options: {
+            cutoutPercentage: 90,
+            animation: {
+              animateRotate: true,
+              animateScale: false, // Disable the scaling animation
+              duration: 3000, // Animation duration
+            },
+            plugins: {
+              legend: {
+                display: false, // Remove legend controls
+              },
+              tooltip: {
+                enabled: false, // Remove tooltips
+              },
+            },
+          },
+        });
+      }
+
+      // Function to check if the element is at the bottom of the viewport
+      function isAtBottomOfViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+
+      // Track which charts have already been initialized
+      const initializedCharts = new Set();
+
+      // Event listener to trigger the animation when scrolling
+      window.addEventListener("scroll", function () {
+        document
+          .querySelectorAll(".doughnut-chart-container")
+          .forEach((container, index) => {
+            if (
+              isAtBottomOfViewport(container) &&
+              !initializedCharts.has(index)
+            ) {
+              initializedCharts.add(index); // Mark this chart as initialized
+              createDoughnutChart(
+                `doughnutChart${index + 1}`,
+                chartData[index]
+              );
+            }
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="./pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="./pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero" style="height: 100vh">
+      <img src="Images/1.png" alt="" />
+      <div class="title">
+        <p data-en="Annual Report 2023">التقرير السنوي للعام 2023</p>
+        <a
+          href="./pdfs/Full Report_Arabic.pdf"
+          download
+          class="donwload-pdf-home-section arabic-item"
+        >
+          <span> التقرير كامل </span>
+          <img src="Images/donwload_three.png" alt="" />
+        </a>
+        <a
+          href="./pdfs/Full Report.pdf"
+          download
+          class="donwload-pdf-home-section english-item"
+        >
+          <span> Download Report</span>
+          <img src="Images/donwload_three.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <footer style="margin-top: 0px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+  </body>
+</html>

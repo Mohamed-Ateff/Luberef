@@ -1,0 +1,113 @@
+.container-for-box-with-title2-with-margin {
+  margin: 70px auto;
+}
+.padding-body {
+  margin-top: 200px;
+}
+
+.img-and-text-under-heroo {
+  margin-top: 10px;
+  /* background-color: red; */
+}
+
+.img-and-text-under-heroo .container {
+  /* background-color: violet; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+}
+.img-and-text-under-heroo .Img-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-and-text-under-heroo .Img-div img {
+  width: 100%;
+}
+.img-and-text-under-heroo .Text-div {
+  width: 50%;
+  padding: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.img-and-text-under-heroo .Text-div h3 {
+  text-align: justify;
+  font-size: 24px;
+}
+.span-number{
+  color: #a8aaad;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 70px;
+}
+
+.img-and-text-ten .Text-div {
+  padding-right: 0px;
+  padding-left: 45px;
+  /* background-color: red; */
+}
+.Text-div h3,span{
+ display: inline;
+ 
+}
+
+body[dir="ltr"] {
+  .img-and-text-ten .Text-div {
+    padding-left: 0px;
+    padding-right: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-and-text-under-heroo .container {
+    flex-direction: column;
+  }
+
+  .img-and-text-under-heroo .Img-div {
+    width: 100%;
+  }
+  .img-and-text-under-heroo .Text-div {
+    width: 100%;
+    padding: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+  .img-and-text-ten .container {
+    flex-direction: column-reverse !important;
+    margin-bottom: 30px !important;
+  }
+  .img-and-text-ten h3 br {
+    display: none;
+  }
+}
+
+.img-and-text-ten {
+  min-height: 500px;
+  margin-bottom: 30px !important;
+}
+
+.img-and-text-ten h2 {
+  color: #a8aaad;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 70px;
+}
+.img-and-text-ten h3 {
+  color: #016aab;
+  font-weight: 600;
+  font-size: 28px !important;
+}
+.img-and-text-ten p {
+  color: #333333;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 35px;
+}

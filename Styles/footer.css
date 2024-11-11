@@ -1,0 +1,116 @@
+footer {
+  background-color: #ffffff;
+  height: 350px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .donwload-pdf-home {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+}
+
+footer .donwload-pdf-home span {
+  position: relative;
+  top: -5px;
+}
+footer .donwload-pdf-home img {
+  position: relative;
+  top: 5px;
+}
+footer .toggle-btn {
+  box-shadow: none;
+  margin-top: 20px;
+  margin-right: 0px !important;
+}
+
+footer .toggle-btn img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 4px;
+  margin-right: 45px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.card-for-footer {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  flex-direction: column;
+}
+
+body[lang="ar"] .card-for-footer .footer-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  font-weight: 800;
+  color: #016aab;
+  font-size: 17px;
+  margin-bottom: 10px;
+  width: fit-content;
+  padding: 13.5px 20px 13.5px 75px;
+  transition: 0.3s ease;
+  border-radius: 500px;
+  line-height: 20px;
+}
+
+body[lang="en"] .card-for-footer .footer-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  font-weight: 800;
+  color: #016aab;
+  font-size: 17px;
+  margin-bottom: 10px;
+  width: fit-content;
+  padding: 13.5px 75px 13.5px 25px !important;
+  transition: 0.3s ease;
+  border-radius: 500px;
+  line-height: 20px;
+}
+
+body[lang="en"] .card-for-footer .dot-for-footer {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.card-for-footer .footer-link:hover {
+  background-color: #fdeda3;
+  color: #162c51;
+}
+.card-for-footer .footer-link:hover .dot-for-footer {
+  background-color: #162c51;
+}
+.card-for-footer .dot-for-footer {
+  min-width: 6px;
+  min-height: 6px;
+  max-width: 6px;
+  max-height: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #016aab;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+.card-for-footer p {
+  position: relative;
+  top: -3px;
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    height: fit-content;
+    padding: 50px 0px;
+    margin-top: 100px;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/s2all.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  < dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="/pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/3.png" alt="" />
+      <div class="title">
+        <h1
+          data-en="Company Leaders"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          قيادات الشركة
+        </h1>
+      </div>
+
+      <div
+        class="box-with-title"
+        id="dif-color-box-with-title"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 data-en="CFO’s Message">كلمة المدير المالي</h1>
+      </div>
+    </div>
+
+    <div class="man-with-word">
+      <div class="curve"></div>
+
+      <div class="man-img" data-aos="fade" data-aos-duration="2000">
+        <img src="Images/man3.png" alt="" />
+      </div>
+      <div class="man-word" data-aos="fade" data-aos-duration="3000">
+        <h1 data-en="Mohammed Al Nafea">محـمد النــافع</h1>
+        <p data-en="Chief Financial Officer">المدير المالي</p>
+      </div>
+    </div>
+
+    <div class="title-for-page" style="margin: 70px auto auto auto">
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-en="Despite this, we have delivered Luberef’s second highest net income in its 46-year history, generated its highest free cash flow ever, and built a strong balance sheet. This is a true testament to Luberef’s uniqueness."
+      >
+        ومع ذلك قمنا بتحقيق ثاني أعلى مستوى للدخل الصافي في تاريخ لوبريف البالغ
+        46 عاماً، كما حققنا أعلى مستوى للتدفقات النقدية الحرة على الإطلاق،
+        وتمكنا من بناء ميزانية قوية، وهذه شهادة حقيقية على التفرد والتميز الذي
+        تحظى به لوبريف.
+      </h1>
+    </div>
+
+    <div class="article">
+      <div id="financial-officer" class="container article-container">
+        <div>
+        <h1
+          data-en="Dear Shareholders,"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          السادة المساهمون الكرام،،،
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-en="It gives me great honor to share with you Luberef’s financial performance for 2023, a year that highlighted the company’s unique business model known for high cash generation. With margins normalizing and shifting economic forecasts, 2023 was expected to be challenging. Nonetheless, we achieved the second highest profit in Luberef’s 46-year history, reached the highest free cash flow ever, and built a strong financial position. This is a true testament to Luberef’s uniqueness and excellence."
+        >
+          يشرفني أن أعرض عليكم الأداء المالي لشركة لوبريف لعام 2023، العام الذي
+          سلط الضوء على نموذج الأعمال الفريد للشركة والذي يتميز بتوليد تدفقات
+          نقدية عالية. مع توجه الهوامش للعودة إلى مستوياتها الطبيعية، وفي ظل
+          التوقعات الاقتصادية المتغيرة كان متوقعاً لعام 2023 أن يكون مليئاً
+          بالتحديات، ومع ذلك قمنا بتحقيق ثاني أعلى مستوى للأرباح في تاريخ لوبريف
+          البالغ 46 عاماً، كما حققنا أعلى مستوى للتدفقات النقدية الحرة على
+          الإطلاق، وتمكنا من بناء مركز مالي قوي، وهذه شهادة حقيقية على التفرد
+          والتميز الذي تحظى به لوبريف.
+        </p>
+        </div>
+<div>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-en="During the first half of 2023, base oil crack margins remained at good levels, exceeding historical averages but were lower than the end of 2022 values. In the third quarter, these margins faced pressure due to a global shortage of high sulfur fuel oil, which impacted our feedstock price. This shortage was due to OPEC’s oil production cuts targeting oils that produce high sulfur fuel oil. By the fourth quarter, fuel oil prices normalized, improving the base oil crack margin environment."
+        >
+          خلال النصف الأول من 2023، احتفظت هوامش تكسير زيوت الأساس بمستويات جيدة
+          فاقت معدلاتها التاريخية، لكنها كانت أقل من المعدلات المسجلة بنهاية
+          2022. وفي الربع الثالث تعرضت هذه الهوامش لضغوط نتيجة نقص عالمي في زيت
+          الوقود عالي المحتوى من الكبريت، الذي أثر على سعر خام اللقيم الخاص بنا،
+          وجاء هذا النقص نتيجة خفض منظمة «أوبك» لإنتاج النفط، الذي ركز على أنواع
+          النفط، التي تنتج زيت الوقود عالي الكبريت. وفي الربع الأخير من العام
+          عادت أسعار زيوت الوقود لمستوياتها الطبيعية، ما عزز من وضع هوامش تكسير
+          زيوت الأساس.
+        </p>
+        </div>
+<div>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-en="Base oil production and sales volumes have continued to grow to record levels year after year as we execute our transformation initiatives. This resulted in a net income of SAR 1,510 million, the second highest in the company’s history. Our 2023 performance led to a Return on Average Capital Employed (ROACE) of 30%, a remarkable industry figure, and a gearing ratio of (-1%) after dividend distributions. We also achieved the highest free cash flow in the company’s history at SAR 2,108 million, which supported the Board of Directors’ recommendation for a second-half dividend of SAR 5.0 per share for 2023, in line with the approved dividend policy."
+        >
+          وواصلت أحجام إنتاج ومبيعات زيوت الأساس النمو عاما تلو الآخر لمستويات
+          قياسية، بينما نواصل تنفيذ مبادرات التحول. ونتج عن ذلك تحقيق دخل صافٍ
+          بقيمة 1,510 مليون ريال، وهو ثاني أعلى مستوى للدخل الصافي في تاريخ
+          الشركة. ونتيجة أدائنا في 2023، بلغ العائد على رأس المال المستخدم 30%
+          وهو مستوى مميز في القطاع في حين بلغت نسبة المديونية (-1%) بعد توزيعات
+          الأرباح. كما سجلنا أعلى مستوى على الإطلاق في تاريخ الشركة للتدفقات
+          النقدية الحرة بلغ 2,108 مليون ريال، وهو ما عزز توصية مجلس الإدارة
+          بإعلان توزيع أرباح بواقع 5.0 ريالات للسهم عن النصف الثاني من عام 2023
+          بما يتماشى مع السياسة المعتمدة للتوزيعات.
+        </p>
+        </div>
+<div>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-en="As we continue to operate within our financial framework, maintain low production costs, and manage high cash conversion assets safely and reliably, we will keep creating value for our shareholders."
+        >
+          سنواصل تحقيق القيمة لمساهمي الشركة، بينما نمضي قدماً في العمل ضمن
+          إطارنا المالي والحفاظ على التكلفة المنخفضة للإنتاج، وتشغيل أصول تولد
+          تدفقات نقدية عالية بصورة آمنة وموثوقة.
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <footer style="margin-top: 70px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="/pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+  </body>
+</html>

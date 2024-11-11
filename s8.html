@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/s8.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="/pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/8.png" alt="" />
+      <div class="title">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-en="Environmental, Social and
+Governance (ESG)"
+        >
+          البيئة والمجتمع
+        </h1>
+      </div>
+
+      <div
+        class="box-with-title"
+        id="dif-color-box-with-title2"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 data-en="Luberef’s Approach to Sustainability">
+          نهج لوبريف نحو الاستدامة
+        </h1>
+      </div>
+    </div>
+
+    <div class="padding-body">
+      <div class="img-and-text-under-heroo">
+        <div class="container">
+          <div class="Img-div" data-aos="fade-up" data-aos-duration="2000">
+            <img
+              src="Images/r1.png"
+              style="border-radius: 35px 5px 35px 5px"
+              alt=""
+            />
+          </div>
+          <div class="Text-div">
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef harnesses its leadership in downstream businesses and its unparalleled competitive advantage to fuel sustainable growth and create enduring value for its stakeholders. This dedication to a better future is woven into its strategic framework, where Environmental, Social, and Governance (ESG) considerations are core drivers of operational excellence."
+            >
+              تسخر لوبريف ريادتها في أعمال التكرير ومعالجة الزيوت وميزتها
+              التنافسية المهيمنة لدفع عجلة النمو المستدام وخلق قيمة مستدامة
+              لأصحاب المصلحة. والواقع أن التزام الشركة نحو بناء مستقبل أفضل
+              تتأصل جذوره ضمن نسيج إطار عملها الاستراتيجي، حيث تركز لوبريف على
+              الاعتبارات البيئية والاجتماعية والحوكمة باعتبارها المحركات
+              الأساسية لتميزها التشغيلي.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="p-text"
+        data-en="Luberef is building for the future by proactively linking its actions to the holistic and sustainable wellbeing of people and the planet. This commitment strengthens the foundations of its long-term success and reinforces its reputation as a responsible business, fully accountable for its decisions and assessments.
+
+"
+      >
+        تبني لوبريف المستقبل من خلال الربط الفعال بين أعمالها والرفاهية الشاملة
+        والمستدامة للناس والكوكب. ويعزز هذا الالتزام أسس نجاح لوبريف على المدى
+        الطويل كما يدعم سمعة لوبريف باعتبارها شركة مسؤولة، حيث تتحمل الشركة
+        المسؤولية الكاملة عن قرارتها وعن التقييم.
+      </p>
+      <p
+        class="p-text"
+        data-en="Luberef prioritizes environmental, health, and safety (EHS) across its operations, aiming to protect its workforce, prevent property losses, and ensure business continuity while adapting to evolving market and operating conditions. This commitment is reflected in Luberef's standards, which adopt a continuous improvement approach in line with common industry best practices.
+
+"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        تولي لوبريف الأولوية لجوانب البيئة والصحة والسلامة، على صعيد عملياتها
+        كافة، وهو ما يدعم هدفها المتمثل في حماية القوى العاملة لديها، ومنع خسائر
+        الممتلكات وضمان استمرار الأعمال، في ظل التأقلم مع ظروف السوق المتغيرة
+        والظروف التشغيلية في ذات الوقت. وينعكس هذا الالتزام على معايير لوبريف
+        التي تتبنى نهج التحسين المتواصل، وتمثل هذه المعايير الممارسة المتبعة
+        والمتعارف عليها في جميع نواحي الصناعة.
+      </p>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="p-text"
+        data-en="Luberef’s environmental policy includes ambitious goals, strong performance measures, and a robust framework for monitoring and measuring performance. The company’s collaborative relationship with Saudi Aramco further strengthens its environmental stance. Additionally, Luberef is actively developing its long-term strategy to achieve net-zero emissions by 2050."
+      >
+        وتنطوي سياسة لوبريف البيئية على أهداف طموحة وإجراءات أداء قوية وإطار عمل
+        لرصد وقياس الأداء. وتعزز علاقات الشركة التعاونية مع أرامكو السعودية من
+        موقف الشركة البيئي. بالإضافة إلى ذلك، تقوم لوبريف بتطوير استراتيجيتها
+        بنشاط على المدى البعيد للوصول إلى صافي انبعاثات صفرية بحلول عام 2050.
+      </p>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="p-text"
+        data-en="Since 2011, Luberef has established a strong Safety Management System (SMS) based on the Dupont Sustainable Solutions program, which focuses primarily on safe operations. The system’s “Safety First” approach covers all aspects of business activities, helping to establish a safety culture that has resulted in a Total Recordable"
+      >
+        منذ عام 2011، أنشأت لوبريف نظام إدارة السلامة القوي استنادًا إلى برنامج
+        دوبونت للحلول المستدامة، والذي يركز في الأساس على عمليات السلامة. ويغطي
+        نهج «السلامة أولاً» جميع جوانب الأنشطة التجارية، ما يساعد على إرساء
+        ثقافة السلامة وتحقيق إنجازات بارزة تتمثل في الوصول إلى إجمالي معدل صفر
+        في الحوادث المسجلة، وذلك للعام الرابع على التوالي في عام 2023. بالإضافة
+        لأكثر من 35 مليون ساعة عمل دون إصابات هادرة للوقت.
+      </p>
+    </div>
+
+    <div class="container container-for-box-with-title2-with-margin">
+      <div class="box-with-title2" data-aos="fade-up" data-aos-duration="2000">
+        <h1 style="margin-top: -10px">
+          <span data-en="Luberef’s Corporate Social Responsibility"
+            >مبادرات المسؤولية الاجتماعية الخاصة </span
+          ><br />
+          <span data-en="Initiatives for 2023">بشركة لوبريف لعام 2023</span>
+        </h1>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">1</span>
+            <h3
+              data-en="Green Homeland Initiative
+"
+            >
+              مبادرة وطن أخضر
+            </h3>
+          </div>
+          <p
+            data-en="In alignment with Saudi Arabia’s Vision 2030 and in partnership with the Social Responsibility Association of Makkah, Luberef proudly sponsored the planting of 1 thousand neem trees in the eastern forest as part of the «Green Homeland» and Saudi green initiatives. Over 35 employee volunteers and their families participated in this environmental project."
+          >
+            تمشيًا مع رؤية السعودية 2030 وبالتعاون مع جمعية المسؤولية المجتمعية
+            بمكة، تفخر لوبريف برعاية مبادرة زراعة ألف شجرة من أشجار النيم في
+            الغابة الشرقية، وذلك في إطار مبادرة «وطن أخضر» ومبادرة السعودية
+            الخضراء. ولقد شارك في هذا المشروع البيئي ما يزيد على 35 موظفاً
+            متطوعا وأسرهم.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r2.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">2</span>
+            <h3 data-en="Kaswa Alsaida Aisha Initiative">
+              مبادرة كسوة السيدة عائشة
+            </h3>
+          </div>
+
+          <p
+            data-en="For the second consecutive year, Luberef was honored to participate as a silver sponsor of Kaswa Alsaida Aisha, a program dedicated to providing Eid clothing for families in need. This initiative operates through community contributions of new an used clothing. We extend our gratitude to our employee volunteers who contributed their time and effort to the initiative. Luberef’s total sponsorship amounted to SAR 75 thousand."
+          >
+            حظيت لوبريف بشرف المشاركة في هذه المبادرة للعام الثاني على التوالي
+            كراع فضي لمبادرة كسوة السيدة عائشة، البرنامج الذي يهدف إلى توفير
+            كسوة العيد للأسر المحتاجة. وتعمل هذه المبادرة من خلال الإسهامات
+            المجتمعية بالملابس الجديدة والمستعملة. ونحن إذ ننتهز هذه الفرصة
+            للتعبير عن امتناننا لموظفينا الذين تطوعوا للمشاركة بوقتهم وجهدهم في
+            هذه المبادرة. وقد بلغ إجمالي مبلغ رعاية لوبريف لهذه المبادرة 75 ألف
+            ريال سعودي.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r3.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">3</span>
+
+            <h3 data-en="Back to School Initiative">
+              مبادرة العودة إلى المدرسة
+            </h3>
+          </div>
+          <p
+            data-en="In partnership with the Waqf Ma'an endowment, Luberef proudly renewed its support for the Back-to-School Initiative for a second year in a row. Our employee volunteers organized and equipped 400 school bags with essential supplies for children from low-income families, ensuring they have a successful school year. Our total sponsorship amounted to SAR 64 thousand."
+          >
+            أطلقت هذه المبادرة بالتعاون مع جمعية «وقف معاً» لتنمية المجتمع،
+            وقامت لوبريف برعاية مبادرة العودة إلى المدرسة للعام الثاني على
+            التوالي، حيث قام متطوعون من صفوف موظفينا بتنظيم وتجهيز 400 حقيبة
+            مدرسية بجميع الأدوات الأساسية لتقديمها للأطفال في الأسر ذات الدخل
+            المحدود، لضمان عام دراسي ناجح لهم. وبلغ إجمالي مبلغ رعاية الشركة
+            لهذه المبادرة 64 ألف ريال سعودي.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r4.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">4</span>
+            <h3 data-en="My Store Initiative">مبادرة متجري</h3>
+          </div>
+          <p
+            data-en="Aligned with Luberef’s commitment to corporate social responsibility, we collaborated with the Majid Society for Development and Social Services to launch the «My Store» initiative. This program specifically supports existing small businesses in the handcrafts and creative industries, empowering entrepreneurs to develop and build an online presence. The initiative’s launch during Entrepreneurship Week highlights our dedication to fostering a thriving entrepreneurial ecosystem."
+          >
+            تمشيًا مع التزام لوبريف تجاه المسؤولية المجتمعية للشركات، قمنا
+            بالتعاون مع جمعية مجد للتنمية والخدمات الاجتماعية لإطلاق مبادرة
+            «متجري». ويهدف هذا البرنامج بوجه خاص إلى دعم الشركات الصغيرة الحالية
+            التي تعمل في مجال الصناعات الحرفية والإبداعية، وذلك لتمكين رواد
+            الأعمال من تطوير وبناء وجودهم عبر الإنترنت. والواقع أن تفعيل هذه
+            المبادرة أثناء أسبوع ريادة الأعمال يلقي الضوء على تفانينا لتعزيز
+            الكوكبة الصاعدة من رواد الأعمال.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r5.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">5</span>
+            <h3 data-en="Let’s Walk the Walk Together2023">
+              مبادرة دعونا نسير معًا 2023
+            </h3>
+          </div>
+          <p
+            data-en="For the fourth consecutive year, we are proud to participate as a gold sponsor in the «Let’s Walk the Walk Together» initiative held at the Jeddah Corniche Waterfront. This program, organized in collaboration with the Help Center, celebrates the skills and athletic abilities of people with disabilities and promotes awareness within our society. Our total sponsorship amounted to SAR 63 thousand."
+          >
+            إنه ليسعدنا ويشرفنا في لوبريف أن نشارك في هذه المبادرة للعام الرابع
+            على التوالي، كراع ذهبي لمبادرة «دعونا نسير معًا» المقامة على كورنيش
+            واجهة جدة البحرية. يتم تنظيم هذا البرنامج بالتعاون مع «مركز العون»
+            احتفاءً بالمهارات والقدرات الرياضية للأشخاص ذوي الإعاقة، من أجل رفع
+            مستوى الوعي في المجتمع. وقد وصل إجمالي مبلغ رعاية الشركة في هذه
+            المبادرة إلى 63 ألف ريال سعودي.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r6.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">6</span>
+            <h3 data-en="Supporting Education in the MADAC Academy Initiative">
+              مبادرة دعم مشروع التعليم <br />
+              في أكاديمية «مداك»
+            </h3>
+          </div>
+          <p
+            data-en="Luberef is committed to supporting educational initiatives that empower future generations. Through a generous contribution of SAR 2.4 Mn (SAR 600 thousand a year starting from 2022), Luberef sponsored the MADAC Academy Education Endowment Project in the Medina Province, enabling the establishment of a high-tech smart lab equipped with the latest technologies which was opened in 2023."
+          >
+            تلتزم لوبريف بدعم المبادرات التعليمية التي تعمل على تمكين أجيال
+            المستقبل، حيث أسهمت الشركة بشكل موسع بمبلغ وصل إلى 2.4 مليون ريال
+            سعودي (600 ألف ريال كل عام منذ 2022) في رعاية مشروع وقف التعليم
+            التابع لأكاديمية «مداك» في منطقة المدينة المنورة، لبناء مختبر ذكي
+            عالي التقنية مجهز بأحدث التقنيات والذي تم افتتاحه في عام 2023.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r7.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">7</span>
+            <h3 data-en="Ramadan Food Basket Initiative">
+              مبادرة سلات رمضان الغذائية
+            </h3>
+          </div>
+          <p
+            data-en="In collaboration with Waqf Maan for Society Development, Luberef and its employees have been actively contributing to the distribution of Ramadan food baskets for five consecutive years. This initiative provides essential food supplies to over 2,500 lowincome families, orphan families, and people with disabilities in the Makkah region. Luberef’s total contribution amounted to SAR 75 thousand."
+          >
+            بالتعاون مع جمعية «وقف معًا» لتنمية المجتمع، ساهمت لوبريف وموظفوها
+            للعام الخامس على التوالي في المساعدة في توزيع السلال الغذائية
+            الرمضانية. وتوفر هذه المبادرة الاحتياجات الغذائية الأساسية لما يزيد
+            على 2,500 أسرة منخفضة الدخل وعائلات اليتامى وذوي الإعاقة في منطقة
+            مكة المكرمة، وقد وصل إجمالي إسهام لوبريف في هذه المبادرة إلى مبلغ 75
+            ألف ريال سعودي.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r8.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">8</span>
+            <h3 data-en="The Destination Program Initiative">
+              مبادرة برنامج «وجهة»
+            </h3>
+          </div>
+          <p
+            data-en="Together with Waqf Maan for Community Development, Luberef sponsored the 'Destination Program' initiative. This program aims to train and empower young women for the labor market through an integrated training application journey. Our sponsorship of SAR 219 thousand demonstrates our commitment to fostering female empowerment and career development."
+          >
+            تعاونت لوبريف مع جمعية «وقف معًا» لتنمية المجتمع، حيث قامت برعاية
+            مبادرة «برنامج الوجهة»، والذي يهدف إلى تدريب وتمكين الفتيات الشابات
+            لسوق العمل من خلال رحلة التدريب التطبيقي المتكامل. ووصل إجمالي مبلغ
+            رعاية الشركة لهذه المبادرة إلى 219 ألف ريال سعودي وهو ما يعبر عن
+            التزام الشركة بتعزيز تمكين النساء وتطويرهن المهني.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r9.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">9</span>
+            <h3
+              data-en="Launching the Corporate Volunteering
+Program “World of Giving”
+"
+            >
+              إطلاق برنامج الشركة التطوعي <br />
+              «عالم من العطاء»
+            </h3>
+          </div>
+          <p
+            data-en="In celebration of International Volunteer Day and as part of its corporate social responsibility, Luberef proudly launched the internal volunteer program, 'World of Giving.' This initiative aligns with our Social Responsibility Program and Vision 2030's emphasis on volunteer work, promoting the spirit of giving back to our communities."
+          >
+            احتفالاً باليوم العالمي للتطوع في إطار المسؤولية الاجتماعية للشركات،
+            سعدنا في لوبريف بإطلاق برنامج التطوع الداخلي «عالم من العطاء»، والذي
+            يتوافق مع برنامج المسؤولية الاجتماعية ورؤية المملكة 2030 وتركيزها
+            على العمل التطوعي، وذلك في سبيل تعزيز روح العطاء داخل مجتمعاتنا.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r10.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="img-and-text-under-heroo img-and-text-ten"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="Text-div">
+          <div class="align-text-1">
+            <span class="counter span-number">10</span>
+            <h3 data-en="Luberef Tournament 2023">دوري لوبريف لعام 2023</h3>
+          </div>
+          <p
+            data-en="Recognizing the importance of health and well-being, Luberef sponsored its employees' participation in our 2023 Football Tournament. Our support extended to awarding the first-place winners, fostering a sense of camaraderie and sportsmanship among our team."
+          >
+            إقراراً منا بأهمية الصحة واللياقة العامة، قامت لوبريف برعاية مشاركة
+            موظفيها في دوري كرة القدم لعام 2023. ولقد امتد دعمنا إلى توزيع
+            الجوائز على الحاصلين على المركز الأول، لتعزيز إحساسهم بالزمالة ودعم
+            الروح الرياضية بين أعضاء الفريق.
+          </p>
+        </div>
+        <div class="Img-div">
+          <img
+            src="Images/r11.png"
+            style="border-radius: 5px 35px 5px 35px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer style="margin-top: 70px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="/pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+  </body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/s5p2.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="/pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/5.png" alt="" />
+      <div class="title">
+        <h1
+          data-en="Products and Facilities"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          المنتجات ومرافق الإنتاج
+        </h1>
+      </div>
+
+      <div
+        class="box-with-title"
+        id="dif-color-box-with-title2"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 data-en="The Yanbu Facility">مرفق إنتاج ينبع</h1>
+      </div>
+    </div>
+
+    <div class="under-hero">
+      <div class="container">
+        <div
+          class="box-for-three-boxes"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div class="three-boxes">
+            <div class="container">
+              <div class="one-box">
+                <p
+                  class="top-title-for-cards"
+                  data-en="Annual Production Capacity after commissioning"
+                >
+                  الطاقة الإنتاجية السنوية <br />
+                  عام 1997
+                </p>
+                <h1 class="second-title-for-cards counter">300,000</h1>
+                <p class="third-title-for-cards" data-en="MT">طن متري</p>
+                <p class="last-title-for-cards counter year">1997</p>
+              </div>
+              <div class="one-box">
+                <p
+                  class="top-title-for-cards"
+                  data-en="Annual Production Capacity after Growth I"
+                >
+                  توسعة الطاقة الإنتاجية <br />
+                  السنوية في 2017
+                </p>
+                <h1 class="second-title-for-cards counter">710,000</h1>
+                <p class="third-title-for-cards" data-en="MT">طن متري</p>
+                <p class="last-title-for-cards counter year">2017</p>
+              </div>
+              <div class="one-box">
+                <p
+                  class="top-title-for-cards"
+                  data-en="Annual Production Capacity after Business Transformation"
+                >
+                  الطاقة الإنتاجية السنوية <br />
+                  بعد تحول الأعمال
+                </p>
+                <h1 class="second-title-for-cards counter">1,180,000</h1>
+                <p class="third-title-for-cards" data-en="MT">طن متري</p>
+                <p class="last-title-for-cards" data-en="Today">الآن</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-for-content">
+      <div class="container">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="The Yanbu facility currently produces Group I base oils (aramcoDURA BS™ 150) and Group II base oils as main products, along with ultra-low sulfur diesel (ULSD), naphtha, drilling fluids, heavy marine fuel oil (MHFO), bright stock extract, and sulfur as secondary products."
+        >
+          ينتج مرفق ينبع حاليا زيت الأساس من الفئة الأولى (أرامكو دورا بي إس
+          150) وزيوت الأساس من الفئة الثانية كمنتجات رئيسية، كما ينتج الديزل ذا
+          المحتوى فائق الانخفاض من الكبريت، والنافثا، وسائل الحفر، وزيت وقود
+          السفن الثقيل، ومستخلص برايت ستوك، والكبريت كمنتجات ثانوية.
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="The Yanbu facility was commissioned in 1997 to produce high-quality Group I base oils with a production capacity of approximately 300,000 metric tons per year. Until November 2017, the facility produced aramcoDURA™ 150, aramcoDURA™ 500, and aramcoDURA BS™ 150."
+        >
+          بدأ تشغيل مرفق ينبع في عام 1997 لإنتاج زيوت الأساس عالية الجودة من
+          الفئة الأولى بطاقة إنتاجية تقارب 300 ألف طن متري سنويا. وكان المرفق
+          ينتج أرامكو دورا 150، وأرامكو دورا 500، وأرامكو دورا بي إس 150 حتى
+          نوفمبر 2017.
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="Luberef completed the Yanbu Growth I Expansion project by the end of 2017, enabling the facility to produce Group II base oils such as aramcoPRIMA™ 70, aramcoPRIMA™ 110, aramcoPRIMA™ 230, aramcoPRIMA™ 500, and aramcoDURA BS™ 150 as main products. Additionally, it continued to produce ULSD, naphtha, drilling fluids, MHFO, bright stock extract, and sulfur as byproducts. Following the commissioning of the expansion, the facility's production capacity reached approximately 1 million metric tons, including a production capacity of 710,000 metric tons for Group II base oils. This expansion increased Luberef's total base oil production capacity (across both Yanbu and Jeddah facilities) to approximately 1.255 million metric tons per year by the end of 2017."
+        >
+          استكملت لوبريف مشروع التوسعة الأولى للمرفق بنهاية 2017، مما مكن المرفق
+          من إنتاج زيوت الأساس من الفئة الثانية أرامكو بريما 70، وأرامكو بريما
+          110، وأرامكو بريما 230، وأرامكو بريما 500، وأرامكو دورا بي إس 150
+          كمنتجات رئيسية، علاوة على الديزل ذي المحتوى فائق الانخفاض من الكبريت،
+          والنافثا، وسائل الحفر، وزيت وقود السفن الثقيل، ومستخلص برايت ستوك
+          والكبريت كمنتجات ثانوية. ومع تشغيل المرفق بعد انتهاء مشروع التوسعة
+          الأولى، بلغت الطاقة الإنتاجية نحو مليون طن متري شملت طاقة إنتاجية
+          قدرها 710 آلاف طن متري لزيوت الأساس من الفئة الثانية. أدى ذلك لزيادة
+          إجمالي الطاقة الإنتاجية للشركة من زيوت الأساس (في مرفقي ينبع وجدة) إلى
+          نحو 1.255 مليون طن متري سنويا بنهاية 2017.
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="In 2021, the Yanbu facility's production capacity increased to approximately 1.07 million metric tons after enhancing the capacity of certain units as part of transformation initiatives. Consequently, Luberef's total base oil production capacity across the Yanbu and Jeddah facilities reached approximately 1.345 million metric tons per year."
+        >
+          في عام 2021 بلغت الطاقة الإنتاجية لمرفق ينبع نحو 1.07 مليون طن متري
+          بعد زيادة الطاقة الإنتاجية لبعض الوحدات في إطار مبادرات التحول، وبلغ
+          إجمالي الطاقة الإنتاجية للشركة من زيوت الأساس في مرفقي ينبع وجدة نحو
+          1.345 مليون طن متري سنويا.
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="In 2023, further improvements were made, resulting in an increase of 110,000 metric tons in the production capacity of Group II base oils. This raised Luberef’s total base oil production capacity to 1.455 million metric tons per year. Luberef is also working on the Yanbu Growth II Expansion project, which is planned for completion in 2025."
+        >
+          في 2023 أنجزت الشركة مزيداً من التحسينات، ما أدى إلى زيادة قدرها 110
+          آلاف طن متري في الطاقة الإنتاجية لزيوت الأساس من الفئة الثانية، ما رفع
+          بدوره إجمالي الطاقة الإنتاجية للشركة إلى 1.455 مليون طن متري سنويا من
+          زيوت الأساس. وتعمل لوبريف على تنفيذ مشروع التوسعة الثانية لمرفق ينبع
+          الذي من المخطط اكتماله في عام 2025.
+        </p>
+      </div>
+
+      <div
+        class="container container-for-box-with-title2-with-margin"
+        style="margin: 50px auto !important"
+      >
+        <div
+          class="box-with-title2"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <h1 data-en="The Jeddah Facility ">مرفق إنتاج جدة</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="p-text"
+          data-en="The Jeddah facility was originally commissioned in 1977 to produce aramcoDURA™ 150 and aramcoDURA™ 500 Group I base oils. The Jeddah facility has undergone a number of de-bottlenecking projects and has synergized its operations with the Yanbu facility which led to an increase in its annual production capacity from approximately 180 thousand MT to the current 275 thousand MT."
+          >
+          بدأ تشغيل مرفق إنتاج جدة في عام 1977 لإنتاج زيوت الأساس من الفئة
+          الأولى أرامكو دورا 150، وأرامكو دورا 500. وخضع المرفق لعدد من مشروعات
+          التحسين والتكامل مع مرفق إنتاج ينبع، ما أدى لزيادة طاقته الإنتاجية
+          السنوية من نحو 180 ألف طن متري إلى 275 ألف طن متري حاليا.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="three-boxes" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container" id="adjust-top-padding">
+          <div class="one-box">
+            <div
+              class="special-card0"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <img src="Images/icon-three-final.png" alt="" />
+              <h1 data-en="Jeddah facility">مرفق إنتاج جدة</h1>
+              <p data-en="Reliable GI Production">
+                إنتاج موثوق لزيوت الأساس من الفئة الأولى
+              </p>
+            </div>
+          </div>
+          <div class="one-box">
+            <p
+              class="top-title-for-cards"
+              data-en="Annual Production Capacity after Commissioning"
+            >
+              الطاقة الإنتاجية السنوية بعد التشغيل
+            </p>
+            <h1 class="second-title-for-cards counter">180,000</h1>
+            <p class="third-title-for-cards" data-en="MT">طناً مترياً</p>
+            <p class="last-title-for-cards counter year">1977</p>
+          </div>
+          <div class="one-box">
+            <p
+              class="top-title-for-cards"
+              data-en="Annual Production Capacity after De-bottlenecking"
+            >
+              الطاقة الإنتاجية السنوية بعد التحسين والتكامل
+            </p>
+            <h1 class="second-title-for-cards counter">275,000</h1>
+            <p class="third-title-for-cards" data-en="MT">طناً مترياً</p>
+            <p class="last-title-for-cards" data-en="Today">الآن</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="margin-top: 70px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="/pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+  </body>
+</html>

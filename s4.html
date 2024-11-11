@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/s4.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/css/all.min.css"
+      integrity="sha512-xqMNodchM7sTWTR1lpVh6SxQeU7kE6dQHp5GVVD3b3oJrCRyt5AlJ53JcNR5TApBfAHnQ0Z8Tj6YIzltAVhP9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="/pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/4.png" alt="" />
+      <div class="title">
+        <h1 data-en="Highlights" data-aos="fade-up" data-aos-duration="2000">
+          أبرز المحطات
+        </h1>
+      </div>
+
+      <div class="box-with-title">
+        <h1
+          data-en="The Company's Milestones"
+          data-aos="fade"
+          data-aos-duration="2000"
+        >
+          أبرز المحطات في تاريخ الشركة
+        </h1>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <div class="container">
+         <div class="box-title-for-slider-card-connect">
+            <p
+              data-en="Browse more by scrolling up or down"
+              data-aos="fade"
+              data-aos-duration="2000"
+            >
+              تصفح المزيد عبر تحريك الفأرة للأعلى أو الأسفل
+            </p>
+          </div>
+        <div class="slider-card-connect">
+         
+          <div class="controls">
+            <button id="slideUp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                />
+              </svg>
+            </button>
+            <button id="slideDown">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="overflow">
+            <div class="wrapper">
+              <div class="outer">
+                <div class="card" style="--delay: -4">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>1976</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	Luberef was incorporated as a limited liability
+company (under the name Petromin Lubricating Oil Refining Company) between Petromin (70%) and Mobil (30%).
+"
+                      >
+                        تأسيس لوبريف كشركة ذات مسؤولية محدودة (تحت اسم شركة
+                        بترومين لتكرير زيت التشحيم) بين المؤسسة العامة للبترول
+                        والمعادن - بترومين (70%) وشركة موبيل (30 %).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="--delay: -3">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>1977</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="The Jeddah facility was commissioned with a production capacity of approximately 180
+thousand MT of Group I base oils.
+"
+                      >
+                        بدء تشغيل مرفق إنتاج جدّة بطاقة إنتاجية تقارب 180 ألف طن
+                        متري من زيوت الأساس من الفئة الأولى.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="--delay: -2">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>1983</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="The production capacity at the Jeddah facility was increased to approximately 220 thousand MT."
+                      >
+                        زيادة الطاقة الإنتاجية لمرفق جدّة إلى نحو 220 ألف طن
+                        متري.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="--delay: -1">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>1991</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	The production capacity at the Jeddah facility was increased to approximately 240 thousand MT."
+                      >
+                        زيادة الطاقة الإنتاجية لمرفق جدّة إلى نحو 240 ألف طن
+                        متري.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="--delay: 1">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>1996</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	Petromin’s stake in the Company (70%) was transferred to Saudi Aramco."
+                      >
+                        نقل حصة المؤسسة العامة للبترول والمعادن - بترومين
+                        البالغة 70% إلى شركة أرامكو السعودية.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="--delay: 2">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>1997</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	The Yanbu facility was commissioned with a
+Production capacity of approximately 300 thousand MT, and the facility was also used to synergise the Jeddah facility increasing its production capacity to approximately 260 thousand MT. This increased Luberef’s total production capacity to approximately 560 thousand MT of Group I base oils.
+"
+                      >
+                        بدء تشغيل مرفق إنتاج ينبع بطاقة إنتاجية تقارب 300 ألف طن
+                        متري، ما عزز التكامل مع مرفق إنتاج جدة ورفع طاقته
+                        الإنتاجية إلى نحو 260 ألف طن متري وهو ما رفع بدوره
+                        إجمالي الطاقة الإنتاجية لشركة لوبريف إلى نحو 560 ألف طن
+                        متري من زيوت الأساس من الفئة الأولى.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="--delay: 3">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>2007</h1>
+                    </div>
+                    <div class="details">
+                      <p data-en="	Jadwa acquired Mobil’s 30% stake in Luberef.">
+                        استحواذ شركة جدوى للاستثمار الصناعي على حصة شركة موبيل
+                        البالغة 30% في شركة لوبريف.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="--delay: 4">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>2013</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	Luberef further improved synergy between its Yanbu and Jeddah facilities, increasing Jeddah’s production capacity to approximately 275 thousand MT of Group I base oils, bringing Luberef’s total capacity to approximately 575 thousand MT."
+                      >
+                        عززت لوبريف التكامل بين مرفقي الإنتاج في ينبع وجدة، ما
+                        أدى إلى زيادة الطاقة الإنتاجية لمرفق جدة إلى نحو 275 ألف
+                        طن متري، وزيادة إجمالي الطاقة الإنتاجية لشركة لوبريف إلى
+                        نحو 575 ألف طن متري من زيوت الأساس من الفئة الأولى.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="--delay: 5">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>2017</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	The Yanbu Growth I Expansion was completed, and added an additional 710 thousand MT to the production capacity."
+                      >
+                        اكتمال التوسعة الأولى لمرفق ينبع وإضافة نحو 710 آلاف طن
+                        متري إلى الطاقة الإنتاجية.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="--delay: 6">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>2019</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	Formation of the Aramco Base Oil Alliance and
+adoption of the Saudi Aramco trademarks.
+"
+                      >
+                        تشكيل تحالف أرامكو لزيوت الأساس واعتماد العلامات
+                        التجارية لزيوت الأساس الخاصة بشركة أرامكو السعودية.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="--delay: 7">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>2021</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	Luberef signed an agreement with Saudi Aramco for additional RCO, which along with transformation project initiatives increased Luberef’s production capacity by approximately 90 thousand MT of base oil."
+                      >
+                        توقيع اتفاقية مع أرامكو السعودية للحصول على كميات إضافية
+                        من الزيت الخام المختزل، التي ساهمت بالإضافة إلى مبادرات
+                        مشروع تحول الأعمال في زيادة الطاقة الإنتاجية للشركة بنحو
+                        90 ألف طن متري.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="--delay: 8">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>2022</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	Luberef was successfully listed on the Saudi Stock Exchange. The IPO was one of the largest in 2022 and was oversubscribed by 29.5 times."
+                      >
+                        إدراج شركة لوبريف في السوق المالية السعودية في واحد من
+                        أكبر الطروحات العامة الأولية لعام 2022 بنسبة تغطية بلغت
+                        29.5 مرة من إجمالي الأسهم المطروحة.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="--delay: 9">
+                  <div class="content">
+                    <div class="box-for-slide">
+                      <h1>2023</h1>
+                    </div>
+                    <div class="details">
+                      <p
+                        data-en="	Luberef amended its Supplemental Feedstock Supply agreement with Saudi Aramco, boosting RCO supply in Yanbu by 5 thousand barrels per day which is expected to lead to an approximate annual base oil production increase of 90 thousand MT."
+                      >
+                        عدلت لوبريف اتفاقية توريد اللقيم الإلحاقية الموقعة مع
+                        أرامكو السعودية لزيادة إمدادات الزيت الخام المختزل بواقع
+                        5 آلاف برميل يوميًا في خطوة ستؤدي لزيادة سنوية في إنتاج
+                        زيوت الأساس بواقع 90 ألف طن متري تقريبا.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- New buttons for manual control -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-for-box-with-title2-with-margin">
+      <div
+        class="box-with-title2"
+        id="dif-color-box-with-title2"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 data-en="Highlights of 2023">أبـرز أحداث عام 2023</h1>
+      </div>
+    </div>
+
+    <div class="one-section">
+      <div class="container">
+        <h1
+          class="title-for-one-section"
+          data-en="First Quarter"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          الربع الأول 
+        </h1>
+        <img
+          class="img-for-one-section"
+          src="Images/s1.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        />
+        <div class="four-cards">
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon1.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef signed an Engineering, Procurement and Construction contract with Petrojet Company for the Yanbu facility expansion (Growth II). This project aims to expand existing units at the Yanbu facility to their maximum potential production capacity of 1.3 million MT by 2025. This expansion will provide flexibility for the production of additional Group II and Group III base oils based on market demand."
+            >
+              وقعت لوبريف عقد أعمال الهندسة والتوريد والبناء مع شركة بتروجيت
+              بغرض توسعة مرفق ينبع (التوسعة الثانية). ويهدف المشروع إلى رفع
+              الطاقة الإنتاجية لمرفق ينبع إلى 1.3 مليون طن متري بحلول عام 2025.
+              ستتيح التوسعة تحقيق المرونة في الإنتاج الإضافي من زيوت الأساس من
+              الفئتين الثانية والثالثة بناء على طلبات العملاء.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon2.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef completed the Jeddah refinery turnaround successfully and safely with zero health, safety, and environmental (HSE) incidents or injuries. Comprehensive testing, inspection, and improvement for the refinery were successfully performed to achieve competitiveness, reliability, and sustainability of the refinery."
+            >
+              أكملت لوبريف أعمال الصيانة الدورية المجدولة لمرفق جدة بنجاح من أجل
+              تحقيق التنافسية، والموثوقية، والاستدامة، وتحقيق معدل صفر للحوادث
+              أو الإصابات المتعلقة بالصحة والسلامة والبيئة.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon3.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef signed memorandums of understanding (MOUs) at LEAP, the premier tech event in Saudi Arabia, with Insilico leveraging their AI expertise to develop new base oil and lubricant formulations. Luberef also signed an agreement with Nournet to secure next generation IT infrastructure and cloud management services. Finally, the “RISE with SAP” agreement, signed with SAP, aims to enhance Luberef’s enterprise resource planning (ERP) capabilities."
+            >
+              وقعت لوبريف مذكرات تفاهم خلال إقامة فعاليات الحدث التقني البارز
+              “ليب” في السعودية، شملت مذكرة تفاهم مع شركة “إنسيليكو” لاستخدام
+              خبرتها في تكنولوجيا الذكاء الاصطناعي لتطوير تطبيقات جديدة لزيوت
+              الأساس ومواد التشحيم ومذكرة تفاهم مع شركة “نور نت” لتوفير خدمة
+              الجيل الجديد من البنية التحتية لتكنولوجيا المعلومات والخدمات
+              السحابية المدارة، بالإضافة إلى اتفاقية مع شركة ساب لاستخدام
+              البرنامج الخدمي “RISE with SAP” لتحسين قدرات برنامج لوبريف لتخطيط
+              الموارد المؤسسية.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon4.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="As part of the ongoing transformation program, Luberef optimized its operational expenses at the Jeddah facility by switching to a third-party water and power provider. This strategic move is projected to yield annual cost savings of up to SAR 28 million."
+            >
+              في إطار برنامج التحول، تمكنت لوبريف من تخفيض النفقات التشغيلية
+              بمرفق جدة عبر التحول لطرف ثالث لتقديم خدمات المياه والطاقة ومن
+              المتوقع أن تسفر هذه الخطوة الاستراتيجية عن توفير بقيمة 28 مليون
+              ريال سعودي سنوياً.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="one-section" style="margin-top: 60px">
+      <div class="container">
+        <h1
+          class="title-for-one-section"
+          data-en="Second Quarter"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          الربع الثاني 
+        </h1>
+        <img
+          class="img-for-one-section"
+          src="Images/s2.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        />
+        <div class="four-cards">
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon1.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef signed an amendment to the Supplemental Feedstock Supply Agreement to receive an additional supply of 5 thousand barrels per day of Reduced Crude Oil (RCO) from Saudi Aramco, which will increase the total quantity of RCO received at Luberef's Yanbu facility to 50 thousand barrels per day."
+            >
+              وقعت لوبريف اتفاقية معدّلة لاتفاقية توريد اللقيم الإلحاقية للحصول
+              على إمدادات إضافية قدرها خمسة آلاف برميل يومياً من الزيت الخام
+              المختزل من أرامكو السعودية، مما سيزيد إجمالي كمية الزيت الخام
+              المختزل المستلمة في مرفق لوبريف بمدينة ينبع إلى 50 ألف برميل
+              يومياً.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon5.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef signed an agreement to receive an additional supply of up to 2,000 barrels per day of Vacuum Gas Oil (VGO) from Saudi Aramco which will be used as feedstock to produce base oil and by-products at the Yanbu facility."
+            >
+              وقعت لوبريف اتفاقية للحصول على إمدادات إضافية تصل إلى 2000 برميل
+              يومياً من زيت غاز التفريغ من شركة أرامكو السعودية والذي سيستخدم
+              كلقيم لإنتاج زيوت الأساس والمنتجات الثانوية في مرفق ينبع.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon6.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef participated in the largest-ever voluntary carbon credit auction held by the Regional Voluntary Carbon Market Company (RVCMC) in Nairobi, Kenya.  20 thousand carbon credits were aquired at the auction, demonstrating Luberef’s commitment to achieve net-zero emissions by 2050."
+            >
+              شاركت لوبريف في أكبر مزاد على الإطلاق لائتمان الكربون الطوعي،
+              والذي نظمته شركة «سوق الكربون الطوعي الإقليمية في نيروبي عاصمة
+              كينيا» واشترت لوبريف 20 ألف طن من أرصدة ائتمان الكربون، وهو ما
+              يعزز التزامها نحو تحقيق الحياد الصفري بحلول عام 2050.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon1.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef and the Royal Commission for Jubail and Yanbu signed an MOU aimed at unlocking investment opportunities in Yanbu which synergize with base oil manufacturing facilites."
+            >
+              وقعت لوبريف مذكرة تفاهم مع الهيئة الملكية للجبيل وينبع تهدف إلى
+              خلق الفرص الاستثمارية التي تسهم في تحقيق التكامل بمرافق تصنيع
+              الزيوت الأساسية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="one-section" style="margin-top: 60px">
+      <div class="container">
+        <h1
+          class="title-for-one-section"
+          data-en="Third Quarter"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          الربع الثالث 
+        </h1>
+        <img
+          class="img-for-one-section"
+          src="Images/s3.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        />
+        <div class="four-cards">
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon7.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef appointed Eng. Samer A. Hokail as the new President & CEO. A leader with over 25 years of experience in the energy sector, Eng. Samer brings a wealth of expertise in leadership, planning, and strategic management. Throughout his career, Eng. Samer has held prominent positions at Saudi Aramco and its subsidiaries. Notably, he established and led an organization overseeing 12 international affiliates with a combined asset value exceeding USD 35 billion. He also served as President & CEO of Saudi Petroleum International in New York, managing Saudi Aramco’s crude sales to North America."
+            >
+              عين مجلس إدارة لوبريف المهندس سامر بن عبد العزيز بن محمد الحقيل في
+              منصب الرئيس وكبير الإداريين التنفيذيين للشركة، وهو قيادي يتمتع
+              بخبرة واسعة تزيد على 25 عاماً في القيادة والتخطيط والإدارة
+              الاستراتيجية في قطاع الطاقة. وشغل الحقيل عدة مناصب بارزة في أرامكو
+              السعودية وشركاتها التابعة، من بينها تأسيس وقيادة منظمة تشرف على 12
+              شركة دولية تابعة لأرامكو السعودية تتجاوز قيمة أصولها المجتمعة 35
+              مليار دولار، كما شغل منصب الرئيس والرئيس التنفيذي لشركة البترول
+              السعودية الدولية في مدينة نيويورك، وتولى إدارة مبيعات أرامكو من
+              النفط الخام في أمريكا الشمالية.
+            </p>
+          </div>
+          <div class="one-card-from-four">
+            <div class="card-for-logo">
+              <img
+                src="Images/icoon8.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef and Idemitsu Lubricants Company signed an MOU to discuss potential business opportunities related to base oil specialty products."
+            >
+              وقعت لوبريف وشركة إديميتسو مذكرة تفاهم لمناقشة الفرص التجارية
+              الممكنة المتعلقة بمنتجات زيوت الأساس المتخصصة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="one-section" style="margin-top: 60px">
+      <div class="container">
+        <h1
+          class="title-for-one-section"
+          data-en="Fourth Quarter"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          الربع الرابع 
+        </h1>
+        <img
+          class="img-for-one-section"
+          src="Images/s4.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        />
+        <div class="four-cards">
+          <div class="one-card-from-four-last">
+            <div class="card-for-logo-last">
+              <img
+                src="Images/icoon2.png"
+                alt=""
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-en="Luberef cemented its position as a key industry player at the 2023 ICIS Middle East Conference in Jeddah, the region’s premier event for the base oils and lubricants sector. This leadership role was further solidified by President & CEO, Eng. Samer, who offered valuable insights into the current landscape. Highlighting both opportunities and challenges, he emphasized the crucial role of collaboration between various entities within the industry."
+            >
+              عززت لوبريف موقعها كلاعب رئيسي في قطاع زيوت الأساس، وذلك من خلال
+              المشاركة في مؤتمر «ICIS» الشرق الأوسط في جدة، وهو حدث إقليمي بارز
+              في قطاع زيوت الأساس وزيوت التشحيم. وترسخ دور الشركة الريادي
+              بمشاركة الرئيس والرئيس التنفيذي لشركة لوبريف، المهندس سامر الحقيل
+              الذي عرض رؤية قيمة عن المشهد الحالي سلط خلالها الضوء على الفرص
+              والتحديات، وشدد على الدور الحاسم الذي يلعبه التعاون بين الكيانات
+              المختلفة داخل القطاع.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="margin-top: 70px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="/pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+
+    <script>
+      const outer = document.querySelector(".outer");
+      const cards = document.querySelectorAll(".card");
+      let currentIndex = 0;
+
+      // Get the buttons
+      const slideUpButton = document.getElementById("slideUp");
+      const slideDownButton = document.getElementById("slideDown");
+
+      // Initially disable the "Go Up" button
+      slideUpButton.classList.add("inactive");
+      slideUpButton.disabled = true;
+
+      // Show the initial card
+      showCards(currentIndex);
+
+      slideUpButton.addEventListener("click", () => {
+        moveSlider(-1);
+      });
+
+      slideDownButton.addEventListener("click", () => {
+        moveSlider(1);
+      });
+
+      function moveSlider(direction) {
+        currentIndex += direction;
+
+        // Update "Go Up" button state
+        if (currentIndex <= 0) {
+          currentIndex = 0;
+          slideUpButton.classList.add("inactive");
+          slideUpButton.classList.remove("active");
+          slideUpButton.disabled = true;
+        } else {
+          slideUpButton.classList.add("active");
+          slideUpButton.classList.remove("inactive");
+          slideUpButton.disabled = false;
+        }
+
+        // Update "Go Down" button state
+        if (currentIndex >= cards.length - 1) {
+          currentIndex = cards.length - 1;
+          slideDownButton.classList.add("inactive");
+          slideDownButton.classList.remove("active");
+          slideDownButton.disabled = true;
+        } else {
+          slideDownButton.classList.add("active");
+          slideDownButton.classList.remove("inactive");
+          slideDownButton.disabled = false;
+        }
+
+        showCards(currentIndex);
+      }
+      function showCards(index) {
+        const isMobile = window.innerWidth <= 992;
+
+        // Reset styles for all cards
+        cards.forEach((card, i) => {
+          card.style.opacity = 0;
+          card.style.pointerEvents = "none";
+          card.style.display = "none"; // Hide all cards initially
+
+          if (isMobile) {
+            // Mobile view: only show the current card
+            if (i === index) {
+              card.style.display = "block";
+              card.style.opacity = 1;
+              card.style.pointerEvents = "auto";
+            }
+          } else {
+            // PC view: Show 3 cards
+            card.style.transform = `translateY(${(i - index) * (100 + 10)}%)`; // Adjust for margin
+            card.style.display = "block";
+
+            if (i === index) {
+              card.style.opacity = 1;
+              card.style.pointerEvents = "auto";
+            } else if (i === index + 1 || i === index + 2) {
+              card.style.opacity = 0.4;
+              card.style.pointerEvents = "auto";
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

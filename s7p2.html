@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="Styles/Index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/hero.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/s7p2.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Luberef</title>
+  </head>
+  <body dir="rtl" lang="ar">
+    <header>
+      <div class="logo-for-header">
+        <a href="index.html" class="navbar-brand"
+          ><img src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="buttons-for-header">
+        <div class="buttons-home delete-buttons-for-mobile">
+          <a
+            href="./pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item delete-buttons-for-mobile"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="./pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item delete-buttons-for-mobile"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+        </div>
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button
+          id="languageToggle"
+          class="toggle-btn delete-buttons-for-mobile"
+        >
+          <span>English </span> <img src="Images/lang.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="sticky">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <!-- item -->
+            <li>
+              <a href="s2.html" class="menu-link" data-en="About Luberef">
+                لوبريف في سطور
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s3p1.html" class="menu-link" data-en="Company Leaders">
+                قيادات الشركة
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s3p1.html" data-en="Chairman’s Message"
+                        >كلمة رئيس مجلس الإدارة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p2.html" data-en="CEO’s Message"
+                        >كلمة الرئيس وكبير الإداريين التنفيذيين</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s3p3.html" data-en="CFO’s Message"
+                        >كلمة المدير المالي</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s4.html" class="menu-link" data-en="Highlights">
+                أبرز المحطات
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+                المنتجات ومرافق الإنتاج
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s5p1.html" data-en="Products Overview"
+                        >نظرة عامة على المنتجات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s5p2.html" data-en="Facilities Overview"
+                        >نظرة عامة على مرافق الإنتاج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s6.html" class="menu-link" data-en="Future Projects">
+                المشاريع المستقبلية
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="#" class="menu-link" data-en="Results and Performance"
+                >النتائج و الأداء
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-item">
+                  <ul>
+                    <li>
+                      <a href="s7p1.html" data-en="Key 2023 Metrics"
+                        >أهم النتائج والمؤشرات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="s7p2.html" data-en="Financial Performance"
+                        >الأداء المالي
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- end of item -->
+
+            <!-- item -->
+            <li>
+              <a href="s8.html" class="menu-link" data-en="ESG">
+                البيئة والمجتمع
+              </a>
+            </li>
+            <!-- end of item -->
+
+            <div class="buttons-home delete-buttons-for-pc">
+              <a
+                href="/pdfs/Full Report_Arabic.pdf"
+                download
+                class="donwload-pdf-home arabic-item"
+              >
+                <span> التقرير كامل </span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+              <a
+                href="/pdfs/Full Report.pdf"
+                download
+                class="donwload-pdf-home english-item"
+              >
+                <span> Download Report</span>
+                <img src="Images/donwload.png" alt="" />
+              </a>
+
+              <button id="languageToggle" class="toggle-btn">
+                <span>English </span> <img src="images/lang.png" alt="" />
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="Images/7.png" alt="" />
+      <div class="title">
+        <h1
+          data-en="Results and Performance"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          النتائج و الأداء
+        </h1>
+      </div>
+
+      <div
+        class="box-with-title"
+        id="dif-color-box-with-title2"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 data-en="Financial Performance">النتائج المالية لشركة لوبريف</h1>
+      </div>
+    </div>
+
+    <div class="body-for-padding" style="margin: 150px auto auto auto">
+      <div
+        class="title-for-page"
+        style="margin: 50px auto auto auto; font-size: 15px; width: 70%"
+      >
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-en="Luberef’s financial results reflect the underlying fundamental strengths of its business model and the rich experience and expertise of the management team that is steering Luberef forwards. 
+"id="small-p-1"
+        >
+          تعكس النتائج المالية لشركة لوبريف نقاط القوة الأساسية لنموذج أعمالها
+          وتجربتها الثرية وخبرتها في إدارة فريق يقود الشركة للأمام.
+        </h1>
+      </div>
+      <div
+        class="title-for-page"
+        style="margin: 50px auto auto auto; font-size: 15px; width: 70%"
+      >
+        <h1
+          id="small-p-1"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-en="In 2020, Luberef’s performance was deeply impacted due to the pandemic-induced economic slowdown. However, Luberef’s performance has shown significant improvement in the last three years, driven by the post-pandemic recovery, healthy crack margins and high capacity utilization."
+        >
+          في عام 2020 تأثر أداء الشركة بشدة بفعل التباطؤ الاقتصادي الناجم عن
+          وباء كورونا، لكنه أظهر تحسناً ملحوظاً في السنوات الثلاث الأخيرة
+          مدفوعاً بالتعافي بعد الجائحة، وبتحقيق هوامش تكسير مرتفعة وبالاستغلال
+          المرتفع للقدرة الإنتاجية.
+        </h1>
+      
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="table-container">
+        <h1
+          class="title-for-table"
+          data-en="Business Results"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          نتائج الأعمال
+        </h1>
+        <p
+          class="small-dis-for-table"
+          data-en="SAR Mn"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          *مليون ريال سعودي
+        </p>
+        <table class="table19" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr>
+              <th data-en="Description">الوصف</th>
+              <th>2019</th>
+              <th>2020</th>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th data-en="% Change">(%) التغيير</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Sales">المبيعات</td>
+              <td>5,620.4</td>
+              <td>4,393.5</td>
+              <td>8,846.7</td>
+              <td>10,613.9</td>
+              <td>9,488.7</td>
+              <td>(11%)</td>
+            </tr>
+            <tr>
+              <td data-en="Cost of Sales">تكلفة المبيعات</td>
+              <td>(5,414.1)</td>
+              <td>(3,978.6)</td>
+              <td>(6,804.9)</td>
+              <td>* (8,180.2)</td>
+              <td>(7,630.3)</td>
+              <td>(7%)</td>
+            </tr>
+            <tr>
+              <td data-en="Gross Profit">إجمالي الربح</td>
+              <td>206.3</td>
+              <td>414.9</td>
+              <td>2,041.8</td>
+              <td>* 2,433.7</td>
+              <td>1,858.4</td>
+              <td>(24%)</td>
+            </tr>
+            <tr>
+              <td data-en="Operating Profit">الربح التشغيلي</td>
+              <td>(57.6)</td>
+              <td>149.0</td>
+              <td>1,755.6</td>
+              <td>2,171.1</td>
+              <td>1,590.3</td>
+              <td>(27%)</td>
+            </tr>
+            <tr>
+              <td data-en="Net Profit for the Year">صافي الربح خلال العام</td>
+              <td>(140.6)</td>
+              <td>81.1</td>
+              <td>1,502.5</td>
+              <td>1,978.1</td>
+              <td>1,509.6</td>
+              <td>(24%)</td>
+            </tr>
+            <tr>
+              <td data-en="Total Comprehensive Income for the Year">
+                إجمالي الربح الشامل خلال العام
+              </td>
+              <td>(106.6)</td>
+              <td>114.7</td>
+              <td>1,470.5</td>
+              <td>2,020.7</td>
+              <td>1,460.4</td>
+              <td>(28%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h1
+          class="title-for-table"
+          data-en="Comparison of Assets and Liabilities"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          مقارنة الموجودات والمطلوبات
+        </h1>
+        <p
+          class="small-dis-for-table"
+          data-en="SAR Mn"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          *مليون ريال سعودي
+        </p>
+        <table class="table19" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr>
+              <th data-en="Description">الوصف</th>
+              <th>2019</th>
+              <th>2020</th>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th data-en="% Change">(%) التغيير</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td data-en="Current Assets">الموجودات المتداولة</td>
+              <td>1,491.6</td>
+              <td>1,793.7</td>
+              <td>3,108.4</td>
+              <td>3,694.9</td>
+              <td>3,885.4</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <td data-en="Non-Current Assets">الموجودات غير المتداولة</td>
+              <td>5,663.4</td>
+              <td>5,518.7</td>
+              <td>5,255.9</td>
+              <td>4,950.0</td>
+              <td>4,971.1</td>
+              <td>0.4%</td>
+            </tr>
+            <tr>
+              <td data-en="Total Assets">إجمالي الأصول</td>
+              <td>7,155.1</td>
+              <td>7,312.4</td>
+              <td>8,364.3</td>
+              <td>8,644.8</td>
+              <td>8,856.5</td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <td data-en="Total Equity">إجمالي حقوق الملكية</td>
+              <td>3,596.9</td>
+              <td>3,711.6</td>
+              <td>4,244.5</td>
+              <td>5,082.8</td>
+              <td>4,868.8</td>
+              <td>(4%)</td>
+            </tr>
+            <tr>
+              <td data-en="Current Liabilities">المطلوبات المتداولة</td>
+              <td>1,775.1</td>
+              <td>2,050.6</td>
+              <td>1,493.8</td>
+              <td>1,216.4</td>
+              <td>1,701.3</td>
+              <td>38%</td>
+            </tr>
+            <tr>
+              <td data-en="Non-Current Liabilities">المطلوبات غير المتداولة</td>
+              <td>1,783.1</td>
+              <td>1,550.2</td>
+              <td>2,626.0</td>
+              <td>2,345.6</td>
+              <td>2,286.4</td>
+              <td>(3%)</td>
+            </tr>
+            <tr>
+              <td data-en="Total Liabilities">إجمالي المطلوبات</td>
+              <td>3,558.2</td>
+              <td>3,600.8</td>
+              <td>4,119.8</td>
+              <td>3,562.0</td>
+              <td>3,987.7</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td data-en="Total Equity and Liabilities">
+                إجمالي حقوق الملكية والمطلوبات
+              </td>
+              <td>7,155.1</td>
+              <td>7,312.4</td>
+              <td>8,364.3</td>
+              <td>8,644.8</td>
+              <td>8,856.5</td>
+              <td>2%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h1
+          class="title-for-table"
+          data-en="Statement of Cash Flows"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          قائمة التدفقات النقدية
+        </h1>
+        <p
+          class="small-dis-for-table"
+          data-en="SAR Mn"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          *مليون ريال سعودي
+        </p>
+        <table class="table19" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr>
+              <th data-en="Description">الوصف</th>
+              <th>2019</th>
+              <th>2020</th>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th data-en="% Change">(%) التغيير</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td data-en="(Loss)/Profit before Zakat and Income Tax">
+                (الخسارة)/ الربح قبل الزكاة وضريبة الدخل
+              </td>
+              <td>(137.9)</td>
+              <td>81.9</td>
+              <td>1,691.4</td>
+              <td>2,131.6</td>
+              <td>1,579.0</td>
+              <td>(26%)</td>
+            </tr>
+            <tr>
+              <td data-en="Cash Generated from Operating Activities">
+                النقد المتولد من الأنشطة التشغيلية
+              </td>
+              <td>128.4</td>
+              <td>334.3</td>
+              <td>1,844.7</td>
+              <td>2,254.7</td>
+              <td>2,334.5</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td data-en="Net Cash Inflow from Operating Activities">
+                صافي التدفق النقدي من الأنشطة التشغيلية
+              </td>
+              <td>21.5</td>
+              <td>311.3</td>
+              <td>1,814.6</td>
+              <td>2,016.9</td>
+              <td>2,321.6</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td
+                data-en="Net Cash (Outflow)/Inflow Generated from
+Investing Activities"
+              >
+                صافي النقد المتولد (التدفقات الخارجة)/ التدفقات الداخلة من
+                الأنشطة الاستثمارية
+              </td>
+              <td>(314.0)</td>
+              <td>11.3</td>
+              <td>(221.6)</td>
+              <td>(48.8)</td>
+              <td>(1,691.0)</td>
+              <td>3,363%</td>
+            </tr>
+            <tr>
+              <td
+                data-en="Net Cash (Outflow)/Inflow Generated from
+Financing Activities"
+              >
+                صافي النقد المتولد (التدفقات الخارجة)/ التدفقات الداخلة من
+                الأنشطة التمويلية
+              </td>
+              <td>(447.3)</td>
+              <td>171.2</td>
+              <td>(916.4)</td>
+              <td>(1,405.4)</td>
+              <td>(1,996.8)</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td
+                data-en="Net (Decrease)/Increase in Cash and Cash Equivalents"
+              >
+                صافي (النقص)/ الزيادة في النقد وما في حكمه
+              </td>
+              <td>739.8</td>
+              <td>493.8</td>
+              <td>676.6</td>
+              <td>562.6</td>
+              <td>(1,366.1)</td>
+              <td>(343%)</td>
+            </tr>
+            <tr>
+              <td
+                data-en="Cash and Cash Equivalents at the Beginning of the Year"
+              >
+                النقد وما في حكمه في بداية العام
+              </td>
+              <td>918.9</td>
+              <td>179.0</td>
+              <td>672.9</td>
+              <td>1,349.5</td>
+              <td>1,912.1</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td data-en="Cash and Cash Equivalents as at Reporting Date">
+                النقد وما في حكمه في نهاية العام
+              </td>
+              <td>179.0</td>
+              <td>672.9</td>
+              <td>1,349.5</td>
+              <td>1,912.1</td>
+              <td>546.0</td>
+              <td>(71%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h1
+          class="title-for-table"
+          data-en="Dividends Declared and Distributed"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          الأرباح المعلنة والموزعة
+        </h1>
+        <p
+          class="small-dis-for-table"
+          data-en="SAR Mn"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          *مليون ريال سعودي
+        </p>
+        <table class="table19" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr>
+              <th data-en="Description">الوصف</th>
+              <th>2019</th>
+              <th>2020</th>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th data-en="% Change">(%) التغيير</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td
+                data-en="Net Profit/Loss before Other Comprehensive
+Income"
+              >
+                صافي الربح/ الخسارة قبل الدخل الشامل الآخر
+              </td>
+              <td>(140.6)</td>
+              <td>81.1</td>
+              <td>1,502.5</td>
+              <td>1,978.1</td>
+              <td>1,509.6</td>
+              <td>(24%)</td>
+            </tr>
+            <tr>
+              <td data-en="Dividends Declared">الأرباح الموزعة المعلنة</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1,023.4</td>
+              <td>1,263.7</td>
+              <td>1,682.6</td>
+              <td>33%</td>
+            </tr>
+            <tr>
+              <td data-en="Dividends Paid after Zakat and Tax Deduction">
+                توزيعات الأرباح المدفوعة بعد خصم الزكاة والضرائب
+              </td>
+              <td>0</td>
+              <td>0</td>
+              <td>937.5</td>
+              <td>1,125.0</td>
+              <td>1,682.6</td>
+              <td>50%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h1
+          class="title-for-table"
+          data-en="Overview of Total Debt Portfolio as of December 31, 2023"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          نظرة عامة على إجمالي محفظة الديون كما في 31 ديسمبر 2023
+        </h1>
+        <p
+          class="small-dis-for-table"
+          data-en="SAR 000"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          *ألف ريال
+        </p>
+        <table class="table32" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr>
+              <th>
+                <span data-en="SAR">ريال </span>
+                <br />
+                <span data-en="">سعودي</span>
+              </th>
+              <th>
+                <span data-en="Original ">مبلغ القرض </span>
+                <br />
+                <span data-en="Loan Amount">الأصلي</span>
+              </th>
+              <th>
+                <span data-en="Beginning ">الرصيد </span>
+                <br />
+                <span data-en="Balance">الافتتاحي</span>
+              </th>
+              <th>
+                <span data-en="Additions During">الإضافات </span>
+                <br />
+                <span data-en="the Year">خلال العام</span>
+              </th>
+              <th>
+                <span data-en="Repayments During ">المسدد </span>
+                <br />
+                <span data-en="the Year">خلال العام</span>
+              </th>
+              <th>
+                <span data-en="Non-cash Additions ">الإضافات غير </span>
+                <br />
+                <span data-en="During the Year">النقدية خلال العام</span>
+              </th>
+
+              <th>
+                <span data-en="Ending ">الرصيد </span>
+                <br />
+                <span data-en="Balance">الختامي</span>
+              </th>
+              <th>
+                <span data-en="Period of the Loans">مدة القرض </span>
+                <br />
+                <span data-en="(Years)">(سنوات)</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Long Term">طويل الأجل</td>
+              <td>2,250,000</td>
+              <td>2,104,860</td>
+              <td>0</td>
+              <td>(297,086)</td>
+              <td>134,330</td>
+              <td>1,942,104</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>
+                <span data-en="Finance Lease">عقود الإيجار </span>
+                <br />
+                <span data-en="">التمويلي</span>
+              </td>
+              <td></td>
+              <td>107,791</td>
+              <td>88,554</td>
+              <td>(17,106)</td>
+              <td>7,031</td>
+              <td>186,270</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td data-en="Total">الإجمالي</td>
+              <td>2,250,000</td>
+              <td>2,212,651</td>
+              <td>88,554</td>
+              <td>(314,192)</td>
+              <td>141,298</td>
+              <td>2,128,374</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="title-for-table"
+          id="title-for-table-margin-bottom"
+          data-en="Total Debt Portfolio as of December 31, 2023 Broken Down by Lender"
+        >
+          إجمالي محفظة الديون كما في 31 ديسمبر 2023 مقسمة حسب المقرضين
+        </h1>
+        <table class="table32" data-aos="fade-up" data-aos-duration="2000">
+          <thead>
+            <tr>
+              <th data-en="Lending Party">الجهة المقرضة</th>
+              <th data-en="Amounts in (SAR 000)">المبلغ بالريال السعودي</th>
+              <th>%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Banks">بنوك</td>
+              <td>1,942,104</td>
+              <td>91%</td>
+            </tr>
+            <tr>
+              <td data-en="Financial Leases">عقود الإيجار التمويلي</td>
+              <td>186,270</td>
+              <td>9%</td>
+            </tr>
+            <tr>
+              <td data-en="Total">الإجمالي</td>
+              <td>2,128,374</td>
+              <td>100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer style="margin-top: 70px !important">
+      <div class="container">
+        <div class="card-for-footer">
+          <a class="footer-link" href="s2.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="About Luberef">لوبريف في سطور</p>
+          </a>
+          <a class="footer-link" href="s3p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Company Leaders">قيادات الشركة</p>
+          </a>
+          <a class="footer-link" href="s4.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Highlights">أبرز المحطات</p>
+          </a>
+          <a class="footer-link" href="s5p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Products and Facilities">المنتجات ومرافق الإنتاج</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a class="footer-link" href="s6.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Future Projects">المشاريع المستقبلية</p>
+          </a>
+          <a class="footer-link" href="s7p1.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="Results and Performance">النتائج و الأداء</p>
+          </a>
+          <a class="footer-link" href="s8.html">
+            <div class="dot-for-footer"></div>
+            <p data-en="ESG">البيئة والمجتمع</p>
+          </a>
+        </div>
+        <div class="card-for-footer">
+          <a
+            href="/pdfs/Full Report_Arabic.pdf"
+            download
+            class="donwload-pdf-home arabic-item"
+          >
+            <span> التقرير كامل </span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <a
+            href="/pdfs/Full Report.pdf"
+            download
+            class="donwload-pdf-home english-item"
+          >
+            <span> Download Report</span>
+            <img src="Images/donwload.png" alt="" />
+          </a>
+          <button id="languageToggle" class="toggle-btn">
+            <span>English </span> <img src="Images/lang.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        // Other AOS options
+      });
+    </script>
+
+    <!--JS-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="Js/Index.js"></script>
+    <script src="Js/counter.js"></script>
+    <script src="Js/en.js"></script>
+  </body>
+</html>
