@@ -24,6 +24,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
+    <script>
+      // Immediately check for preferred language before the main content loads
+      (function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
+        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
+        document.body.classList.toggle("english", savedLanguage === "en");
+      })();
+    </script>
   </head>
   <body dir="rtl" lang="ar">
     <header>
@@ -670,7 +679,7 @@ includes minimal alliance Group I base oil"
             "
           >
             <img
-              src="Images/G5.png"
+              src="Images/G6.png"
               style="width: 120px; height: 120px"
               alt=""
             />
@@ -735,7 +744,7 @@ includes minimal alliance Group I base oil"
             "
           >
             <img
-              src="Images/G5.png"
+              src="Images/G7.png"
               style="width: 120px; height: 120px"
               alt=""
             />

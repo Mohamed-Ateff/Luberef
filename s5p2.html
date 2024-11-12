@@ -23,6 +23,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
+    <script>
+      // Immediately check for preferred language before the main content loads
+      (function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
+        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
+        document.body.classList.toggle("english", savedLanguage === "en");
+      })();
+    </script>
   </head>
   <body dir="rtl" lang="ar">
     <header>
@@ -364,7 +373,7 @@
           data-aos-duration="2000"
           class="p-text"
           data-en="The Jeddah facility was originally commissioned in 1977 to produce aramcoDURA™ 150 and aramcoDURA™ 500 Group I base oils. The Jeddah facility has undergone a number of de-bottlenecking projects and has synergized its operations with the Yanbu facility which led to an increase in its annual production capacity from approximately 180 thousand MT to the current 275 thousand MT."
-          >
+        >
           بدأ تشغيل مرفق إنتاج جدة في عام 1977 لإنتاج زيوت الأساس من الفئة
           الأولى أرامكو دورا 150، وأرامكو دورا 500. وخضع المرفق لعدد من مشروعات
           التحسين والتكامل مع مرفق إنتاج ينبع، ما أدى لزيادة طاقته الإنتاجية
@@ -377,11 +386,7 @@
       <div class="three-boxes" data-aos="fade-up" data-aos-duration="2000">
         <div class="container" id="adjust-top-padding">
           <div class="one-box">
-            <div
-              class="special-card0"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
+            <div id="special-card0" data-aos="fade-up" data-aos-duration="2000">
               <img src="Images/icon-three-final.png" alt="" />
               <h1 data-en="Jeddah facility">مرفق إنتاج جدة</h1>
               <p data-en="Reliable GI Production">

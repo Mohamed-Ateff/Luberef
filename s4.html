@@ -24,6 +24,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
+    <script>
+      // Immediately check for preferred language before the main content loads
+      (function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
+        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
+        document.body.classList.toggle("english", savedLanguage === "en");
+      })();
+    </script>
   </head>
   <body dir="rtl" lang="ar">
     <header>
@@ -114,7 +123,11 @@
 
             <!-- item -->
             <li>
-              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
                 المنتجات ومرافق الإنتاج
               </a>
               <div class="sub-menu">
@@ -224,17 +237,16 @@
 
     <div class="slider-container">
       <div class="container">
-         <div class="box-title-for-slider-card-connect">
-            <p
-              data-en="Browse more by scrolling up or down"
-              data-aos="fade"
-              data-aos-duration="2000"
-            >
-              تصفح المزيد عبر تحريك الفأرة للأعلى أو الأسفل
-            </p>
-          </div>
+        <div class="box-title-for-slider-card-connect">
+          <p
+            data-en="Browse more by scrolling up or down"
+            data-aos="fade"
+            data-aos-duration="2000"
+          >
+            تصفح المزيد عبر تحريك الفأرة للأعلى أو الأسفل
+          </p>
+        </div>
         <div class="slider-card-connect">
-         
           <div class="controls">
             <button id="slideUp">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -501,7 +513,7 @@ adoption of the Saudi Aramco trademarks.
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          الربع الأول 
+          الربع الأول
         </h1>
         <img
           class="img-for-one-section"
@@ -607,7 +619,7 @@ adoption of the Saudi Aramco trademarks.
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          الربع الثاني 
+          الربع الثاني
         </h1>
         <img
           class="img-for-one-section"
@@ -707,7 +719,7 @@ adoption of the Saudi Aramco trademarks.
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          الربع الثالث 
+          الربع الثالث
         </h1>
         <img
           class="img-for-one-section"
@@ -771,7 +783,7 @@ adoption of the Saudi Aramco trademarks.
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          الربع الرابع 
+          الربع الرابع
         </h1>
         <img
           class="img-for-one-section"

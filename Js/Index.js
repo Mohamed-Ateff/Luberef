@@ -16,19 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Check localStorage for saved language preference
-  const savedLanguage = localStorage.getItem("preferredLanguage");
-  if (savedLanguage) {
-    setLanguage(savedLanguage);
-  } else {
-    // Set default language if none is saved
-    setLanguage("en");
-  }
+  const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+  setLanguage(savedLanguage);
 
   // Add event listeners to all toggle buttons
   languageToggles.forEach((toggle) => {
     toggle.addEventListener("click", function () {
-      const currentLang = body.classList.contains("english") ? "en" : "ar";
-      const newLang = currentLang === "en" ? "ar" : "en";
+      const newLang = body.classList.contains("english") ? "ar" : "en";
       setLanguage(newLang);
     });
   });
@@ -36,18 +30,18 @@ document.addEventListener("DOMContentLoaded", function () {
   function setLanguage(language) {
     if (language === "en") {
       body.classList.add("english");
+      body.setAttribute("lang", "en");
+      body.setAttribute("dir", "ltr");
       languageToggles.forEach((toggle) => {
         toggle.querySelector("span").textContent = "عربي";
       });
-      body.setAttribute("lang", "en");
-      body.setAttribute("dir", "ltr");
     } else {
       body.classList.remove("english");
+      body.setAttribute("lang", "ar");
+      body.setAttribute("dir", "rtl");
       languageToggles.forEach((toggle) => {
         toggle.querySelector("span").textContent = "English";
       });
-      body.setAttribute("lang", "ar");
-      body.setAttribute("dir", "rtl");
     }
     updateContent(language);
     localStorage.setItem("preferredLanguage", language);
@@ -66,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         element.classList.remove("english");
       }
     });
-    // Reinitialize AOS
+    // Reinitialize AOS animations if used
     AOS.refresh();
 
     // Convert numbers based on the language
@@ -109,11 +103,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentLanguage = body.getAttribute("lang");
 
     if (element.nodeType === Node.TEXT_NODE) {
-      if (currentLanguage === "ar") {
-        element.textContent = convertToHindiNumerals(element.textContent);
-      } else {
-        element.textContent = convertToArabicNumerals(element.textContent);
-      }
+      element.textContent =
+        currentLanguage === "ar"
+          ? convertToHindiNumerals(element.textContent)
+          : convertToArabicNumerals(element.textContent);
     } else if (element.nodeType === Node.ELEMENT_NODE) {
       for (const child of element.childNodes) {
         convertNumbersInElement(child);
@@ -203,5 +196,3 @@ animateProgressBars();
 
 // Event listener to animate progress bars on scroll
 window.addEventListener("scroll", animateProgressBars);
-
-

@@ -24,6 +24,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
+    <script>
+      // Immediately check for preferred language before the main content loads
+      (function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
+        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
+        document.body.classList.toggle("english", savedLanguage === "en");
+      })();
+    </script>
   </head>
   <body dir="rtl" lang="ar">
     <header>
@@ -114,7 +123,11 @@
 
             <!-- item -->
             <li>
-              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
                 المنتجات ومرافق الإنتاج
               </a>
               <div class="sub-menu">
@@ -234,7 +247,8 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-en="Luberef’s financial results reflect the underlying fundamental strengths of its business model and the rich experience and expertise of the management team that is steering Luberef forwards. 
-"id="small-p-1"
+"
+          id="small-p-1"
         >
           تعكس النتائج المالية لشركة لوبريف نقاط القوة الأساسية لنموذج أعمالها
           وتجربتها الثرية وخبرتها في إدارة فريق يقود الشركة للأمام.
@@ -255,7 +269,6 @@
           مدفوعاً بالتعافي بعد الجائحة، وبتحقيق هوامش تكسير مرتفعة وبالاستغلال
           المرتفع للقدرة الإنتاجية.
         </h1>
-      
       </div>
     </div>
 

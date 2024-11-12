@@ -23,6 +23,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
+    <script>
+      // Immediately check for preferred language before the main content loads
+      (function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
+        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
+        document.body.classList.toggle("english", savedLanguage === "en");
+      })();
+    </script>
   </head>
   <body dir="rtl" lang="ar">
     <header>
@@ -113,7 +122,11 @@
 
             <!-- item -->
             <li>
-              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
                 المنتجات ومرافق الإنتاج
               </a>
               <div class="sub-menu">
@@ -268,8 +281,8 @@ and Europe."
         <div class="card-blue" data-aos="fade-up" data-aos-duration="2000">
           <img src="Images/icon2.png" alt="" />
           <p data-en="Marine Heavy Fuel<br/>Oil (MHFO)">
-              زيت وقود السفن <br />
-              الثقيل
+            زيت وقود السفن <br />
+            الثقيل
           </p>
         </div>
         <div class="card-blue" data-aos="fade-up" data-aos-duration="2000">
@@ -309,96 +322,106 @@ and Europe."
     <div class="container text-with-dots">
       <div class="row-text">
         <div class="col-text-with-dot">
-          <div class="text-with-dot" data-aos="fade-up" data-aos-duration="2000">
-          <div class="dot"></div>
-          <p
-            class="text-with-dot-p"
-            data-en="Luberef has a strong reputation for its quality and reliability in the global lubricants market. It continues to explore newer market opportunities for future growth and expansion in this sector."
+          <div
+            class="text-with-dot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
           >
-            تتمتع لوبريف بسمعة قوية، نظرا لجودة وموثوقية منتجاتها في سوق زيوت
-            التشحيم العالمية، وتواصل الشركة البحث عن فرص جديدة في السوق لتحقيق
-            النمو المستقبلي والتوسع في القطاع.
-          </p>
-        </div>
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="Luberef has a strong reputation for its quality and reliability in the global lubricants market. It continues to explore newer market opportunities for future growth and expansion in this sector."
+            >
+              تتمتع لوبريف بسمعة قوية، نظرا لجودة وموثوقية منتجاتها في سوق زيوت
+              التشحيم العالمية، وتواصل الشركة البحث عن فرص جديدة في السوق لتحقيق
+              النمو المستقبلي والتوسع في القطاع.
+            </p>
+          </div>
         </div>
 
         <div
-        class="col-text-with-dot"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
-      <div class="text-with-dot">
-          <div class="dot"></div>
-          <p
-            class="text-with-dot-p"
-            data-en="Luberef draws on its rich experience in the base oil business to bring quality products that offer reliability and consistency
+          class="col-text-with-dot"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div class="text-with-dot">
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="Luberef draws on its rich experience in the base oil business to bring quality products that offer reliability and consistency
 on a global scale."
-          >
-            تعتمد لوبريف على خبرتها الواسعة في قطاع زيوت الأساس لتقديم منتجات
-            عالية الجودة توفر الموثوقية والاتساق على نطاق عالمي.
-          </p>
-        </div>
+            >
+              تعتمد لوبريف على خبرتها الواسعة في قطاع زيوت الأساس لتقديم منتجات
+              عالية الجودة توفر الموثوقية والاتساق على نطاق عالمي.
+            </p>
+          </div>
         </div>
       </div>
 
-<div class="row-text">
-      <div class="col-text-with-dot">
-        
-        <div class="text-with-dot" data-aos="fade-up" data-aos-duration="2000">
-          <div class="dot"></div>
-          <p
-            class="text-with-dot-p"
-            data-en="Luberef is committed to strategic expansion in key end markets with promising demand outlooks."
+      <div class="row-text">
+        <div class="col-text-with-dot">
+          <div
+            class="text-with-dot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
           >
-            تلتزم لوبريف بالتوسع الاستراتيجي في الأسواق النهائية الرئيسية ذات
-            النظرة المستقبلية الواعدة للطلب.
-          </p>
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="Luberef is committed to strategic expansion in key end markets with promising demand outlooks."
+            >
+              تلتزم لوبريف بالتوسع الاستراتيجي في الأسواق النهائية الرئيسية ذات
+              النظرة المستقبلية الواعدة للطلب.
+            </p>
+          </div>
         </div>
-        
-      </div>
-      <div
-        class="col-text-with-dot"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
-        
-        <div class="text-with-dot" data-aos="fade-up" data-aos-duration="2000">
-          <div class="dot"></div>
-          <p
-            class="text-with-dot-p"
-            data-en="Luberef’s Base Oil portfolio serves critical applications across automotive, marine and industrial sectors. In 2023, Luberef sold approximately 1.3 million MT of base oils (including Group III), with 27% in Saudi Arabia, 40% across the Middle East, 6% in Africa, 17% in India, and 10% in other markets."
+        <div
+          class="col-text-with-dot"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div
+            class="text-with-dot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
           >
-            تلبي قائمة منتجات الشركة من زيوت الأساس تطبيقات مهمة في قطاع
-            السيارات والقطاعات البحرية والصناعية في 2023 باعت لوبريف نحو 1.3
-            مليون طن متري من زيوت الأساس (بما في ذلك زيوت الأساس من الفئة
-            الثالثة) وتوزعت المبيعات بنسبة 27% في السعودية، و40% في منطقة الشرق
-            الأوسط، و6% في إفريقيا، و17% في الهند، و10% في أسواق أخرى.
-          </p>
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="Luberef’s Base Oil portfolio serves critical applications across automotive, marine and industrial sectors. In 2023, Luberef sold approximately 1.3 million MT of base oils (including Group III), with 27% in Saudi Arabia, 40% across the Middle East, 6% in Africa, 17% in India, and 10% in other markets."
+            >
+              تلبي قائمة منتجات الشركة من زيوت الأساس تطبيقات مهمة في قطاع
+              السيارات والقطاعات البحرية والصناعية في 2023 باعت لوبريف نحو 1.3
+              مليون طن متري من زيوت الأساس (بما في ذلك زيوت الأساس من الفئة
+              الثالثة) وتوزعت المبيعات بنسبة 27% في السعودية، و40% في منطقة
+              الشرق الأوسط، و6% في إفريقيا، و17% في الهند، و10% في أسواق أخرى.
+            </p>
+          </div>
         </div>
-      </div>
       </div>
 
-
-    <div class="row-text">
-      <div class="col-text-with-dot">
-        <div class="text-with-dot" data-aos="fade-up" data-aos-duration="2000">
-          <div class="dot"></div>
-          <p
-            class="text-with-dot-p"
-            data-en="Luberef’s products are used by a broad range of critical and core industries to
+      <div class="row-text">
+        <div class="col-text-with-dot">
+          <div
+            class="text-with-dot"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="dot"></div>
+            <p
+              class="text-with-dot-p"
+              data-en="Luberef’s products are used by a broad range of critical and core industries to
                     produce offerings that positively
                     impact the lives of millions of people
                     around the world."
-          >
-            تستخدم منتجات لوبريف من قبل مجموعة واسعة من الصناعات الحيوية
-            والأساسية والتي تؤثر منتجاتها إيجابياً على حياة الملايين من البشر
-            حول العالم.
-          </p>
+            >
+              تستخدم منتجات لوبريف من قبل مجموعة واسعة من الصناعات الحيوية
+              والأساسية والتي تؤثر منتجاتها إيجابياً على حياة الملايين من البشر
+              حول العالم.
+            </p>
+          </div>
         </div>
-</div>
-    </div>
-
-
+      </div>
     </div>
 
     <footer style="margin-top: 70px !important">

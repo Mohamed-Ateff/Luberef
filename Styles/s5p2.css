@@ -1,6 +1,6 @@
 #adjust-top-padding {
-  top: 50px;
-  margin-bottom: 150px;
+  top: 50px !important;
+  margin-bottom: 150px !important;
 }
 .under-hero {
   height: 350px;
@@ -109,27 +109,27 @@ body[lang="en"] {
   justify-content: space-between;
   align-items: stretch;
 }
-.special-card0 {
+#special-card0 {
   width: 100% !important;
   padding: 0px 0px 0px 0px !important;
   background-color: transparent !important;
-  height: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  height: 100%  !important;  
+  display: flex !important;
+  justify-content: center  !important;
+  align-items: center  !important;
+  flex-direction: column  !important;
+  text-align: center  !important;
 }
 
-.special-card0 img {
-  margin-top: 10px;
-  height: 100px;
+#special-card0 img {
+  margin-top: 10px  !important;
+  height: 100px  !important;
 }
-.special-card0 h1 {
-  color: white;
-  margin: 20px 0px 20px 0px;
+#special-card0 h1 {
+  color: white  !important;
+  margin: 20px 0px 20px 0px  !important;
 }
-.special-card0 p {
-  color: #fcdc48;
-  font-size: 17px;
+#special-card0 p {
+  color: #fcdc48  !important;
+  font-size: 17px  !important ;
 }
