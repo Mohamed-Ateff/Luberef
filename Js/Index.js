@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Check localStorage for saved language preference
+  // Initialize language based on saved preference
   const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
   setLanguage(savedLanguage);
 

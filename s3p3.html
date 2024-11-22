@@ -23,16 +23,20 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
-<script>
-  // Immediately check for preferred language before the main content loads
-  (function() {
-    const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
-    document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
-    document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
-    document.body.classList.toggle("english", savedLanguage === "en");
-  })();
-</script>
+    <script>
+      (function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        const html = document.documentElement;
+        const body = document.body;
 
+        // Set language and direction in the head
+        html.lang = savedLanguage === "en" ? "en" : "ar";
+        html.dir = savedLanguage === "en" ? "ltr" : "rtl";
+
+        // Apply the language class to the body
+        body.classList.toggle("english", savedLanguage === "en");
+      })();
+    </script>
   </head>
   <body dir="rtl" lang="ar">
     <header>
@@ -123,7 +127,11 @@
 
             <!-- item -->
             <li>
-              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
                 المنتجات ومرافق الإنتاج
               </a>
               <div class="sub-menu">
@@ -262,71 +270,71 @@
     <div class="article">
       <div id="financial-officer" class="container article-container">
         <div>
-        <h1
-          data-en="Dear Shareholders,"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          السادة المساهمون الكرام،،،
-        </h1>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="It gives me great honor to share with you Luberef’s financial performance for 2023, a year that highlighted the company’s unique business model known for high cash generation. With margins normalizing and shifting economic forecasts, 2023 was expected to be challenging. Nonetheless, we achieved the second highest profit in Luberef’s 46-year history, reached the highest free cash flow ever, and built a strong financial position. This is a true testament to Luberef’s uniqueness and excellence."
-        >
-          يشرفني أن أعرض عليكم الأداء المالي لشركة لوبريف لعام 2023، العام الذي
-          سلط الضوء على نموذج الأعمال الفريد للشركة والذي يتميز بتوليد تدفقات
-          نقدية عالية. مع توجه الهوامش للعودة إلى مستوياتها الطبيعية، وفي ظل
-          التوقعات الاقتصادية المتغيرة كان متوقعاً لعام 2023 أن يكون مليئاً
-          بالتحديات، ومع ذلك قمنا بتحقيق ثاني أعلى مستوى للأرباح في تاريخ لوبريف
-          البالغ 46 عاماً، كما حققنا أعلى مستوى للتدفقات النقدية الحرة على
-          الإطلاق، وتمكنا من بناء مركز مالي قوي، وهذه شهادة حقيقية على التفرد
-          والتميز الذي تحظى به لوبريف.
-        </p>
+          <h1
+            data-en="Dear Shareholders,"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            السادة المساهمون الكرام،،،
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="It gives me great honor to share with you Luberef’s financial performance for 2023, a year that highlighted the company’s unique business model known for high cash generation. With margins normalizing and shifting economic forecasts, 2023 was expected to be challenging. Nonetheless, we achieved the second highest profit in Luberef’s 46-year history, reached the highest free cash flow ever, and built a strong financial position. This is a true testament to Luberef’s uniqueness and excellence."
+          >
+            يشرفني أن أعرض عليكم الأداء المالي لشركة لوبريف لعام 2023، العام
+            الذي سلط الضوء على نموذج الأعمال الفريد للشركة والذي يتميز بتوليد
+            تدفقات نقدية عالية. مع توجه الهوامش للعودة إلى مستوياتها الطبيعية،
+            وفي ظل التوقعات الاقتصادية المتغيرة كان متوقعاً لعام 2023 أن يكون
+            مليئاً بالتحديات، ومع ذلك قمنا بتحقيق ثاني أعلى مستوى للأرباح في
+            تاريخ لوبريف البالغ 46 عاماً، كما حققنا أعلى مستوى للتدفقات النقدية
+            الحرة على الإطلاق، وتمكنا من بناء مركز مالي قوي، وهذه شهادة حقيقية
+            على التفرد والتميز الذي تحظى به لوبريف.
+          </p>
         </div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="During the first half of 2023, base oil crack margins remained at good levels, exceeding historical averages but were lower than the end of 2022 values. In the third quarter, these margins faced pressure due to a global shortage of high sulfur fuel oil, which impacted our feedstock price. This shortage was due to OPEC’s oil production cuts targeting oils that produce high sulfur fuel oil. By the fourth quarter, fuel oil prices normalized, improving the base oil crack margin environment."
-        >
-          خلال النصف الأول من 2023، احتفظت هوامش تكسير زيوت الأساس بمستويات جيدة
-          فاقت معدلاتها التاريخية، لكنها كانت أقل من المعدلات المسجلة بنهاية
-          2022. وفي الربع الثالث تعرضت هذه الهوامش لضغوط نتيجة نقص عالمي في زيت
-          الوقود عالي المحتوى من الكبريت، الذي أثر على سعر خام اللقيم الخاص بنا،
-          وجاء هذا النقص نتيجة خفض منظمة «أوبك» لإنتاج النفط، الذي ركز على أنواع
-          النفط، التي تنتج زيت الوقود عالي الكبريت. وفي الربع الأخير من العام
-          عادت أسعار زيوت الوقود لمستوياتها الطبيعية، ما عزز من وضع هوامش تكسير
-          زيوت الأساس.
-        </p>
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="During the first half of 2023, base oil crack margins remained at good levels, exceeding historical averages but were lower than the end of 2022 values. In the third quarter, these margins faced pressure due to a global shortage of high sulfur fuel oil, which impacted our feedstock price. This shortage was due to OPEC’s oil production cuts targeting oils that produce high sulfur fuel oil. By the fourth quarter, fuel oil prices normalized, improving the base oil crack margin environment."
+          >
+            خلال النصف الأول من 2023، احتفظت هوامش تكسير زيوت الأساس بمستويات
+            جيدة فاقت معدلاتها التاريخية، لكنها كانت أقل من المعدلات المسجلة
+            بنهاية 2022. وفي الربع الثالث تعرضت هذه الهوامش لضغوط نتيجة نقص
+            عالمي في زيت الوقود عالي المحتوى من الكبريت، الذي أثر على سعر خام
+            اللقيم الخاص بنا، وجاء هذا النقص نتيجة خفض منظمة «أوبك» لإنتاج
+            النفط، الذي ركز على أنواع النفط، التي تنتج زيت الوقود عالي الكبريت.
+            وفي الربع الأخير من العام عادت أسعار زيوت الوقود لمستوياتها
+            الطبيعية، ما عزز من وضع هوامش تكسير زيوت الأساس.
+          </p>
         </div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="Base oil production and sales volumes have continued to grow to record levels year after year as we execute our transformation initiatives. This resulted in a net income of SAR 1,510 million, the second highest in the company’s history. Our 2023 performance led to a Return on Average Capital Employed (ROACE) of 30%, a remarkable industry figure, and a gearing ratio of (-1%) after dividend distributions. We also achieved the highest free cash flow in the company’s history at SAR 2,108 million, which supported the Board of Directors’ recommendation for a second-half dividend of SAR 5.0 per share for 2023, in line with the approved dividend policy."
-        >
-          وواصلت أحجام إنتاج ومبيعات زيوت الأساس النمو عاما تلو الآخر لمستويات
-          قياسية، بينما نواصل تنفيذ مبادرات التحول. ونتج عن ذلك تحقيق دخل صافٍ
-          بقيمة 1,510 مليون ريال، وهو ثاني أعلى مستوى للدخل الصافي في تاريخ
-          الشركة. ونتيجة أدائنا في 2023، بلغ العائد على رأس المال المستخدم 30%
-          وهو مستوى مميز في القطاع في حين بلغت نسبة المديونية (-1%) بعد توزيعات
-          الأرباح. كما سجلنا أعلى مستوى على الإطلاق في تاريخ الشركة للتدفقات
-          النقدية الحرة بلغ 2,108 مليون ريال، وهو ما عزز توصية مجلس الإدارة
-          بإعلان توزيع أرباح بواقع 5.0 ريالات للسهم عن النصف الثاني من عام 2023
-          بما يتماشى مع السياسة المعتمدة للتوزيعات.
-        </p>
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="Base oil production and sales volumes have continued to grow to record levels year after year as we execute our transformation initiatives. This resulted in a net income of SAR 1,510 million, the second highest in the company’s history. Our 2023 performance led to a Return on Average Capital Employed (ROACE) of 30%, a remarkable industry figure, and a gearing ratio of (-1%) after dividend distributions. We also achieved the highest free cash flow in the company’s history at SAR 2,108 million, which supported the Board of Directors’ recommendation for a second-half dividend of SAR 5.0 per share for 2023, in line with the approved dividend policy."
+          >
+            وواصلت أحجام إنتاج ومبيعات زيوت الأساس النمو عاما تلو الآخر لمستويات
+            قياسية، بينما نواصل تنفيذ مبادرات التحول. ونتج عن ذلك تحقيق دخل صافٍ
+            بقيمة 1,510 مليون ريال، وهو ثاني أعلى مستوى للدخل الصافي في تاريخ
+            الشركة. ونتيجة أدائنا في 2023، بلغ العائد على رأس المال المستخدم 30%
+            وهو مستوى مميز في القطاع في حين بلغت نسبة المديونية (-1%) بعد
+            توزيعات الأرباح. كما سجلنا أعلى مستوى على الإطلاق في تاريخ الشركة
+            للتدفقات النقدية الحرة بلغ 2,108 مليون ريال، وهو ما عزز توصية مجلس
+            الإدارة بإعلان توزيع أرباح بواقع 5.0 ريالات للسهم عن النصف الثاني من
+            عام 2023 بما يتماشى مع السياسة المعتمدة للتوزيعات.
+          </p>
         </div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="As we continue to operate within our financial framework, maintain low production costs, and manage high cash conversion assets safely and reliably, we will keep creating value for our shareholders."
-        >
-          سنواصل تحقيق القيمة لمساهمي الشركة، بينما نمضي قدماً في العمل ضمن
-          إطارنا المالي والحفاظ على التكلفة المنخفضة للإنتاج، وتشغيل أصول تولد
-          تدفقات نقدية عالية بصورة آمنة وموثوقة.
-        </p>
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="As we continue to operate within our financial framework, maintain low production costs, and manage high cash conversion assets safely and reliably, we will keep creating value for our shareholders."
+          >
+            سنواصل تحقيق القيمة لمساهمي الشركة، بينما نمضي قدماً في العمل ضمن
+            إطارنا المالي والحفاظ على التكلفة المنخفضة للإنتاج، وتشغيل أصول تولد
+            تدفقات نقدية عالية بصورة آمنة وموثوقة.
+          </p>
         </div>
       </div>
     </div>

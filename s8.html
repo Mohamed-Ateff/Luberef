@@ -25,12 +25,17 @@
 
     <title>Luberef</title>
     <script>
-      // Immediately check for preferred language before the main content loads
       (function () {
         const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
-        document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
-        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
-        document.body.classList.toggle("english", savedLanguage === "en");
+        const html = document.documentElement;
+        const body = document.body;
+
+        // Set language and direction in the head
+        html.lang = savedLanguage === "en" ? "en" : "ar";
+        html.dir = savedLanguage === "en" ? "ltr" : "rtl";
+
+        // Apply the language class to the body
+        body.classList.toggle("english", savedLanguage === "en");
       })();
     </script>
   </head>
@@ -343,7 +348,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">1</span>
+            <span class="span-number">1</span>
             <h3
               data-en="Green Homeland Initiative
 "
@@ -379,7 +384,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">2</span>
+            <span class="span-number">2</span>
             <h3 data-en="Kaswa Alsaida Aisha Initiative">
               مبادرة كسوة السيدة عائشة
             </h3>
@@ -414,7 +419,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">3</span>
+            <span class="span-number">3</span>
 
             <h3 data-en="Back to School Initiative">
               مبادرة العودة إلى المدرسة
@@ -449,7 +454,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">4</span>
+            <span class="span-number">4</span>
             <h3 data-en="My Store Initiative">مبادرة متجري</h3>
           </div>
           <p
@@ -482,7 +487,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">5</span>
+            <span class="span-number">5</span>
             <h3 data-en="Let’s Walk the Walk Together2023">
               مبادرة دعونا نسير معًا 2023
             </h3>
@@ -516,7 +521,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">6</span>
+            <span class="span-number">6</span>
             <h3 data-en="Supporting Education in the MADAC Academy Initiative">
               مبادرة دعم مشروع التعليم <br />
               في أكاديمية «مداك»
@@ -550,7 +555,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">7</span>
+            <span class="span-number">7</span>
             <h3 data-en="Ramadan Food Basket Initiative">
               مبادرة سلات رمضان الغذائية
             </h3>
@@ -584,7 +589,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">8</span>
+            <span class="span-number">8</span>
             <h3 data-en="The Destination Program Initiative">
               مبادرة برنامج «وجهة»
             </h3>
@@ -617,7 +622,7 @@ Governance (ESG)"
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">9</span>
+            <span class="span-number">9</span>
             <h3
               data-en="Launching the Corporate Volunteering
 Program “World of Giving”
@@ -654,7 +659,7 @@ Program “World of Giving”
       <div class="container">
         <div class="Text-div">
           <div class="align-text-1">
-            <span class=" span-number">10</span>
+            <span class="span-number">10</span>
             <h3 data-en="Luberef Tournament 2023">دوري لوبريف لعام 2023</h3>
           </div>
           <p
