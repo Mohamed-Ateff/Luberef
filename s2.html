@@ -26,15 +26,25 @@
     <script>
       (function () {
         const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+
+        // Apply language and direction attributes
         const html = document.documentElement;
         const body = document.body;
-
-        // Set language and direction in the head
-        html.lang = savedLanguage === "en" ? "en" : "ar";
+        html.lang = savedLanguage;
         html.dir = savedLanguage === "en" ? "ltr" : "rtl";
+        body.className = savedLanguage === "en" ? "english" : "";
 
-        // Apply the language class to the body
-        body.classList.toggle("english", savedLanguage === "en");
+        // Update content statically
+        const elements = document.querySelectorAll("[data-en], [data-ar]");
+        elements.forEach((element) => {
+          element.textContent =
+            savedLanguage === "en"
+              ? element.getAttribute("data-en")
+              : element.getAttribute("data-ar");
+        });
+
+        // Unhide the body after applying language settings
+        body.style.display = "block";
       })();
     </script>
   </head>
