@@ -23,16 +23,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
-<script>
-  // Immediately check for preferred language before the main content loads
-  (function() {
-    const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
-    document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
-    document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
-    document.body.classList.toggle("english", savedLanguage === "en");
-  })();
-</script>
-
+    <script>
+      // Immediately check for preferred language before the main content loads
+      (function () {
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        document.documentElement.lang = savedLanguage === "en" ? "en" : "ar";
+        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
+        document.body.classList.toggle("english", savedLanguage === "en");
+      })();
+    </script>
   </head>
   <body dir="rtl" lang="ar">
     <header>
@@ -123,7 +122,11 @@
 
             <!-- item -->
             <li>
-              <a href="s5p1.html" class="menu-link" data-en="Products and Facilities">
+              <a
+                href="s5p1.html"
+                class="menu-link"
+                data-en="Products and Facilities"
+              >
                 المنتجات ومرافق الإنتاج
               </a>
               <div class="sub-menu">
@@ -187,7 +190,7 @@
 
             <div class="buttons-home delete-buttons-for-pc">
               <a
-                href="./pdfs/Full Report_Arabic.pdf"
+                href="/pdfs/Full Report_Arabic.pdf"
                 download
                 class="donwload-pdf-home arabic-item"
               >
@@ -195,7 +198,7 @@
                 <img src="Images/donwload.png" alt="" />
               </a>
               <a
-                href="./pdfs/Full Report.pdf"
+                href="/pdfs/Full Report.pdf"
                 download
                 class="donwload-pdf-home english-item"
               >
@@ -265,137 +268,218 @@
     <div class="article">
       <div class="container article-container">
         <div>
-        <h1
-          data-en="Dear Shareholders,"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          مساهمينا الكرام،،،
-        </h1>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="It is my pleasure to share with you our 2023 annual report, reflecting Luberef’s resilient performance and significant value creation for our shareholders. Luberef’s share price climbed nearly 50%, demonstrating the confidence investors have placed in the company’s future. We also returned value directly through dividend distributions, aligned with our recently approved dividend policy targeting 60% to 80% of the company’s free cash flow. This resulted in a distribution of 10 SAR per share. Our commitment to balancing long-term growth with rewarding shareholders through consistent distributions is core to Luberef’s value proposition.
-                  It is important to acknowledge that we navigated lower base oil margins throughout the year as prices began to normalize.
-                  "
-        >
-          يسرني ويطيب لي أن أضع بين أيديكم التقرير السنوي لعام 2023 الذي نستعرض
-          فيه مرونة أداء شركة لوبريف وتعظيم القيمة للمساهمين، حيث شهد هذا العام
-          ارتفاعاً في سعر سهم لوبريف بنحو 50%، ما يعكس ثقة المستثمرين في مستقبل
-          الشركة. كما أعادت الشركة هذه القيمة للمساهمين بشكل مباشر عبر توزيعات
-          الأرباح بما يتماشى مع ما أقره مجلس الإدارة بشأن اعتماد سياسة توزيع
-          أرباح مرتبطة بالأداء تبلغ نسبتها من 60% إلى 80% من التدفقات النقدية
-          الحرة السنوية. ونتج عن ذلك توزيع عشرة ريالات للسهم. ويعد التزام لوبريف
-          بتحقيق التوازن بين النمو على المدى الطويل وتحقيق عوائد للمساهمين عبر
-          توزيعات منتظمة أمراً جوهرياً ضمن القيم الأساسية للشركة.
-        </p>
+          <h1
+            data-en="Dear Shareholders,"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            مساهمينا الكرام،،،
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="It is my pleasure to share with
+you our 2023 annual report,
+reflecting Luberef’s resilient
+performance and significant
+value creation for our shareholders. Luberef’s share
+price climbed nearly 50%,
+demonstrating the confidence
+investors have placed in the
+company’s future. We also returned value directly through
+dividend distributions, aligned
+with our recently approved
+dividend policy targeting 60%
+to 80% of the company’s
+free cash flow. This resulted
+in a distribution of 10 SR per
+share. Our commitment to
+balancing long-term growth
+with rewarding shareholders
+through consistent distributions is core to Luberef’s value
+proposition."
+          >
+            يسرني ويطيب لي أن أضع بين أيديكم التقرير السنوي لعام 2023 الذي
+            نستعرض فيه مرونة أداء شركة لوبريف وتعظيم القيمة للمساهمين، حيث شهد
+            هذا العام ارتفاع في سعر سهم لوبريف بنحو 50%، ما يعكس ثقة المستثمرين
+            في مستقبل الشركة. كما أعادت الشركة هذه القيمة للمساهمين بشكل مباشر
+            عبر توزيعات الأرباح بما يتماشى مع ما أقره مجلس الإدارة بشأن اعتماد
+            سياسة توزيع أرباح مرتبطة بالأداء تبلغ نسبتها من 60% إلى 80% من
+            التدفقات النقدية الحرة السنوية. ونتج عن ذلك توزيع عشرة ريالات للسهم.
+            ويعد التزام لوبريف بتحقيق التوازن بين النمو على المدى الطويل وتحقيق
+            عوائد للمساهمين عبر توزيعات منتظمة أمراً جوهرياً ضمن القيم الأساسية
+            للشركة.
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="It is important to acknowledge
+that we navigated lower base
+oil margins throughout the
+year as prices began to normalize. Despite this challenge,
+Luberef was able to record its
+second-highest income and
+its highest-ever free cash flow
+in its 46-year history. This
+achievement is a testament
+to our strong foundation and
+strategic focus, as we continue to position Luberef for
+continued success."
+          >
+            ومن المهم أن نسلط الضوء على نجاحنا في مواجهة انخفاض هوامش التكسير
+            لزيوت الأساس على مدار العام مع بدء الأسعار في العودة لمستوياتها
+            الطبيعية. ورغم التحديات، تمكنت لوبريف من تسجيل ثاني أعلى مستوى أرباح
+            وأعلى مستوى للتدفقات النقدية الحرة على مدى تاريخها البالغ 46 عاما.
+            ويعد هذا الإنجاز شهادة على قوة أساسنا وتركيزنا الاستراتيجي، بينما
+            تتواصل جهودنا لوضع لوبريف في مكانة مميزة تمكنها من تحقيق النجاح
+            المتواصل.
+          </p>
         </div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="Despite this challenge, Luberef was able to record its second-highest income and its highest-ever free cash flow in its 46-year history. This achievement is a testament to our strong foundation and strategic focus, as we continue to position Luberef for
-continued success.
-"
-        >
-          ومن المهم أن نسلط الضوء على نجاحنا في مواجهة انخفاض هوامش التكسير
-          لزيوت الأساس على مدار العام مع بدء الأسعار في العودة لمستوياتها
-          الطبيعية. ورغم التحديات، تمكنت لوبريف من تسجيل ثاني أعلى مستوى أرباح
-          وأعلى مستوى للتدفقات النقدية الحرة على مدى تاريخها البالغ 46 عاما.
-          ويعد هذا الإنجاز شهادة على قوة أساسنا وتركيزنا الاستراتيجي، بينما
-          تتواصل جهودنا لوضع لوبريف في مكانة مميزة تمكنها من تحقيق النجاح
-          المتواصل.
-        </p>
-</div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="Our unique focus on base oil production, coupled with financial strength, strategic location, an efficient value chain, and a competitive cost structure, positions us well to thrive in the evolving base oil market. We have prudently navigated changing dynamics, anticipating the shift in demand from Group I to Group II and III base oils. The Yanbu Growth II project will provide Luberef with the flexibility to adjust its Group II and III offerings based on the most favorable
-netback economics. In collaboration with our majority shareholder, Saudi Aramco, we continue to identify opportunities to participate in the growing demand for Group III base oils.
-"
-        >
-          إن تركيزنا على إنتاج زيوت الأساس، بجودة عالية بالإضافة إلى صلابة
-          مركزنا المالي، وموقعنا الاستراتيجي، وسلسلة القيمة الفعالة، وهيكل
-          التكلفة التنافسي، جميعها عوامل تضعنا في موقع جيد للنمو والتميز في سوق
-          الزيوت الأساسية التي تتسم بالتطور المستمر. ولقد تعاملنا بحرص مع
-          ديناميكية السوق، متوقعين التحول في الطلب من الفئة الأولى لزيوت الأساس
-          إلى الفئتين الثانية والثالثة. وسيوفر مشروع التوسعة الثانية لمرفق إنتاج
-          ينبع المرونة لإنتاج زيوت الأساس من الفئتين الثانية والثالثة بناء على
-          أفضل اقتصاديات التسعير لتحقيق أعلى مستوى من العوائد. وبالتعاون مع شركة
-          أرامكو السعودية المساهم الرئيسي في الشركة، نواصل استكشاف وتحديد الفرص
-          المناسبة للاستفادة من الطلب المتنامي على زيوت الأساس من الفئة الثالثة.
-        </p>
-</div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="By leveraging the Saudi Aramco business transformation program, we successfully extracted additional value
-from our assets. This involved securing new feedstocks, enabling increased production of Group II base oil. The program, focused on synergizing operations across Saudi Aramco’s assets, facilitated Luberef’s partnerships with other facilities, unlocking further value creation opportunities.
-"
-        >
-          ومن خلال الاستفادة من برنامج التحول في أعمال شركة أرامكو السعودية،
-          نجحنا في استخلاص قيمة إضافية من أصولنا. وتضمن ذلك تأمين مواد أولية
-          جديدة، ما أتاح زيادة إنتاج زيوت الأساس من الفئة الثانية. حيث ساهم هذا
-          البرنامج الذي يركز على تكامل العمليات عبر أصول أرامكو السعودية، في
-          تسهيل تنفيذ شراكات لوبريف مع مرافق ومنشآت أخرى وفتح آفاق جديدة لإتاحة
-          المزيد من الفرص لخلق القيمة.
-        </p>
-</div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="At Luberef, we are committed to operating responsibly and sustainably, actively seeking opportunities to minimize our environmental impact and contribute to a more sustainable future. In 2023, we took a significant step towards our 2050 net-zero journey by participating in the largest voluntary carbon credit auction held in Nairobi, Kenya.
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="Our unique focus on base
+oil production, coupled with
+financial strength, strategic
+location, an efficient value
+chain, and a competitive cost
+structure, positions us well
+to thrive in the evolving base
+oil market. We have prudently
+navigated changing dynamics,
+anticipating the shift in demand from Group I to Group
+II and III base oils. The Yanbu
+Growth II project will provide
+Luberef with the flexibility to
+adjust its Group II and III offerings based on the most favorable netback economics. In
+collaboration with our majority shareholder, Saudi Aramco,
+we continue to identify opportunities to participate in the
+growing demand for Group III
+base oils."
+          >
+            إن تركيزنا على إنتاج زيوت الأساس، بجودة عالية بالإضافة إلى صلابة
+            مركزنا المالي، وموقعنا الاستراتيجي، وسلسلة القيمة الفعالة، وهيكل
+            التكلفة التنافسي، جميعها عوامل تضعنا في موقع جيد للنمو والتميز في
+            سوق الزيوت الأساسية التي تتسم بالتطور المستمر. ولقد تعاملنا بحرص مع
+            ديناميكية السوق، متوقعين التحول في الطلب من الفئة الأولى لزيوت
+            الأساس إلى الفئتين الثانية والثالثة. وسيوفر مشروع التوسعة الثانية
+            لمرفق إنتاج ينبع المرونة لإنتاج زيوت الأساس من الفئتين الثانية
+            والثالثة بناء على أفضل اقتصاديات التسعير لتحقيق أعلى مستوى من
+            العوائد. وبالتعاون مع شركة أرامكو السعودية المساهم الرئيسي في
+            الشركة، نواصل استكشاف وتحديد الفرص المناسبة للاستفادة من الطلب
+            المتنامي على زيوت الأساس من الفئة الثالثة.
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="By leveraging the Saudi Aramco business transformation
+program, we successfully
+extracted additional value
+from our assets. This involved
+securing new feedstocks,
+enabling increased production of Group II base oil. The
+program, focused on synergizing operations across Saudi
+Aramco’s assets, facilitated Luberef’s partnerships with
+other facilities, unlocking
+further value creation opportunities."
+          >
+            ومن خلال الاستفادة من برنامج التحول في أعمال شركة أرامكو السعودية،
+            نجحنا في استخلاص قيمة إضافية من أصولنا. وتضمن ذلك تأمين مواد أولية
+            جديدة، ما أتاح زيادة إنتاج زيوت الأساس من الفئة الثانية. حيث ساهم
+            هذا البرنامج الذي يركز على تكامل العمليات عبر أصول أرامكو السعودية،
+            في تسهيل تنفيذ شراكات لوبريف مع مرافق ومنشآت أخرى وفتح آفاق جديدة
+            لإتاحة المزيد من الفرص لخلق القيمة.
+          </p>
+        </div>
 
-Carbon credits, along with energy efficiency and sustainable energy initiatives, are the pillars of Luberef’s strategy to achieve net-zero emissions.
-By integrating sustainability into our core business practices, we aim to create long-term value for our stakeholders while contributing to a more sustainable future for all.
-"
-        >
-          نحن في لوبريف نلتزم بالعمل بشكل مسؤول ومستدام ونبحث بنشاط عن فرص للحد
-          من التأثير على البيئة والمساهمة في مستقبل أكثر استدامة. ففي خلال عام
-          2023، اتخذنا خطوات مهمة في إطار رحلتنا الساعية إلى تحقيق صافي الانبعاث
-          الصفري بحلول عام 2050 عبر مشاركتنا في أكبر مزاد لائتمان الكربون الطوعي
-          والذي عُقد في العاصمة الكينية نيروبي. وإلى جانب ائتمان الكربون، فإن
-          كفاءة واستدامة الطاقة يعد من الركائز الأساسية لاستراتيجية لوبريف التي
-          تمكنها من تحقيق هدف صافي الانبعاث الصفري. ومن خلال دمج الاستدامة في
-          ممارسات عملياتنا الأساسية، نهدف إلى خلق قيمة طويلة المدى لشركائنا
-          بالتوازي مع المساهمة في مستقبل أكثر استدامة للجميع.
-        </p>
-</div>
-<div>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="It is important to highlight that our success is built on a strong foundation of safe and reliable operations, without which we would not have realized our current successes.
-Luberef has achieved more than 4 years 0.0 Total Recordable Incident Rate (TRIR) and we maintain a top quartile operational availability performance of 98.3%. This is a remarkable achievement by the team in the field, however we must remain focused to maintain such a record and
-continue to celebrate future success.
-"
-        >
-          ومن المهم التأكيد على أن نجاحنا يرتكز على أسس قوية من العمليات الآمنة
-          والموثوقة، وبدون هذه الأسس لم نكن لنحقق نجاحاتنا الحالية. حيث تمكنت
-          لوبريف لأكثر من أربع سنوات من الحفاظ على معدل صفر لإجمالي الحوادث
-          المسجلة، وحققت الشركة عمليات موثوقة مع أعلى معدل توافر تشغيلي للعمليات
-          الربعية بنسبة 98.3%، وهو إنجاز مميز لفريقنا على أرض الواقع، ومع ذلك،
-          ينبغي علينا التركيز على الحفاظ على هذا المعدل والاستمرار في تحقيق
-          النجاحات المستقبلية.
-        </p>
-
-           <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-en="As we look to the future, we the Board of Directors and the Executive Management remain committed to positioning the company for a generation of success and value creation. I would also like to thank all our customers, valued partners and Luberef’s employees whose professionalism and dedication have allowed us to celebrate such a strong performance."
-        >
-          وبينما نتطلع للمستقبل، نظل نحن أعضاء مجلس الإدارة وكبار التنفيذيين
-          ملتزمين بتعزيز مكانة الشركة عبر سنوات من النجاح وتعظيم القيمة
-          للمساهمين. وفي الختام، أود أن أتقدم بخالص الشكر والتقدير لجميع عملائنا
-          وشركائنا الكرام ولموظفي لوبريف الذين لم يتوانوا عن إظهار احترافيتهم
-          وتفانيهم في العمل والتي لولاها لم يكن بوسعنا الاحتفال
-          بهذا الأداء القوي.
-        </p>
-</div>
-
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="At Luberef, we are committed
+to operating responsibly and
+sustainably, actively seeking
+opportunities to minimize our
+environmental impact and
+contribute to a more sustainable future. In 2023, we took
+a significant step towards
+our 2050 net-zero journey by
+participating in the largest
+voluntary carbon credit auction held in Nairobi, Kenya.
+Carbon credits, along with
+energy efficiency and sustainable energy initiatives, are the
+pillars of Luberef’s strategy to
+achieve net-zero emissions.
+By integrating sustainability
+into our core business practices, we aim to create long-term value for our stakeholders
+while contributing to a more
+sustainable future for all."
+          >
+            نحن في لوبريف نلتزم بالعمل بشكل مسؤول ومستدام ونبحث بنشاط عن فرص
+            للحد من التأثير على البيئة والمساهمة في مستقبل أكثر استدامة. ففي
+            خلال عام 2023، اتخذنا خطوات مهمة في إطار رحلتنا الساعية إلى تحقيق
+            صافي الانبعاث الصفري بحلول عام 2050 عبر مشاركتنا في أكبر مزاد
+            لائتمان الكربون الطوعي والذي عُقد في العاصمة الكينية نيروبي. وإلى
+            جانب ائتمان الكربون، فإن كفاءة واستدامة الطاقة يعد من الركائز
+            الأساسية لاستراتيجية لوبريف التي تمكنها من تحقيق هدف صافي الانبعاث
+            الصفري. ومن خلال دمج الاستدامة في ممارسات عملياتنا الأساسية، نهدف
+            إلى خلق قيمة طويلة المدى لشركائنا بالتوازي مع المساهمة في مستقبل
+            أكثر استدامة للجميع.
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="It is important to highlight
+that our success is built on a
+strong foundation of safe and
+reliable operations, without
+this foundation we would not
+have realized our current successes. Luberef has now completed more than 4 years 0.0
+Total Recordable Incident Rate
+(TRIR) and we maintain a top
+quartile operational availability performance of 98.3%, this
+is a remarkable achievement
+by the team in the field, however we must remain focused
+to maintain such a record and
+continue to celebrate future
+success. "
+          >
+            ومن المهم التأكيد على أن نجاحنا يرتكز على أسس قوية من العمليات
+            الآمنة والموثوقة، وبدون هذه الأسس لم نكن لنحقق نجاحاتنا الحالية. حيث
+            تمكنت لوبريف لأكثر من أربع سنوات من الحفاظ على معدل صفر لإجمالي
+            الحوادث المسجلة، وحققت الشركة عمليات موثوقة مع أعلى معدل توافر
+            تشغيلي للعمليات الربعية بنسبة 98.3%، وهو إنجاز مميز لفريقنا على أرض
+            الواقع، ومع ذلك، ينبغي علينا التركيز على الحفاظ على هذا المعدل
+            والاستمرار في تحقيق النجاحات المستقبلية.
+          </p>
+        </div>
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-en="As we look to the future, we
+the board of directors and the executive management
+remain committed to positioning the company for a
+generation of success and
+value creation. Also, I would
+like to sincerely thank all our
+customers, valued partners
+and Luberef’s employees who
+without their professionalism
+and dedication we would not
+be celebrating such a strong
+performance."
+          >
+            وبينما نتطلع للمستقبل، نظل نحن أعضاء مجلس الإدارة وكبار التنفيذيين
+            ملتزمين بتعزيز مكانة الشركة عبر سنوات من النجاح وتعظيم القيمة
+            للمساهمين. وفي الختام، أود أن أتقدم بخالص الشكر والتقدير لجميع
+            عملائنا وشركائنا الكرام ولموظفي لوبريف الذين لم يتوانوا عن إظهار
+            احترافيتهم وتفانيهم في العمل والتي لولاها لم يكن بوسعنا الاحتفال
+            بهذا الأداء القوي.
+          </p>
+        </div>
+      </div>
     </div>
 
     <footer style="margin-top: 70px !important">
@@ -434,7 +518,7 @@ continue to celebrate future success.
         </div>
         <div class="card-for-footer">
           <a
-            href="./pdfs/Full Report_Arabic.pdf"
+            href="/pdfs/Full Report_Arabic.pdf"
             download
             class="donwload-pdf-home arabic-item"
           >
@@ -442,7 +526,7 @@ continue to celebrate future success.
             <img src="Images/donwload.png" alt="" />
           </a>
           <a
-            href="./pdfs/Full Report.pdf"
+            href="/pdfs/Full Report.pdf"
             download
             class="donwload-pdf-home english-item"
           >
