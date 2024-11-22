@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
 // navbar
 
 $(document).ready(function () {
@@ -196,3 +197,26 @@ animateProgressBars();
 
 // Event listener to animate progress bars on scroll
 window.addEventListener("scroll", animateProgressBars);
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("loader");
+  const mainContent = document.getElementById("main-content");
+
+  // Add 'loading' class to prevent scrolling
+  document.documentElement.classList.add("loading");
+  document.body.classList.add("loading");
+
+  // Simulate a loading delay (for demonstration purposes)
+  setTimeout(() => {
+    // Remove 'loading' class to enable scrolling
+    document.documentElement.classList.remove("loading");
+    document.body.classList.remove("loading");
+
+    // Hide loader and show main content
+    loader.style.display = "none";
+    mainContent.classList.remove("hidden");
+  }, 1500); // Adjust time as needed
+});

@@ -24,32 +24,27 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Luberef</title>
+
     <script>
       (function () {
-        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "ar";
 
-        // Apply language and direction attributes
-        const html = document.documentElement;
-        const body = document.body;
-        html.lang = savedLanguage;
-        html.dir = savedLanguage === "en" ? "ltr" : "rtl";
-        body.className = savedLanguage === "en" ? "english" : "";
+        // Apply the saved language settings instantly
+        document.documentElement.lang = savedLanguage;
+        document.documentElement.dir = savedLanguage === "en" ? "ltr" : "rtl";
 
-        // Update content statically
-        const elements = document.querySelectorAll("[data-en], [data-ar]");
-        elements.forEach((element) => {
-          element.textContent =
-            savedLanguage === "en"
-              ? element.getAttribute("data-en")
-              : element.getAttribute("data-ar");
-        });
-
-        // Unhide the body after applying language settings
-        body.style.display = "block";
+        // Add appropriate language class for styling
+        document.documentElement.classList.add(
+          savedLanguage === "en" ? "english" : "arabic"
+        );
       })();
     </script>
   </head>
   <body dir="rtl" lang="ar">
+    <div id="loader">
+      <img src="Images/logo.png" alt="" />
+    </div>
+
     <header>
       <div class="logo-for-header">
         <a href="index.html" class="navbar-brand"
